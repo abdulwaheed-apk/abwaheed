@@ -9,7 +9,7 @@ import {
     FaSun,
 } from 'react-icons/fa6'
 
-let light = false
+const light = false
 
 const navigation = [
     {
