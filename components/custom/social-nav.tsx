@@ -5,7 +5,11 @@ import {
     FaSquareInstagram,
     FaHackerrank,
     FaSquareXTwitter,
+    FaMoon,
+    FaSun,
 } from 'react-icons/fa6'
+
+let light = false
 
 const navigation = [
     {
@@ -37,19 +41,30 @@ const navigation = [
 
 export default function Social() {
     return (
-        <nav className='inline-flex overflow-hidden rounded-md border bg-white shadow-sm'>
-            {navigation.map((item) => (
-                <Link
-                    key={item.name}
-                    href={item.href}
-                    target='_blank'
-                    title={item.name}
-                    rel='noopener noreferrer'
+        <>
+            <nav className='inline-flex overflow-hidden rounded-md border bg-white shadow-sm'>
+                <button
                     className='inline-block border-e p-3 text-gray-700 hover:bg-gray-50 focus:relative'
+                    title={
+                        light ? 'Switch to dark mode' : 'Switch to light mode'
+                    }
                 >
-                    <item.icon />
-                </Link>
-            ))}
-        </nav>
+                    {' '}
+                    {light ? <FaMoon /> : <FaSun />}
+                </button>
+                {navigation.map((item) => (
+                    <Link
+                        key={item.name}
+                        href={item.href}
+                        target='_blank'
+                        title={item.name}
+                        rel='noopener noreferrer'
+                        className='inline-block border-e p-3 text-gray-700 hover:bg-gray-50 focus:relative'
+                    >
+                        <item.icon />
+                    </Link>
+                ))}
+            </nav>
+        </>
     )
 }
