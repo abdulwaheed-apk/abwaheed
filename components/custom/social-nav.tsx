@@ -1,43 +1,8 @@
 import Link from 'next/link'
-import {
-    FaGithub,
-    FaLinkedin,
-    FaSquareInstagram,
-    FaHackerrank,
-    FaSquareXTwitter,
-    FaMoon,
-    FaSun,
-} from 'react-icons/fa6'
+import { socialNavigation } from '@/lib/data'
+import { FaMoon, FaSun } from 'react-icons/fa6'
 
 const light = true
-
-const navigation = [
-    {
-        name: 'GitHub',
-        href: 'https://github.com/abdulwaheed-apk',
-        icon: FaGithub,
-    },
-    {
-        name: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/abdulwaheed-apk/',
-        icon: FaLinkedin,
-    },
-    {
-        name: 'X',
-        href: 'https://x.com/abdulwaheed_apk',
-        icon: FaSquareXTwitter,
-    },
-    {
-        name: 'HackerRank',
-        href: 'https://www.hackerrank.com/profile/abdulwaheed_apk',
-        icon: FaHackerrank,
-    },
-    {
-        name: 'Instagram',
-        href: 'https://www.instagram.com/abdulwaheed.apk',
-        icon: FaSquareInstagram,
-    },
-]
 
 export default function Social() {
     return (
@@ -52,7 +17,7 @@ export default function Social() {
                     {' '}
                     {light ? <FaMoon /> : <FaSun />}
                 </button>
-                {navigation.map((item) => (
+                {socialNavigation.map((item) => (
                     <Link
                         key={item.name}
                         href={item.href}
