@@ -6,6 +6,20 @@ import { FaGithub, FaGlobe } from 'react-icons/fa6'
 import Link from 'next/link'
 import { AnimatedTooltip } from './animated-tooltip'
 
+type Card = {
+    title: string
+    src: string
+    url: string
+    stack: StackItem[]
+}
+
+type StackItem = {
+    id: number
+    name: string
+    designation: string
+    image: string
+}
+
 export const Card = React.memo(
     ({
         card,
@@ -13,7 +27,7 @@ export const Card = React.memo(
         hovered,
         setHovered,
     }: {
-        card: any
+        card: Card
         index: number
         hovered: number | null
         setHovered: React.Dispatch<React.SetStateAction<number | null>>
@@ -74,20 +88,6 @@ export const Card = React.memo(
 )
 
 Card.displayName = 'Card'
-
-type Card = {
-    title: string
-    src: string
-    url: string
-    stack: StackItem[]
-}
-
-type StackItem = {
-    id: number
-    name: string
-    designation: string
-    image: string
-}
 
 export function FocusCards({ cards }: { cards: Card[] }) {
     const [hovered, setHovered] = useState<number | null>(null)
