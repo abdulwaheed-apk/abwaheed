@@ -64,3 +64,204 @@ export const skills = [
             'Discover my recent projects and articles, highlighting my expertise in full-stack development.',
     },
 ]
+
+export const projects = [
+    {
+        title: 'Methvin | Cost Estimation App',
+        src: '/assets/Methvin - Estimate.png',
+        url: 'https://methvin.org/products/estimating-tools/estimating-software',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation: 'Used for building Single Page Application (SPA)',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'Redux',
+                designation: 'Used for state management',
+                image: '/assets/redux.svg',
+            },
+            {
+                id: 3,
+                name: 'DevExtreme TreeList',
+                designation:
+                    "Used React TreeList's, which is build on top of the MUI",
+                image: '/assets/devexpress.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation:
+                    'Used AWS services suck as AWS Elastic Beanstalk, RDS, S3, and CloudFront',
+                image: '/assets/aws.svg',
+            },
+        ],
+    },
+    {
+        title: 'Valley of life',
+        src: '/assets/Methvin - Estimate 2.png',
+        url: 'https://github.com/abdulwaheed-apk',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+        ],
+    },
+    {
+        title: 'Sala behta hi jayega',
+        src: '/assets/Methvin - Estimate 3.png',
+        url: 'https://github.com/abdulwaheed-apk',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+        ],
+    },
+    {
+        title: 'Camping is for pros',
+        src: '/assets/4.avif',
+        url: 'https://github.com/abdulwaheed-apk',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+        ],
+    },
+    {
+        title: 'The road not taken',
+        src: '/assets/5.avif',
+        url: 'https://github.com/abdulwaheed-apk',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+        ],
+    },
+    {
+        title: 'The First Rule',
+        src: '/assets/6.png',
+        url: 'https://github.com/abdulwaheed-apk',
+        stack: [
+            {
+                id: 1,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 2,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+            {
+                id: 3,
+                name: 'React',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/react.svg',
+            },
+            {
+                id: 4,
+                name: 'AWS',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/graph-ql.svg',
+            },
+        ],
+    },
+]

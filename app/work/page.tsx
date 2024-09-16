@@ -12,13 +12,9 @@ export default function Work() {
                     experience.
                 </p>
             </section>
-            <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 px-4 gap-x-4 gap-y-6 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
-                {' '}
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />{' '}
-            </section>
+            {/* <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-8 px-4 gap-x-4 gap-y-6 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
+            </section> */}
+            <ProjectCard />
         </main>
     )
 }
