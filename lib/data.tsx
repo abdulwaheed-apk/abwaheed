@@ -100,9 +100,9 @@ export const projects = [
         ],
     },
     {
-        title: 'Valley of life',
-        src: '/assets/Methvin - Estimate 2.png',
-        url: 'https://github.com/abdulwaheed-apk',
+        title: 'Acme | Invoice Tracking Dashboard',
+        src: '/assets/invoice tracking dashboard.avif',
+        url: 'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
         stack: [
             {
                 id: 1,
@@ -113,49 +113,56 @@ export const projects = [
             },
             {
                 id: 2,
-                name: 'AWS',
+                name: 'TypeScript',
                 designation: 'Deployed web app on AWS Elastic Beanstalk',
-                image: '/assets/graph-ql.svg',
+                image: '/assets/ts.svg',
             },
             {
                 id: 3,
-                name: 'React',
-                designation:
-                    'Used for building SPA, with redux for state management',
-                image: '/assets/react.svg',
+                name: 'PostgreSQL',
+                designation: 'Deployed web app on AWS Elastic Beanstalk',
+                image: '/assets/pg.svg',
             },
             {
                 id: 4,
-                name: 'AWS',
-                designation: 'Deployed web app on AWS Elastic Beanstalk',
-                image: '/assets/graph-ql.svg',
+                name: 'Vercel',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/tailwind.svg',
+            },
+            {
+                id: 5,
+                name: 'Next.js',
+                designation:
+                    'Used for building SPA, with redux for state management',
+                image: '/assets/nextjs.svg',
             },
         ],
     },
     {
-        title: 'Sala behta hi jayega',
-        src: '/assets/Methvin - Estimate 3.png',
-        url: 'https://github.com/abdulwaheed-apk',
+        title: 'UBL Digital',
+        src: '/assets/ubl-digital.webp',
+        url: 'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
         stack: [
             {
                 id: 1,
-                name: 'React',
+                name: 'JavaScript',
                 designation:
                     'Used for building SPA, with redux for state management',
-                image: '/assets/react.svg',
+                image: '/assets/js.svg',
             },
             {
                 id: 2,
-                name: 'AWS',
+                name: 'Redux',
                 designation: 'Deployed web app on AWS Elastic Beanstalk',
-                image: '/assets/graph-ql.svg',
+                image: '/assets/redux.svg',
             },
             {
                 id: 3,
-                name: 'React',
+                name: 'PostgreSQL',
                 designation:
                     'Used for building SPA, with redux for state management',
-                image: '/assets/react.svg',
+                image: '/assets/pg.svg',
             },
             {
                 id: 4,

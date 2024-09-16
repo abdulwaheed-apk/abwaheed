@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { cn } from '@/lib/utils'
-import { FaGlobe } from 'react-icons/fa6'
+import { FaGithub, FaGlobe } from 'react-icons/fa6'
 import Link from 'next/link'
 import { AnimatedTooltip } from './animated-tooltip'
 
@@ -53,12 +53,18 @@ export const Card = React.memo(
                             href={card.url}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-clip-text text-amber-600 flex items-center justify-between gap-x-2'
+                            className='bg-clip-text text-amber-600 flex items-center justify-between gap-x-1.5'
                         >
                             <h4 className='font-semibold text-xl'>
-                                Check Live Site
+                                {card.url.includes('github')
+                                    ? 'Check GitHub Repo'
+                                    : 'Check Live Site'}
                             </h4>
-                            <FaGlobe className='text-amber-600 size-6' />
+                            {card.url.includes('github') ? (
+                                <FaGithub className='text-amber-600 size-6' />
+                            ) : (
+                                <FaGlobe className='text-amber-600 size-6' />
+                            )}
                         </Link>
                     </div>
                 </div>
