@@ -42,11 +42,7 @@ export default function NotFound() {
                                 </svg>
                             </Link>
                         </Button>
-                        <Button
-                            asChild
-                            variant={'outline'}
-                            className='hover:bg-orange-500'
-                        >
+                        <Button asChild variant={'outline'}>
                             <Link
                                 href='https://www.github.com/abdulwaheed-apk/'
                                 className='flex justify-center items-center space-x-2 text-sm font-semibold text-gray-900'

@@ -3,7 +3,7 @@ import Skills from '@/components/custom/skills'
 import { Button } from '@/components/ui/button'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
-import { FaRegCopy } from 'react-icons/fa6'
+import CopyEmail from '@/components/custom/copy-email'
 
 export default function Home() {
     return (
@@ -50,11 +50,11 @@ export default function Home() {
                             articles, highlighting my expertise in full-stack
                             development.
                         </p>
-                        <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-6 gap-y-2 sm:gap-y-0'>
+                        <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
                             <Button
                                 asChild
                                 variant={'primary'}
-                                className='hover:bg-orange-500'
+                                className='hover:bg-orange-500 font-medium'
                             >
                                 <Link
                                     href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
@@ -63,16 +63,10 @@ export default function Home() {
                                     download
                                 >
                                     Resume{' '}
-                                    <IoCloudDownloadOutline className='ml-2 size-5' />
+                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
                             </Button>
-                            <Button
-                                variant={'outline'}
-                                className='hover:cursor-copy'
-                            >
-                                Email{' '}
-                                <FaRegCopy className='ml-2 size-5 hover:animate-pulse' />
-                            </Button>
+                            <CopyEmail />
                         </div>
                     </div>
                 </div>
@@ -104,13 +98,21 @@ export default function Home() {
                             articles, highlighting my expertise in full-stack
                             development.
                         </p>
-                        <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'>
-                            <Button asChild variant={'primary'}>
-                                <Link href='mailto:abdulwaheed.apk@gmail.com'>
+                        <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
+                            <Button
+                                asChild
+                                variant={'primary'}
+                                className='font-medium'
+                            >
+                                <Link href='mailto:ab.waheed1722@gmail.com'>
                                     Hire Me
                                 </Link>
                             </Button>
-                            <Button asChild variant={'outline'}>
+                            <Button
+                                asChild
+                                variant={'outline'}
+                                className='font-medium'
+                            >
                                 <Link
                                     href='/work'
                                     className='inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
