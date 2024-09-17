@@ -73,29 +73,35 @@ export const projects = [
         stack: [
             {
                 id: 1,
+                name: 'JS',
+                designation: 'JavaScript',
+                image: '/assets/js.svg',
+            },
+            {
+                id: 2,
                 name: 'React',
                 designation: 'Used for building Single Page Application (SPA)',
                 image: '/assets/react.svg',
             },
             {
-                id: 2,
+                id: 3,
+                name: 'AWS',
+                designation:
+                    'Used AWS services such as AWS Elastic Beanstalk, RDS, S3, and CloudFront',
+                image: '/assets/aws.svg',
+            },
+            {
+                id: 4,
                 name: 'Redux',
                 designation: 'Used for state management',
                 image: '/assets/redux.svg',
             },
             {
-                id: 3,
+                id: 5,
                 name: 'DevExtreme TreeList',
                 designation:
                     "Used React TreeList's, which is build on top of the MUI",
                 image: '/assets/devexpress.svg',
-            },
-            {
-                id: 4,
-                name: 'AWS',
-                designation:
-                    'Used AWS services suck as AWS Elastic Beanstalk, RDS, S3, and CloudFront',
-                image: '/assets/aws.svg',
             },
         ],
     },

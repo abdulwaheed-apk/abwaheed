@@ -58,8 +58,8 @@ export const Card = React.memo(
                 <p className='font-medium text-neutral-200 pt-4 pb-2'>
                     Tech Stack
                 </p>
-                <div className='flex justify-evenly items-center gap-10 '>
-                    <div className='flex flex-row items-center justify-center mb-10 w-auto'>
+                <div className='flex justify-stretch lg:justify-evenly w-11/12 items-center gap-16 lg:gap-10'>
+                    <div className='flex flex-row items-center justify-center lg:mb-10 w-auto'>
                         <AnimatedTooltip items={card.stack} />
                     </div>
                     <div className='ml-auto'>
@@ -67,12 +67,12 @@ export const Card = React.memo(
                             href={card.url}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-clip-text text-amber-600 flex items-center justify-between gap-x-1.5'
+                            className='bg-clip-text text-amber-600 flex items-start lg:items-center justify-end lg:justify-between gap-x-1.5 ml-6 lg:ml-0'
                         >
-                            <h4 className='font-semibold text-xl'>
+                            <h4 className='font-semibold text-xl hidden lg:inline-block'>
                                 {card.url.includes('github')
-                                    ? 'Check GitHub Repo'
-                                    : 'Check Live Site'}
+                                    ? 'GitHub Repo'
+                                    : 'Live Site'}
                             </h4>
                             {card.url.includes('github') ? (
                                 <FaGithub className='text-amber-600 size-6' />
