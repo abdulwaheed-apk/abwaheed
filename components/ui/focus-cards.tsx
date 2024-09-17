@@ -67,7 +67,7 @@ export const Card = React.memo(
                             href={card.url}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='bg-clip-text text-amber-600 flex items-start lg:items-center justify-end lg:justify-between gap-x-1.5 ml-6 lg:ml-0'
+                            className='bg-clip-text text-orange-600 flex items-start lg:items-center justify-end lg:justify-between gap-x-1.5 ml-6 lg:ml-0'
                         >
                             <h4 className='font-semibold text-xl hidden lg:inline-block'>
                                 {card.url.includes('github')
@@ -75,9 +75,9 @@ export const Card = React.memo(
                                     : 'Live Site'}
                             </h4>
                             {card.url.includes('github') ? (
-                                <FaGithub className='text-amber-600 size-6' />
+                                <FaGithub className='text-orange-600 size-6' />
                             ) : (
-                                <FaGlobe className='text-amber-600 size-6' />
+                                <FaGlobe className='text-orange-600 size-6' />
                             )}
                         </Link>
                     </div>
