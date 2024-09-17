@@ -13,7 +13,7 @@ export const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Work', href: '/work' },
-    { name: 'Articles', href: '/blog' },
+    { name: 'Articles', href: '/articles' },
 ]
 
 export const socialNavigation = [

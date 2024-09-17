@@ -6,7 +6,10 @@ export default function LogoAvatar() {
         <Link href='/' className='-m-1.5 p-1.5'>
             <span className='sr-only'>Abdul Waheed</span>
             <Avatar>
-                <AvatarImage src='/alexander-hipp-iEEBWgY_6lA-unsplash.jpg' />
+                <AvatarImage
+                    src='/assets/avatar.jpeg'
+                    className='object-cover pointer-events-none'
+                />
                 <AvatarFallback>apk</AvatarFallback>
             </Avatar>
         </Link>

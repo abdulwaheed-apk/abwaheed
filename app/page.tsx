@@ -22,13 +22,13 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:py-40'>
+                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-40 lg:pt-16'>
                     <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
                         <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
                             Learn about my skills and experience.{' '}
                             <Link
                                 href='/about'
-                                className='font-semibold text-amber-600'
+                                className='font-semibold text-orange-600'
                             >
                                 <span
                                     aria-hidden='true'
@@ -50,8 +50,12 @@ export default function Home() {
                             articles, highlighting my expertise in full-stack
                             development.
                         </p>
-                        <div className='mt-10 flex items-center justify-center gap-x-6'>
-                            <Button asChild variant={'primary'}>
+                        <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-6 gap-y-2 sm:gap-y-0'>
+                            <Button
+                                asChild
+                                variant={'primary'}
+                                className='hover:bg-orange-500'
+                            >
                                 <Link
                                     href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
                                     target='_blank'
