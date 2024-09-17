@@ -1,8 +1,5 @@
-import { Cover } from '@/components/ui/cover'
 import { Spotlight } from '@/components/ui/spotlight'
-import { Timeline } from '@/components/ui/timeline'
 import Image from 'next/image'
-import { cn } from '@/lib/utils'
 
 export default function About() {
     return (
@@ -34,8 +31,8 @@ export default function About() {
                 <div>
                     <h4 className='font-bold text-xl my-2'>Biography</h4>
                     <p className='font-medium'>
-                        Hello, I'm Abdul Waheed, a Full Stack Software Engineer
-                        proficient in MERN stack. With over 3 years of
+                        Hello, I&apos;m Abdul Waheed, a Full Stack Software
+                        Engineer proficient in MERN stack. With over 3 years of
                         experience in the field, I specialize in building
                         scalable and high-performance systems using Node.js,
                         Ruby on Rails, Django, and front-end technologies like
@@ -52,8 +49,8 @@ export default function About() {
                     <p className='font-medium'>
                         {' '}
                         My commitment to innovation and problem-solving drives
-                        me to bring my clients' visions to life effectively and
-                        efficiently.
+                        me to bring my client&apos;s visions to life effectively
+                        and efficiently.
                     </p>
                 </div>
             </section>
