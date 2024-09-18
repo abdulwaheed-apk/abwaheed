@@ -1,4 +1,4 @@
-import { skills } from '@/lib/data'
+import { skills } from '@/data'
 
 export default function Skills() {
     return (

@@ -1,4 +1,9 @@
+import { Metadata } from 'next'
 import ProjectCard from '@/components/custom/project-card'
+
+export const metadata: Metadata = {
+    title: 'Work • Abdul Waheed',
+}
 
 export default function Work() {
     return (

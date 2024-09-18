@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 import Social from './social-nav'
 import LogoAvatar from './logo-avatar'
-import { navigation } from '@/lib/data'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { navigation } from '@/data'
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

@@ -1,7 +1,12 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Timeline } from '@/components/ui/timeline'
 import { timelineData } from '@/data/main'
+
+export const metadata: Metadata = {
+    title: 'About • Abdul Waheed',
+}
 
 export default function About() {
     return (

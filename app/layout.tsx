@@ -10,7 +10,7 @@ const mont = Montserrat({
 })
 
 export const metadata: Metadata = {
-    title: 'Abdul Waheed Portfolio • Full Stack Software Engineer',
+    title: 'Abdul Waheed • Full Stack Software Engineer',
     description: 'Self-Taught Full Stack Engineer',
 }
 

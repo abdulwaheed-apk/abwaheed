@@ -114,7 +114,7 @@ export const timelineData = [
         content: (
             <div>
                 <h4 className='font-bold text-lg sm:text-xl md:text-2xl capitalize'>
-                    Frontend Developer{' '}
+                    Software Engineer{' '}
                     <Link
                         href={'https://www.o3interfaces.com/'}
                         className='text-orange-600 hover:text-orange-500'

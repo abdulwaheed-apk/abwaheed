@@ -1,4 +1,9 @@
+import { Metadata } from 'next'
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
+
+export const metadata: Metadata = {
+    title: 'Articles • Abdul Waheed',
+}
 
 export default function Articles() {
     return (
@@ -10,7 +15,7 @@ export default function Articles() {
                     </h2>
                     <p className='mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                         Everything you need to know about React, Next.js and
-                        TypeScript.s
+                        TypeScript
                     </p>
                 </div>
                 {/*  */}

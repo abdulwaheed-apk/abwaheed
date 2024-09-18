@@ -1,4 +1,4 @@
-import { projects } from '@/lib/data'
+import { projects } from '@/data'
 import { FocusCards } from '../ui/focus-cards'
 
 export default function ProjectCard() {
