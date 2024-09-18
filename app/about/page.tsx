@@ -1,5 +1,7 @@
-import { Spotlight } from '@/components/ui/spotlight'
 import Image from 'next/image'
+import { Spotlight } from '@/components/ui/spotlight'
+import { Timeline } from '@/components/ui/timeline'
+import { timelineData } from '@/data/main'
 
 export default function About() {
     return (
@@ -54,7 +56,7 @@ export default function About() {
                     </p>
                 </div>
             </section>
-            <section className='flex flex-col md:flex-row justify-start items-start w-11/12 md:w-4/5 my-8 md:my-16 mx-auto'>
+            <section className='flex flex-col md:flex-row justify-start items-start w-11/12 md:w-10/12 my-8 md:my-16 mx-auto'>
                 <h4 className='font-bold text-xl md:w-3/12 md:mr-16'>
                     Education
                 </h4>
@@ -70,6 +72,7 @@ export default function About() {
                     </p>
                 </div>
             </section>
+            <Timeline data={timelineData} />
         </main>
     )
 }

@@ -32,14 +32,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className='w-full bg-white dark:bg-neutral-950 font-sans md:px-10'
             ref={containerRef}
         >
-            <div className='max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10'>
-                <h2 className='text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl'>
-                    Changelog from my journey
+            <div className='max-w-7xl mx-auto pt-20 pb-0 px-4 md:px-8 lg:px-10'>
+                <h2 className='font-bold text-lg md:text-xl mb-4 text-black dark:text-white max-w-4xl'>
+                    Experience
                 </h2>
-                <p className='text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm'>
-                    I&apos;ve been working on Aceternity for the past 2 years.
-                    Here&apos;s a timeline of my journey.
-                </p>
             </div>
 
             <div ref={ref} className='relative max-w-7xl mx-auto pb-20'>
@@ -76,7 +72,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                             height: heightTransform,
                             opacity: opacityTransform,
                         }}
-                        className='absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full'
+                        className='absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] from-[0%] via-[10%] rounded-full'
                     />
                 </div>
             </div>
