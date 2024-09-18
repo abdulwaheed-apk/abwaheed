@@ -4,13 +4,13 @@ import Image from 'next/image'
 export default function About() {
     return (
         <main className='w-full max-w-screen-xl mx-auto'>
-            <div className='h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
+            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
                 <Spotlight
                     className='-top-40 left-0 md:left-60 md:-top-20'
                     fill='white'
                 />
-                <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0'>
-                    <h1 className='text-4xl md:text-7xl text-black/[0.96] font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
+                <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
+                    <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
                         Driven by <br /> Curiosity and Impact.
                     </h1>
                     <p className='mt-4 font-normal text-base text-neutral-800 max-w-lg text-center mx-auto'>
@@ -20,7 +20,7 @@ export default function About() {
                     </p>
                 </div>
             </div>
-            <section className='flex flex-col-reverse md:flex-row justify-evenly items-center z-50 gap-y-4 lg:gap-y-0 md:gap-x-4 w-4/5 mx-auto'>
+            <section className='flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-4 lg:gap-y-0 md:gap-x-4 w-11/12 sm:w-4/5 mx-auto'>
                 <Image
                     alt='Abdul Waheed'
                     src={'/assets/abdul-waheed.png'}
