@@ -1,9 +1,10 @@
 import Link from 'next/link'
-import Skills from '@/components/custom/skills'
 import { Button } from '@/components/ui/button'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
 import CopyEmail from '@/components/custom/copy-email'
+import { HoverEffect } from '@/components/ui/card-hover-effect'
+import { skills } from '@/data/main'
 
 export default function Home() {
     return (
@@ -22,7 +23,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-40 lg:pt-16'>
+                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
                     <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
                         <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
                             Learn about my skills and experience.{' '}
@@ -84,7 +85,7 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <Skills />
+            <HoverEffect items={skills} />
             <section className='bg-white dark:bg-gray-900'>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
                     <div className='max-w-screen-md'>

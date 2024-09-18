@@ -4,10 +4,10 @@ import { AiOutlineTrophy } from 'react-icons/ai'
 import {
     FaGithub,
     FaLinkedin,
-    FaSquareInstagram,
     FaHackerrank,
     FaSquareXTwitter,
 } from 'react-icons/fa6'
+import { SiCodewars, SiLeetcode } from 'react-icons/si'
 
 export const navigation = [
     { name: 'Home', href: '/' },
@@ -38,9 +38,14 @@ export const socialNavigation = [
         icon: FaHackerrank,
     },
     {
-        name: 'Instagram',
-        href: 'https://www.instagram.com/abdulwaheed.apk',
-        icon: FaSquareInstagram,
+        name: 'SiLeetcode',
+        href: 'https://leetcode.com/u/abdulwaheed-apk/',
+        icon: SiLeetcode,
+    },
+    {
+        name: 'SiCodewars',
+        href: 'https://www.codewars.com/users/abdulwaheed-apk',
+        icon: SiCodewars,
     },
 ]
 
@@ -275,6 +280,48 @@ export const projects = [
                 designation: 'Deployed web app on AWS Elastic Beanstalk',
                 image: '/assets/graph-ql.svg',
             },
+        ],
+    },
+]
+
+export const experiences = [
+    {
+        duration: 'Feb 2023 - Present',
+        position: 'Software Engineer',
+        company: 'Methvin',
+        location: 'New Zealand',
+        office: 'Remote',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
+        ],
+    },
+    {
+        duration: 'Feb 2022 - Jan 2023',
+        position: 'Software Engineer',
+        company: 'O3 Interfaces',
+        location: 'Karachi, Pakistan',
+        office: 'Onsite',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
+        ],
+    },
+    {
+        duration: 'Oct 2021 - Jan 2022',
+        position: 'Software Engineer',
+        company: 'Clixsta',
+        location: 'Karachi, Pakistan',
+        office: 'Onsite',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
         ],
     },
 ]
