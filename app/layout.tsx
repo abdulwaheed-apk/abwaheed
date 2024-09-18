@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body
-                className={`${mont.className} antialiased flex flex-col bg-white`}
+                className={`${mont.className} antialiased flex flex-col bg-white mx-auto max-w-screen-xl`}
             >
                 <Header />
                 {children}

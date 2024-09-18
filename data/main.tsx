@@ -1,4 +1,31 @@
 import Link from 'next/link'
+import { AiOutlineTrophy } from 'react-icons/ai'
+import { FaTerminal } from 'react-icons/fa6'
+import { PiStrategy } from 'react-icons/pi'
+
+export const skills = [
+    {
+        icon: <FaTerminal className='size-10 text-orange-600' />,
+        title: 'Full Stack',
+        description:
+            'A technology company that builds economic infrastructure for the internet. A streaming service that offers a wide variety of award-winning TV shows, movies, anime',
+        link: 'https://stripe.com',
+    },
+    {
+        icon: <PiStrategy className='size-10 text-orange-600' />,
+        title: 'Strategy-Minded',
+        description:
+            'A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
+        link: 'https://netflix.com',
+    },
+    {
+        icon: <AiOutlineTrophy className='size-10 text-orange-600' />,
+        title: 'Results Driven',
+        description:
+            'A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
+        link: 'https://netflix.com',
+    },
+]
 
 export const timelineData = [
     {

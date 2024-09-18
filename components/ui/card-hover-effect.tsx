@@ -1,8 +1,7 @@
 'use client'
-import { cn } from '@/lib/utils'
-import { AnimatePresence, motion } from 'framer-motion'
-import Link from 'next/link'
 import { useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { cn } from '@/lib/utils'
 
 export const HoverEffect = ({
     items,
@@ -12,6 +11,7 @@ export const HoverEffect = ({
         title: string
         description: string
         link: string
+        icon: React.ReactNode
     }[]
     className?: string
 }) => {
@@ -25,8 +25,7 @@ export const HoverEffect = ({
             )}
         >
             {items.map((item, idx) => (
-                <Link
-                    href={item?.link}
+                <div
                     key={item?.link}
                     className='relative group  block p-2 h-full w-full'
                     onMouseEnter={() => setHoveredIndex(idx)}
@@ -49,11 +48,12 @@ export const HoverEffect = ({
                             />
                         )}
                     </AnimatePresence>
-                    <Card>
+                    <Card className='cursor-pointer'>
+                        <CardIcon>{item.icon}</CardIcon>
                         <CardTitle>{item.title}</CardTitle>
                         <CardDescription>{item.description}</CardDescription>
                     </Card>
-                </Link>
+                </div>
             ))}
         </div>
     )
@@ -104,11 +104,19 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                'mt-8 text-gray-600 tracking-wide leading-relaxed text-sm',
+                'mt-6 text-gray-600 tracking-wide leading-relaxed text-sm',
                 className
             )}
         >
             {children}
         </p>
     )
+}
+
+export const CardIcon = ({
+    children,
+}: Readonly<{
+    children: React.ReactNode
+}>) => {
+    return <>{children}</>
 }
