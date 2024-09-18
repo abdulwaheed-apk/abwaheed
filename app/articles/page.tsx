@@ -29,14 +29,14 @@ export default function Articles() {
                         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2'>
                             <div className='max-w-xl lg:max-w-lg'>
                                 <h2 className='text-3xl font-bold tracking-tight text-black sm:text-4xl'>
-                                    Subscribe to our newsletter.
+                                    Subscribe to my newsletter.
                                 </h2>
                                 <p className='mt-4 text-lg leading-8 text-gray-600'>
                                     Nostrud amet eu ullamco nisi aute in ad
                                     minim nostrud adipisicing velit quis. Duis
                                     tempor incididunt dolore.
                                 </p>
-                                <div className='mt-6 flex max-w-md gap-x-4'>
+                                <div className='mt-6 flex flex-col sm:flex-row gap-y-2 max-w-md gap-x-4'>
                                     <label
                                         htmlFor='email-address'
                                         className='sr-only'

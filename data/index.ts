@@ -283,3 +283,45 @@ export const projects = [
         ],
     },
 ]
+
+export const experiences = [
+    {
+        duration: 'Feb 2023 - Present',
+        position: 'Software Engineer',
+        company: 'Methvin',
+        location: 'New Zealand',
+        office: 'Remote',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
+        ],
+    },
+    {
+        duration: 'Feb 2022 - Jan 2023',
+        position: 'Software Engineer',
+        company: 'O3 Interfaces',
+        location: 'Karachi, Pakistan',
+        office: 'Onsite',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
+        ],
+    },
+    {
+        duration: 'Oct 2021 - Jan 2022',
+        position: 'Software Engineer',
+        company: 'Clixsta',
+        location: 'Karachi, Pakistan',
+        office: 'Onsite',
+        work: [
+            'Developed and maintained web applications using React and Node.js.',
+            'Collaborated with cross-functional teams to design and implement new features.',
+            'Optimized application performance, reducing page load times by 30%.',
+            'Wrote unit tests and performed integration testing to ensure code quality.',
+        ],
+    },
+]

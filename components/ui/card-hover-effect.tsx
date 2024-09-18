@@ -10,7 +10,6 @@ export const HoverEffect = ({
     items: {
         title: string
         description: string
-        link: string
         icon: React.ReactNode
     }[]
     className?: string
@@ -26,7 +25,7 @@ export const HoverEffect = ({
         >
             {items.map((item, idx) => (
                 <div
-                    key={item?.link}
+                    key={item?.title}
                     className='relative group  block p-2 h-full w-full'
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
