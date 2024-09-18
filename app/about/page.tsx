@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
     return (
-        <main className='w-full max-w-screen-xl mx-auto'>
+        <main className='w-full sm:w-11/12 max-w-screen-xl mx-auto'>
             <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
                 <Spotlight
                     className='-top-40 left-0 md:left-60 md:-top-20'
@@ -20,15 +20,15 @@ export default function About() {
                     </p>
                 </div>
             </div>
-            <section className='flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-4 lg:gap-y-0 md:gap-x-4 w-11/12 sm:w-4/5 mx-auto'>
+            <section className='flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-4 lg:gap-y-0 md:gap-x-4 w-11/12 sm:w-full mx-auto'>
                 <Image
                     alt='Abdul Waheed'
                     src={'/assets/abdul-waheed.png'}
                     width={620}
                     height={850}
-                    className='rounded-3xl pointer-events-none'
+                    className='rounded-3xl pointer-events-none md:w-2/5 lg:w-1/3'
                 />
-                <div>
+                <div className='w-full sm:w-4/5 md:w-2/4'>
                     <h4 className='font-bold text-xl my-2'>Biography</h4>
                     <p className='font-medium'>
                         Hello, I&apos;m Abdul Waheed, a Full Stack Software
