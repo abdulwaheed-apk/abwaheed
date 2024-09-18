@@ -4,6 +4,8 @@ import { Button } from '@/components/ui/button'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
 import CopyEmail from '@/components/custom/copy-email'
+import { HoverEffect } from '@/components/ui/card-hover-effect'
+import { skillsC } from '@/data'
 
 export default function Home() {
     return (
@@ -85,6 +87,9 @@ export default function Home() {
                 </div>
             </main>
             <Skills />
+            <div className='max-w-5xl mx-auto px-8'>
+                <HoverEffect items={skillsC} />
+            </div>
             <section className='bg-white dark:bg-gray-900'>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
                     <div className='max-w-screen-md'>
