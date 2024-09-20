@@ -325,3 +325,138 @@ export const experiences = [
         ],
     },
 ]
+
+export const stackIcons = [
+    [
+        {
+            url: '/assets/ts.svg',
+            name: 'TS',
+        },
+        {
+            url: '/assets/tailwind.svg',
+            name: 'Tailwind CSS',
+        },
+        {
+            url: '/assets/vite.svg',
+            name: 'Vite',
+        },
+        {
+            url: '/assets/astro.svg',
+            name: 'Astro',
+        },
+        {
+            url: '/assets/react.svg',
+            name: 'React',
+        },
+        {
+            url: '/assets/git.svg',
+            name: 'Git',
+        },
+        {
+            url: '/assets/dock.svg',
+            name: 'Docker',
+        },
+        {
+            url: '/assets/express.svg',
+            name: 'Express.js',
+        },
+        {
+            url: '/assets/graph-ql.svg',
+            name: 'GraphQL',
+        },
+        {
+            url: '/assets/mui.svg',
+            name: 'MIUI',
+        },
+        {
+            url: '/assets/nextjs.svg',
+            name: 'Next.js',
+        },
+        {
+            url: '/assets/redux.svg',
+            name: 'Redux.js',
+        },
+        {
+            url: '/assets/pg.svg',
+            name: 'PostgreSQL',
+        },
+        {
+            url: '/assets/nodejs.svg',
+            name: 'Node.js',
+        },
+        {
+            url: '/assets/mongodb.svg',
+            name: 'MongoDB',
+        },
+        {
+            url: '/assets/Strapi-monogram-logo.svg',
+            name: 'Strapi',
+        },
+    ],
+    [
+        {
+            url: '/assets/Figma.svg',
+            name: 'Figma',
+        },
+        {
+            url: '/assets/netlify.svg',
+            name: 'Netlify',
+        },
+        {
+            url: '/assets/aws.svg',
+            name: 'AWS',
+        },
+        {
+            url: '/assets/bootstrap.png',
+            name: 'Bootstrap',
+        },
+        {
+            url: '/assets/WordPress.png',
+            name: 'WordPress',
+        },
+        {
+            url: '/assets/github.svg',
+            name: 'GitHub',
+        },
+        {
+            url: '/assets/js.svg',
+            name: 'JS',
+        },
+        {
+            url: '/assets/django.svg',
+            name: 'django',
+        },
+        {
+            url: '/assets/mysql-official.svg',
+            name: 'MySQL',
+        },
+        {
+            url: '/assets/vs-code.svg',
+            name: 'VS Code',
+        },
+        {
+            url: '/assets/Gatsby.svg',
+            name: 'Gatsby',
+        },
+        {
+            url: '/assets/rubyonrails.svg',
+            name: 'Ruby on Rails',
+        },
+        {
+            url: '/assets/Angular.svg',
+            name: 'Angular',
+        },
+        {
+            url: '/assets/tan-stack-query.svg',
+            name: 'TanStack Query',
+        },
+        {
+            url: '/assets/Sanity.svg',
+            name: 'Sanity',
+        },
+        {
+            url: '/assets/devexpress.svg',
+            name: 'Dev Express',
+        },
+    ],
+]
