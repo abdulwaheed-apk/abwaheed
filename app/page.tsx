@@ -4,7 +4,8 @@ import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
-import { skills } from '@/data/main'
+import { skills, stackOne, stackTwo } from '@/data/main'
+import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
 
 export default function Home() {
     return (
@@ -22,7 +23,6 @@ export default function Home() {
                         className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
                     />
                 </div>
-
                 <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
                     <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
                         <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
@@ -85,6 +85,22 @@ export default function Home() {
                     />
                 </div>
             </main>
+            <>
+                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
+                    <InfiniteMovingCards
+                        items={stackOne}
+                        direction='left'
+                        speed='normal'
+                    />
+                </div>
+                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
+                    <InfiniteMovingCards
+                        items={stackTwo}
+                        direction='right'
+                        speed='normal'
+                    />
+                </div>
+            </>
             <HoverEffect items={skills} />
             <section className='bg-white dark:bg-gray-900'>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
