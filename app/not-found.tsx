@@ -4,15 +4,15 @@ import Link from 'next/link'
 export default function NotFound() {
     return (
         <>
-            <main className='max-h-screen h-max flex justify-center items-center lg:items-start w-full max-w-screen-xl mx-auto bg-white px-6 py-24 sm:py-32 lg:px-8'>
+            <main className='max-h-screen h-max flex justify-center items-center lg:items-start w-full max-w-screen-xl mx-auto bg-white dark:bg-[#101214] px-6 py-24 sm:py-32 lg:px-8'>
                 <div className='text-center'>
                     <p className='text-base font-semibold text-orange-600'>
                         Oops! 404 Error
                     </p>
-                    <h1 className='mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+                    <h1 className='mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-5xl'>
                         Page not found
                     </h1>
-                    <p className='mt-6 text-base leading-7 text-gray-600'>
+                    <p className='mt-6 text-base leading-7 text-gray-600 dark:text-white'>
                         Sorry, we couldn’t find the page you’re looking for.
                     </p>
                     <div className='mt-10 flex flex-col md:flex-row md:items-center justify-center gap-y-2 w-full md:gap-y-0 gap-x-2'>
@@ -45,7 +45,7 @@ export default function NotFound() {
                         <Button asChild variant={'outline'}>
                             <Link
                                 href='https://www.github.com/abdulwaheed-apk/'
-                                className='flex justify-center items-center space-x-2 text-sm font-semibold text-gray-900'
+                                className='flex justify-center items-center space-x-2 text-sm font-semibold shadow-sm text-gray-900 dark:text-white'
                                 target='_blank'
                                 rel='noopener noreferrer'
                             >

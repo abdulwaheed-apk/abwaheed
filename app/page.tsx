@@ -25,7 +25,7 @@ export default function Home() {
                 </div>
                 <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
                     <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
-                        <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
+                        <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-zinc-100 ring-1 ring-gray-900/10 dark:ring-gray-400 hover:ring-gray-900/20 dark:hover:ring-gray-300'>
                             Learn about my skills and experience.{' '}
                             <Link
                                 href='/about'
@@ -40,11 +40,11 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='text-center'>
-                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
+                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-6xl'>
                             Innovative Problem Solver with a Passion for
                             Lifelong Learning
                         </h1>
-                        <p className='mt-6 text-lg leading-8 text-gray-600'>
+                        <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
                             As a self-taught full-stack engineer, I focus on
                             transforming concepts into advanced web
                             applications. Discover my recent projects and
@@ -86,14 +86,14 @@ export default function Home() {
                 </div>
             </main>
             <>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
+                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
                     <InfiniteMovingCards
                         items={stackOne}
                         direction='left'
                         speed='normal'
                     />
                 </div>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
+                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
                     <InfiniteMovingCards
                         items={stackTwo}
                         direction='right'
@@ -102,13 +102,13 @@ export default function Home() {
                 </div>
             </>
             <HoverEffect items={skills} />
-            <section className='bg-white dark:bg-gray-900'>
+            <section>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
                     <div className='max-w-screen-md'>
-                        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white'>
+                        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-stone-100'>
                             Let&apos;s find more that brings us together.
                         </h2>
-                        <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400'>
+                        <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
                             As a self-taught full-stack engineer, I focus on
                             transforming concepts into advanced web
                             applications. Discover my recent projects and
@@ -132,7 +132,7 @@ export default function Home() {
                             >
                                 <Link
                                     href='/work'
-                                    className='inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+                                    className='inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-slate-800/[0.8] dark:focus:ring-gray-600'
                                 >
                                     Projects{' '}
                                     <HiMiniRectangleStack className='ml-2 size-5' />{' '}
