@@ -33,7 +33,7 @@ export const CardContainer = ({
         const y = (e.clientY - top - height / 2) / 25
         containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`
     }
-
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
         setIsMouseEntered(true)
         if (!containerRef.current) return
@@ -44,6 +44,7 @@ export const CardContainer = ({
         setIsMouseEntered(false)
         containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`
     }
+    /* eslint-enable @typescript-eslint/no-unused-vars */
     return (
         <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
             <div
