@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/custom/header'
 import Footer from '@/components/custom/footer'
+import { ThemeProvider } from 'next-themes'
 
 const mont = Montserrat({
     subsets: ['latin'],
@@ -20,13 +21,15 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang='en'>
+        <html lang='en' suppressHydrationWarning>
             <body
-                className={`${mont.className} antialiased flex flex-col bg-white mx-auto max-w-screen-xl`}
+                className={`${mont.className} antialiased flex flex-col bg-white text-[#101214] dark:bg-[#101214] dark:text-white mx-auto max-w-screen-xl`}
             >
-                <Header />
-                {children}
-                <Footer />
+                <ThemeProvider attribute='class'>
+                    <Header />
+                    {children}
+                    <Footer />
+                </ThemeProvider>
             </body>
         </html>
     )
