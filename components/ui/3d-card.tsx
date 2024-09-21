@@ -116,7 +116,7 @@ export const CardItem = ({
     rotateX?: number | string
     rotateY?: number | string
     rotateZ?: number | string
-    [key: string]: any
+    [key: string]: unknown
 }) => {
     const ref = useRef<HTMLDivElement>(null)
     const [isMouseEntered] = useMouseEnter()
@@ -124,7 +124,7 @@ export const CardItem = ({
     useEffect(() => {
         handleAnimations()
     }, [isMouseEntered])
-
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleAnimations = () => {
         if (!ref.current) return
         if (isMouseEntered) {
