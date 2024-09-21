@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
     return (
-        <footer className='sticky inset-x-0 bottom-0 z-50 flex justify-center items-center text-black p-6 lg:px-8 bg-white'>
+        <footer className='sticky inset-x-0 bottom-0 z-50 flex justify-center items-center text-[#101214] dark:text-white p-6 lg:px-8 bg-white dark:bg-[#101214]'>
             <div className='grid grid-cols-1 lg:grid-cols-2 lg:divide-black lg:divide-x font-medium text-sm md:text-base'>
                 <div className='pr-3'>
                     Copyright © {new Date().getFullYear()} - All right reserved

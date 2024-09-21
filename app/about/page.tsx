@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <main className='w-full sm:w-11/12 max-w-screen-xl mx-auto'>
-            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
+            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] dark:bg-[#101214] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
                 <Spotlight
                     className='-top-40 left-0 md:left-60 md:-top-20'
                     fill='white'
                 />
                 <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
-                    <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
+                    <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] dark:text-stone-100 font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
                         Driven by <br /> Curiosity and Impact.
                     </h1>
-                    <p className='mt-4 font-normal text-base text-neutral-800 max-w-lg text-center mx-auto'>
+                    <p className='mt-4 font-normal text-base text-neutral-800 dark:text-white max-w-lg text-center mx-auto'>
                         Thanks for stopping by. I am a Full Stack Engineer who
                         is currently based in Riyadh, Saudi Arabia. Read below
                         to learn more about myself and my background.
