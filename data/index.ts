@@ -460,3 +460,56 @@ export const stackIcons = [
         },
     ],
 ]
+
+export const newProjects = [
+    {
+        title: 'Methvin | Estimation App',
+        description: 'Cost Estimation App for construction projects',
+        src: '/assets/Methvin - Estimate.png',
+        projectUrl:
+            'https://methvin.org/products/estimating-tools/estimating-software',
+        stack: ['JS', 'React', 'Redux', 'AWS'],
+    },
+    {
+        title: 'Video Calling App',
+        description: 'Video Conferencing using React, WebRTC',
+        src: '/assets/webrtc-meeting.webp',
+        projectUrl: 'https://github.com/abdulwaheed-apk',
+        stack: ['TypeScript', 'WebRTC', 'Tailwind', 'Next.js'],
+    },
+
+    {
+        title: 'Acme | Invoice Tracking Dashboard',
+        description:
+            'Invoice Tracking Dashboard using Next.js, TypeScript, PostgreSQL',
+        src: '/assets/invoice tracking dashboard.avif',
+        projectUrl:
+            'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
+        stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
+    },
+
+    {
+        title: 'UBL | Fin-tech Mobile App',
+        description: 'UBL Digital iOS and Android App using Temenos Framework',
+        src: '/assets/ubl-digital.webp',
+        projectUrl:
+            'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
+        stack: ['JavaScript', 'HTML/CSS', 'Temenos', 'REST'],
+    },
+    {
+        title: 'Methvin | Takeoff Software App',
+        description:
+            'Takeoff app to provides an accurate count of the materials needed',
+        src: '/assets/Methvin-takeoff.png',
+        projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
+        stack: ['JS', 'React', 'Redux', 'AWS'],
+    },
+    {
+        title: 'Microservices | Video Calling',
+        description:
+            'Video Calling built with Microservices Architecture using Kafka',
+        src: '/assets/webrtc-meeting.webp',
+        projectUrl: 'https://github.com/abdulwaheed-apk',
+        stack: ['TypeScript', 'Next.js', 'Tailwind', 'AWS'],
+    },
+]
