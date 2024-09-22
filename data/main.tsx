@@ -2,8 +2,7 @@ import Link from 'next/link'
 import { AiOutlineTrophy } from 'react-icons/ai'
 import { FaTerminal } from 'react-icons/fa6'
 import { PiStrategy } from 'react-icons/pi'
-import { experiences, stackIcons } from '.'
-import Image from 'next/image'
+import { experiences } from '.'
 
 export const skills = [
     {
@@ -72,27 +71,28 @@ export const timelineData = experiences.map((experience) => ({
     ),
 }))
 
-export const stackOne = stackIcons[0].map((item) => ({
-    icon: (
-        <Image
-            src={item.url}
-            alt={item.name}
-            className='size-8'
-            width={32}
-            height={32}
-            title={item.name}
-        />
-    ),
-}))
-export const stackTwo = stackIcons[1].map((item) => ({
-    icon: (
-        <Image
-            src={item.url}
-            alt={item.name}
-            className='size-8'
-            width={32}
-            height={32}
-            title={item.name}
-        />
-    ),
-}))
+// export const stackOne = stackIcons[0].map((item) => ({
+//     icon: (
+//         <Image
+//             src={item.url}
+//             alt={item.name}
+//             className='size-8'
+//             width={32}
+//             height={32}
+//             title={item.name}
+//         />
+//     ),
+// }))
+
+// export const stackTwo = stackIcons[1].map((item) => ({
+//     icon: (
+//         <Image
+//             src={item.url}
+//             alt={item.name}
+//             className='size-8'
+//             width={32}
+//             height={32}
+//             title={item.name}
+//         />
+//     ),
+// }))

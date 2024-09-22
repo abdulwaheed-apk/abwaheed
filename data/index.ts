@@ -341,7 +341,8 @@ export const stackIcons = [
             name: 'Vite',
         },
         {
-            url: '/assets/astro.svg',
+            url: '/assets/astro-icon-dark.svg',
+            darkIcon: '/assets/astro-icon-light.svg',
             name: 'Astro',
         },
         {
@@ -351,6 +352,10 @@ export const stackIcons = [
         {
             url: '/assets/git.svg',
             name: 'Git',
+        },
+        {
+            url: '/assets/EC2.svg',
+            name: 'EC2',
         },
         {
             url: '/assets/dock.svg',
@@ -389,6 +394,10 @@ export const stackIcons = [
             name: 'MongoDB',
         },
         {
+            url: '/assets/python.png',
+            name: 'Python',
+        },
+        {
             url: '/assets/Strapi-monogram-logo.svg',
             name: 'Strapi',
         },
@@ -399,11 +408,8 @@ export const stackIcons = [
             name: 'Figma',
         },
         {
-            url: '/assets/netlify.svg',
-            name: 'Netlify',
-        },
-        {
             url: '/assets/aws.svg',
+            darkIcon: '/assets/aws.png',
             name: 'AWS',
         },
         {
@@ -411,11 +417,13 @@ export const stackIcons = [
             name: 'Bootstrap',
         },
         {
-            url: '/assets/WordPress.png',
-            name: 'WordPress',
+            url: '/assets/webrtc.svg',
+            name: 'WebRTC',
         },
+
         {
             url: '/assets/github.svg',
+            darkIcon: '/assets/github-mark-white.svg',
             name: 'GitHub',
         },
         {
@@ -423,7 +431,12 @@ export const stackIcons = [
             name: 'JS',
         },
         {
-            url: '/assets/django.svg',
+            url: '/assets/appwrite-logo1.svg',
+            name: 'Appwrite',
+        },
+        {
+            url: '/assets/djangoproject1.svg',
+            darkIcon: '/assets/djangoproject.svg',
             name: 'django',
         },
         {
@@ -453,6 +466,10 @@ export const stackIcons = [
         {
             url: '/assets/Sanity.svg',
             name: 'Sanity',
+        },
+        {
+            url: '/assets/Ruby_logo.png',
+            name: 'Ruby',
         },
         {
             url: '/assets/devexpress.svg',

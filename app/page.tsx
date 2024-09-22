@@ -4,8 +4,8 @@ import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
-import { skills, stackOne, stackTwo } from '@/data/main'
-import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+import { skills } from '@/data/main'
+import MovingLogos from '@/components/custom/moving-logos'
 
 export default function Home() {
     return (
@@ -45,28 +45,22 @@ export default function Home() {
                             Lifelong Learning
                         </h1>
                         <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
-                            As a self-taught full-stack engineer, I focus on
-                            transforming concepts into advanced web
-                            applications. Discover my recent projects and
-                            articles, highlighting my expertise in full-stack
-                            development.
+                            I&apos;m a self-taught full-stack engineer focus on
+                            building beautiful, modern and scaleable web
+                            applications. Discover about me and the projects I
+                            had worked on, highlighting my expertise in
+                            full-stack development.
                         </p>
                         <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
-                            <Button
-                                asChild
-                                variant={'primary'}
-                                className='hover:bg-orange-500 font-medium'
-                            >
-                                <Link
-                                    href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    download
+                            <Link href='/work'>
+                                <Button
+                                    variant={'primary'}
+                                    className='font-medium'
                                 >
-                                    Resume{' '}
-                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
-                                </Link>
-                            </Button>
+                                    Projects{' '}
+                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
+                                </Button>
+                            </Link>
                             <CopyEmail />
                         </div>
                     </div>
@@ -85,22 +79,7 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-                    <InfiniteMovingCards
-                        items={stackOne}
-                        direction='left'
-                        speed='normal'
-                    />
-                </div>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-                    <InfiniteMovingCards
-                        items={stackTwo}
-                        direction='right'
-                        speed='normal'
-                    />
-                </div>
-            </>
+            <MovingLogos />
             <HoverEffect items={skills} />
             <section>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
@@ -131,11 +110,13 @@ export default function Home() {
                                 className='font-medium'
                             >
                                 <Link
-                                    href='/work'
-                                    className='inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-slate-800/[0.8] dark:focus:ring-gray-600'
+                                    href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    download
                                 >
-                                    Projects{' '}
-                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
+                                    Resume{' '}
+                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
                             </Button>
                         </div>
