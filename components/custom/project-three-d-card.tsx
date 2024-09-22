@@ -37,7 +37,7 @@ export default function ProjectThreeDCard() {
                                 alt={project.title}
                             />
                         </CardItem>
-                        <div className='flex justify-between items-center mt-20'>
+                        <div className='flex flex-col-reverse sm:flex-row justify-between items-center gap-y-4 sm:gap-y-0 mt-20'>
                             <Link
                                 href={project.projectUrl}
                                 target='_blank'
@@ -53,7 +53,7 @@ export default function ProjectThreeDCard() {
                                     Try now →
                                 </CardItem>
                             </Link>
-                            <div className='flex justify-center items-center gap-x-0.5'>
+                            <div className='flex justify-center items-center gap-x-0.5 gap-y-1 flex-wrap'>
                                 {project.stack.map((stk, idx) => {
                                     const variant = highlightBadges.includes(
                                         stk

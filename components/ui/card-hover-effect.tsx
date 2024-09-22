@@ -26,14 +26,14 @@ export const HoverEffect = ({
             {items.map((item, idx) => (
                 <div
                     key={item?.title}
-                    className='relative group  block p-2 h-full w-full'
+                    className='relative group  block p-2 h-full w-ful'
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className='absolute inset-0 h-full w-full bg-neutral-100 dark:bg-slate-800/[0.8] block  rounded-3xl'
+                                className='absolute inset-0 h-full w-full bg-neutral-100 dark:bg-[#232325] block rounded-3xl'
                                 layoutId='hoverBackground'
                                 initial={{ opacity: 0 }}
                                 animate={{
@@ -68,7 +68,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                'rounded-2xl h-full w-full p-4 overflow-hidden bg-white dark:bg-[#101214] border border-solid border-[#e3e6ee] shadow-sm dark:border-white/[0.2] group-hover:border-slate-50 dark:group-hover:border-white/[0.3] relative z-20',
+                'rounded-2xl h-full w-full p-4 overflow-hidden bg-stone-100 dark:bg-[#101214] border border-solid border-[#e3e6ee] shadow-sm dark:border-white/[0.2] group-hover:border-slate-50 dark:group-hover:border-white/[0.3] relative z-20',
                 className
             )}
         >

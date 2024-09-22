@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function NotFound() {
     return (
         <>
-            <main className='max-h-screen h-max flex justify-center items-center lg:items-start w-full max-w-screen-xl mx-auto bg-white dark:bg-[#101214] px-6 py-24 sm:py-32 lg:px-8'>
+            <main className='max-h-screen h-max flex justify-center items-center lg:items-start w-full max-w-screen-xl mx-auto bg-stone-100 dark:bg-[#101214] px-6 py-24 sm:py-32 lg:px-8'>
                 <div className='text-center'>
                     <p className='text-base font-semibold text-orange-600'>
                         Oops! 404 Error

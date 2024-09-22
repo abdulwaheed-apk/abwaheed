@@ -11,8 +11,8 @@ export const ThemeSwitch = () => {
     return (
         <button
             onClick={toggleTheme}
-            className={`flex justify-center items-center p-2 rounded-full ${
-                theme === 'dark' ? 'bg-black' : 'bg-stone-100'
+            className={`flex justify-center items-center p-2 rounded-full shadow-sm ${
+                theme === 'dark' ? 'bg-black' : 'bg-white'
             }`}
         >
             {theme === 'dark' ? (

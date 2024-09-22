@@ -93,11 +93,12 @@ export default function Home() {
                             Let&apos;s find more that brings us together.
                         </h2>
                         <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
-                            As a self-taught full-stack engineer, I focus on
-                            transforming concepts into advanced web
+                            As a passionate full-stack engineer, I focus on
+                            transforming concepts into efficient, scalable web
                             applications. Discover my recent projects and
-                            articles, highlighting my expertise in full-stack
-                            development.
+                            articles, highlighting my expertise in building
+                            full-stack solutions using React, TypeScript, and
+                            other modern technologies.
                         </p>
                         <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
                             <Button

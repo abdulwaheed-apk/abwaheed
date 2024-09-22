@@ -9,19 +9,19 @@ export const skills = [
         icon: <FaTerminal className='size-10 text-orange-600' />,
         title: 'Full Stack',
         description:
-            'A technology company that builds economic infrastructure for the internet. A streaming service that offers a wide variety of award-winning TV shows, movies, anime',
+            'Specialized in building robust full-stack web applications using modern technologies like React, TypeScript, Node.js, and PostgreSQL. From backend logic to frontend interfaces, I ensure seamless integration and optimal performance.',
     },
     {
         icon: <PiStrategy className='size-10 text-orange-600' />,
         title: 'Strategy-Minded',
         description:
-            'A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
+            'I approach development with a focus on scalability, maintainability, and user-centered design. My process emphasizes planning and strategy to deliver solutions that meet both business and user needs.',
     },
     {
         icon: <AiOutlineTrophy className='size-10 text-orange-600' />,
         title: 'Results Driven',
         description:
-            'A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.',
+            'Committed to delivering impactful results through continuous improvement and problem-solving. My work focuses on providing high-quality code and solutions that help businesses achieve their goals efficiently.',
     },
 ]
 
