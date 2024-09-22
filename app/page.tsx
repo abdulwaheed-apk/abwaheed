@@ -1,11 +1,13 @@
+'use client'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
+import { Button } from '@/components/ui/button'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
 import MovingLogos from '@/components/custom/moving-logos'
+import Preview from '@/components/custom/preview'
 
 export default function Home() {
     return (
@@ -47,20 +49,23 @@ export default function Home() {
                         <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
                             I&apos;m a self-taught full-stack engineer focus on
                             building beautiful, modern and scaleable web
-                            applications. Discover about me and the projects I
-                            had worked on, highlighting my expertise in
-                            full-stack development.
+                            applications. Discover{' '}
+                            <Preview img='/assets/About.png' url='/about'>
+                                About me
+                            </Preview>{' '}
+                            and the projects I had worked on, highlighting my
+                            expertise in full-stack development.
                         </p>
                         <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
-                            <Link href='/work'>
-                                <Button
-                                    variant={'primary'}
-                                    className='font-medium'
+                            <Button variant={'primary'} className='font-medium'>
+                                <Link
+                                    href='/work'
+                                    className='flex justify-center items-center gap-x-0.5'
                                 >
                                     Projects{' '}
                                     <HiMiniRectangleStack className='ml-2 size-5' />{' '}
-                                </Button>
-                            </Link>
+                                </Link>
+                            </Button>
                             <CopyEmail />
                         </div>
                     </div>
