@@ -26,14 +26,14 @@ export const HoverEffect = ({
             {items.map((item, idx) => (
                 <div
                     key={item?.title}
-                    className='relative group  block p-2 h-full w-ful'
+                    className='relative group  block p-2 h-full w-full'
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
                 >
                     <AnimatePresence>
                         {hoveredIndex === idx && (
                             <motion.span
-                                className='absolute inset-0 h-full w-full bg-neutral-100 dark:bg-[#232325] block rounded-3xl'
+                                className='absolute inset-0 h-full w-full bg-stone-200 dark:bg-[#232325] block rounded-3xl'
                                 layoutId='hoverBackground'
                                 initial={{ opacity: 0 }}
                                 animate={{
