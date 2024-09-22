@@ -70,29 +70,3 @@ export const timelineData = experiences.map((experience) => ({
         </div>
     ),
 }))
-
-// export const stackOne = stackIcons[0].map((item) => ({
-//     icon: (
-//         <Image
-//             src={item.url}
-//             alt={item.name}
-//             className='size-8'
-//             width={32}
-//             height={32}
-//             title={item.name}
-//         />
-//     ),
-// }))
-
-// export const stackTwo = stackIcons[1].map((item) => ({
-//     icon: (
-//         <Image
-//             src={item.url}
-//             alt={item.name}
-//             className='size-8'
-//             width={32}
-//             height={32}
-//             title={item.name}
-//         />
-//     ),
-// }))
