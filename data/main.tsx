@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { AiOutlineTrophy } from 'react-icons/ai'
 import { FaTerminal } from 'react-icons/fa6'
+import { IoIosCheckmarkCircleOutline } from 'react-icons/io'
 import { PiStrategy } from 'react-icons/pi'
 import { experiences } from '.'
 
@@ -32,7 +33,7 @@ export const timelineData = experiences.map((experience) => ({
             <h4 className='font-bold text-lg sm:text-xl md:text-2xl capitalize'>
                 {experience.position}
                 <Link
-                    href={'https://www.o3interfaces.com/'}
+                    href={experience.companyWebsite}
                     className='text-orange-600 hover:text-orange-500'
                     target='_blank'
                     rel='noopener noreferrer'
@@ -45,24 +46,8 @@ export const timelineData = experiences.map((experience) => ({
             </span>
             <ul className='mb-8'>
                 {experience.work.map((point) => (
-                    <li
-                        className='flex items-start md:items-center gap-x-1.5'
-                        key={point}
-                    >
-                        <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            strokeWidth={1.5}
-                            stroke='currentColor'
-                            className='size-5 inline-block'
-                        >
-                            <path
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                d='M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
-                            />
-                        </svg>
+                    <li className='flex items-start gap-x-1.5' key={point}>
+                        <IoIosCheckmarkCircleOutline className='flex-shrink-0 w-5 h-5 mt-1' />
                         {point}
                     </li>
                 ))}
