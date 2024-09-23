@@ -106,7 +106,7 @@ export default function Home() {
                                 variant={'primary'}
                                 className='font-medium'
                             >
-                                <Link href='mailto:ab.waheed1722@gmail.com'>
+                                <Link href='mailto:abwaheed701@gmail.com'>
                                     Hire Me
                                 </Link>
                             </Button>
@@ -116,7 +116,7 @@ export default function Home() {
                                 className='font-medium'
                             >
                                 <Link
-                                    href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
+                                    href='/Ab_Waheed_Full_Stack_Engineer.pdf'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     download
