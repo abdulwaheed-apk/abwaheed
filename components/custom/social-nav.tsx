@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Social() {
     return (
         <>
-            <nav className='inline-flex overflow-hidden rounded-md border bg-stone-100 dark:bg-[#101214] shadow-sm'>
+            <nav className='flex flex-wrap items-center justify-center gap-x-2 gap-y-2'>
                 {socialNavigation.map((item) => (
                     <Link
                         key={item.name}
@@ -12,7 +12,7 @@ export default function Social() {
                         target='_blank'
                         title={item.name}
                         rel='noopener noreferrer'
-                        className='inline-block border-e p-3 text-gray-700 dark:text-white hover:bg-gray-50 dark:hover:bg-black focus:relative'
+                        className={`flex justify-center items-center p-2 rounded-full h-10 w-10 shadow-sm bg-white dark:bg-black`}
                     >
                         <item.icon />
                     </Link>

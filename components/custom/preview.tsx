@@ -10,7 +10,12 @@ export default function Preview({
     img: string
 }) {
     return (
-        <LinkPreview url={url} isStatic imageSrc={img} className='font-bold'>
+        <LinkPreview
+            url={url}
+            isStatic
+            imageSrc={img}
+            className='font-bold dark:text-orange-600'
+        >
             {children}
         </LinkPreview>
     )

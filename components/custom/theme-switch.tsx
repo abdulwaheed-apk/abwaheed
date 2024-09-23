@@ -1,3 +1,4 @@
+'use client'
 import { useTheme } from 'next-themes'
 import { Sun } from 'lucide-react'
 
@@ -11,9 +12,7 @@ export const ThemeSwitch = () => {
     return (
         <button
             onClick={toggleTheme}
-            className={`flex justify-center items-center p-2 rounded-full shadow-sm ${
-                theme === 'dark' ? 'bg-black' : 'bg-white'
-            }`}
+            className='flex justify-center items-center p-2 rounded-full shadow-sm max-w-10 max-h-10 bg-white dark:bg-black'
         >
             {theme === 'dark' ? (
                 <Sun className='size-6' />

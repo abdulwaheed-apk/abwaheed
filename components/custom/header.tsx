@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
-
 import Social from './social-nav'
 import LogoAvatar from './logo-avatar'
 import { Dialog, DialogPanel } from '@headlessui/react'
