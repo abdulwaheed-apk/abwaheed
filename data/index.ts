@@ -341,7 +341,8 @@ export const stackIcons = [
             name: 'Vite',
         },
         {
-            url: '/assets/astro.svg',
+            url: '/assets/astro-icon-dark.svg',
+            darkIcon: '/assets/astro-icon-light.svg',
             name: 'Astro',
         },
         {
@@ -351,6 +352,10 @@ export const stackIcons = [
         {
             url: '/assets/git.svg',
             name: 'Git',
+        },
+        {
+            url: '/assets/EC2.svg',
+            name: 'EC2',
         },
         {
             url: '/assets/dock.svg',
@@ -389,6 +394,10 @@ export const stackIcons = [
             name: 'MongoDB',
         },
         {
+            url: '/assets/python.png',
+            name: 'Python',
+        },
+        {
             url: '/assets/Strapi-monogram-logo.svg',
             name: 'Strapi',
         },
@@ -399,11 +408,8 @@ export const stackIcons = [
             name: 'Figma',
         },
         {
-            url: '/assets/netlify.svg',
-            name: 'Netlify',
-        },
-        {
             url: '/assets/aws.svg',
+            darkIcon: '/assets/aws.png',
             name: 'AWS',
         },
         {
@@ -411,11 +417,13 @@ export const stackIcons = [
             name: 'Bootstrap',
         },
         {
-            url: '/assets/WordPress.png',
-            name: 'WordPress',
+            url: '/assets/webrtc.svg',
+            name: 'WebRTC',
         },
+
         {
             url: '/assets/github.svg',
+            darkIcon: '/assets/github-mark-white.svg',
             name: 'GitHub',
         },
         {
@@ -423,7 +431,12 @@ export const stackIcons = [
             name: 'JS',
         },
         {
-            url: '/assets/django.svg',
+            url: '/assets/appwrite-logo1.svg',
+            name: 'Appwrite',
+        },
+        {
+            url: '/assets/djangoproject1.svg',
+            darkIcon: '/assets/djangoproject.svg',
             name: 'django',
         },
         {
@@ -455,8 +468,65 @@ export const stackIcons = [
             name: 'Sanity',
         },
         {
+            url: '/assets/Ruby_logo.png',
+            name: 'Ruby',
+        },
+        {
             url: '/assets/devexpress.svg',
             name: 'Dev Express',
         },
     ],
+]
+
+export const newProjects = [
+    {
+        title: 'Methvin | Estimation App',
+        description: 'Cost Estimation App for construction projects',
+        src: '/assets/Methvin - Estimate.png',
+        projectUrl:
+            'https://methvin.org/products/estimating-tools/estimating-software',
+        stack: ['JS', 'React', 'Redux', 'AWS'],
+    },
+    {
+        title: 'Video Calling App',
+        description: 'Video Conferencing using React, WebRTC',
+        src: '/assets/webrtc-meeting.webp',
+        projectUrl: 'https://github.com/abdulwaheed-apk',
+        stack: ['TypeScript', 'WebRTC', 'Tailwind', 'Next.js'],
+    },
+
+    {
+        title: 'Acme | Invoice Tracking Dashboard',
+        description:
+            'Invoice Tracking Dashboard using Next.js, TypeScript, PostgreSQL',
+        src: '/assets/invoice tracking dashboard.avif',
+        projectUrl:
+            'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
+        stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
+    },
+
+    {
+        title: 'UBL | Fin-tech Mobile App',
+        description: 'UBL Digital iOS and Android App using Temenos Framework',
+        src: '/assets/ubl-digital.webp',
+        projectUrl:
+            'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
+        stack: ['JavaScript', 'HTML/CSS', 'Temenos', 'REST'],
+    },
+    {
+        title: 'Methvin | Takeoff Software App',
+        description:
+            'Takeoff app to provides an accurate count of the materials needed',
+        src: '/assets/Methvin-takeoff.png',
+        projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
+        stack: ['JS', 'React', 'Redux', 'AWS'],
+    },
+    {
+        title: 'Microservices | Video Calling',
+        description:
+            'Video Calling built with Microservices Architecture using Kafka',
+        src: '/assets/webrtc-meeting.webp',
+        projectUrl: 'https://github.com/abdulwaheed-apk',
+        stack: ['TypeScript', 'Next.js', 'Tailwind', 'AWS'],
+    },
 ]

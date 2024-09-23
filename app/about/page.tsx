@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Timeline } from '@/components/ui/timeline'
 import { timelineData } from '@/data/main'
+import TechStackIcons from '@/components/custom/tech-stack-icons'
 
 export const metadata: Metadata = {
     title: 'About • Abdul Waheed',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <main className='w-full sm:w-11/12 max-w-screen-xl mx-auto'>
-            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-white/[0.96] dark:bg-[#101214] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
+            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-stone-100/[0.96] dark:bg-[#101214] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
                 <Spotlight
                     className='-top-40 left-0 md:left-60 md:-top-20'
                     fill='white'
@@ -19,11 +20,13 @@ export default function About() {
                 <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
                     <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] dark:text-stone-100 font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
                         Driven by <br /> Curiosity and Impact.
+                        {/* Driven by
+Innovation and Growth. */}
                     </h1>
                     <p className='mt-4 font-normal text-base text-neutral-800 dark:text-white max-w-lg text-center mx-auto'>
-                        Thanks for stopping by. I am a Full Stack Engineer who
-                        is currently based in Riyadh, Saudi Arabia. Read below
-                        to learn more about myself and my background.
+                        Thanks for visiting. I&apos;m a Full Stack Engineer
+                        currently based in Riyadh, Saudi Arabia. Explore below
+                        to discover more about my journey and expertise.
                     </p>
                 </div>
             </div>
@@ -38,29 +41,43 @@ export default function About() {
                 <div className='w-full sm:w-4/5 md:w-2/4'>
                     <h4 className='font-bold text-xl my-2'>Biography</h4>
                     <p className='font-medium'>
-                        Hello, I&apos;m Abdul Waheed, a Full Stack Software
-                        Engineer proficient in MERN stack. With over 3 years of
-                        experience in the field, I specialize in building
-                        scalable and high-performance systems using Node.js,
-                        Ruby on Rails, Django, and front-end technologies like
-                        JavaScript/TypeScript, React.js and Next.js. I am
-                        dedicated to delivering top-notch software solutions
-                        that seamlessly integrate and communicate between
-                        systems.
+                        Hello, I&apos;m Abdul Waheed, a self-taught Full Stack
+                        Software Engineer specializing in the MERN stack and
+                        modern web technologies. With 3 years of professional
+                        experience, I&apos;ve honed my skills in building robust
+                        and scalable applications using Node.js, React, Next.js,
+                        and TypeScript. My expertise extends to database
+                        management with PostgreSQL and MongoDB.
                     </p>
                     <p className='font-medium my-4'>
                         {' '}
-                        I believe in the power of design excellence and
-                        user-centered thinking in every project I undertake.
+                        My journey in software development has been driven by
+                        curiosity and a passion for problem-solving. I&apos;ve
+                        expanded my skillset to include Python, Django, Ruby on
+                        Rails, and Angular, allowing me to adapt to diverse
+                        project requirements. I hold a MERN Stack certification,
+                        validating my proficiency in this powerful technology
+                        stack.
                     </p>
                     <p className='font-medium'>
                         {' '}
-                        My commitment to innovation and problem-solving drives
-                        me to bring my client&apos;s visions to life effectively
-                        and efficiently.
+                        I&apos;m committed to creating intuitive,
+                        high-performance solutions that seamlessly integrate
+                        front-end and back-end systems. My approach combines
+                        technical expertise with a keen eye for user-centered
+                        design, ensuring that every project I undertake not only
+                        functions flawlessly but also delivers an exceptional
+                        user experience.
+                    </p>
+                    <p className='font-medium mt-4'>
+                        As a continuous learner, I&apos;m always exploring new
+                        technologies and methodologies to enhance my
+                        capabilities and deliver cutting-edge solutions to my
+                        clients.
                     </p>
                 </div>
             </section>
+            <Timeline data={timelineData} />
             <section className='flex flex-col md:flex-row justify-start items-start w-11/12 md:w-10/12 my-8 md:my-16 mx-auto'>
                 <h4 className='font-bold text-xl md:w-3/12 md:mr-16'>
                     Education
@@ -77,7 +94,12 @@ export default function About() {
                     </p>
                 </div>
             </section>
-            <Timeline data={timelineData} />
+            <section className='flex flex-col justify-start items-start w-11/12 md:w-10/12 my-8 md:my-16 mx-auto'>
+                <h4 className='font-bold text-xl md:w-3/12 md:mr-16'>
+                    My Tech Stack
+                </h4>
+                <TechStackIcons />
+            </section>
         </main>
     )
 }

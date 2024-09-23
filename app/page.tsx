@@ -1,11 +1,13 @@
+'use client'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
+import { Button } from '@/components/ui/button'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
-import { skills, stackOne, stackTwo } from '@/data/main'
-import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards'
+import { skills } from '@/data/main'
+import MovingLogos from '@/components/custom/moving-logos'
+import Preview from '@/components/custom/preview'
 
 export default function Home() {
     return (
@@ -45,26 +47,23 @@ export default function Home() {
                             Lifelong Learning
                         </h1>
                         <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
-                            As a self-taught full-stack engineer, I focus on
-                            transforming concepts into advanced web
-                            applications. Discover my recent projects and
-                            articles, highlighting my expertise in full-stack
-                            development.
+                            I&apos;m a self-taught full-stack engineer focus on
+                            building beautiful, modern and scaleable web
+                            applications. Discover{' '}
+                            <Preview img='/assets/About.png' url='/about'>
+                                About me
+                            </Preview>{' '}
+                            and the projects I had worked on, highlighting my
+                            expertise in full-stack development.
                         </p>
                         <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
-                            <Button
-                                asChild
-                                variant={'primary'}
-                                className='hover:bg-orange-500 font-medium'
-                            >
+                            <Button variant={'primary'} className='font-medium'>
                                 <Link
-                                    href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    download
+                                    href='/work'
+                                    className='flex justify-center items-center gap-x-0.5'
                                 >
-                                    Resume{' '}
-                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
+                                    Projects{' '}
+                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
                                 </Link>
                             </Button>
                             <CopyEmail />
@@ -85,22 +84,7 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-                    <InfiniteMovingCards
-                        items={stackOne}
-                        direction='left'
-                        speed='normal'
-                    />
-                </div>
-                <div className='rounded-md flex flex-col antialiased bg-transparent dark:bg-[#101214] dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-                    <InfiniteMovingCards
-                        items={stackTwo}
-                        direction='right'
-                        speed='normal'
-                    />
-                </div>
-            </>
+            <MovingLogos />
             <HoverEffect items={skills} />
             <section>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
@@ -109,11 +93,12 @@ export default function Home() {
                             Let&apos;s find more that brings us together.
                         </h2>
                         <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
-                            As a self-taught full-stack engineer, I focus on
-                            transforming concepts into advanced web
+                            As a passionate full-stack engineer, I focus on
+                            transforming concepts into efficient, scalable web
                             applications. Discover my recent projects and
-                            articles, highlighting my expertise in full-stack
-                            development.
+                            articles, highlighting my expertise in building
+                            full-stack solutions using React, TypeScript, and
+                            other modern technologies.
                         </p>
                         <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
                             <Button
@@ -131,11 +116,13 @@ export default function Home() {
                                 className='font-medium'
                             >
                                 <Link
-                                    href='/work'
-                                    className='inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-slate-800/[0.8] dark:focus:ring-gray-600'
+                                    href='/Abdul-Waheed-Full-Stack-Software-Engineer.pdf'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    download
                                 >
-                                    Projects{' '}
-                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
+                                    Resume{' '}
+                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
                             </Button>
                         </div>

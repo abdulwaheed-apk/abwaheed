@@ -23,7 +23,7 @@ export default function RootLayout({
     return (
         <html lang='en' suppressHydrationWarning>
             <body
-                className={`${mont.className} antialiased flex flex-col bg-white text-[#101214] dark:bg-[#101214] dark:text-white mx-auto max-w-screen-xl`}
+                className={`${mont.className} antialiased flex flex-col bg-stone-100 text-[#101214] dark:bg-[#101214] dark:text-white mx-auto max-w-screen-xl`}
             >
                 <ThemeProvider attribute='class'>
                     <Header />

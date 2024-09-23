@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Articles() {
     return (
-        <div className='bg-white dark:bg-[#101214] pt-24 pb-4 sm:pt-32'>
+        <div className='bg-stone-100 dark:bg-[#101214] pt-24 pb-4 sm:pt-32'>
             <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                 <div className='mx-auto max-w-2xl lg:text-center'>
                     <h2 className='text-base font-semibold leading-7 text-orange-600'>
@@ -24,7 +24,7 @@ export default function Articles() {
                     or subscribe to newsletter for updates!
                 </p>
 
-                <div className='relative isolate overflow-hidden bg-white dark:bg-[#101214] py-16 md:-mb-6'>
+                <div className='relative isolate overflow-hidden bg-stone-100 dark:bg-[#101214] py-16 md:-mb-6'>
                     <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2'>
                             <div className='max-w-xl lg:max-w-lg'>
@@ -32,9 +32,10 @@ export default function Articles() {
                                     Subscribe to my newsletter.
                                 </h2>
                                 <p className='mt-4 text-lg leading-8 text-gray-600 dark:text-white'>
-                                    Nostrud amet eu ullamco nisi aute in ad
-                                    minim nostrud adipisicing velit quis. Duis
-                                    tempor incididunt dolore.
+                                    Get the latest updates on React, TypeScript,
+                                    and software engineering best practices.
+                                    Stay informed about industry trends and new
+                                    tools.
                                 </p>
                                 <div className='mt-6 flex flex-col sm:flex-row gap-y-2 max-w-md gap-x-4'>
                                     <label
@@ -72,9 +73,11 @@ export default function Articles() {
                                         Weekly articles
                                     </dt>
                                     <dd className='mt-2 leading-7 text-gray-600 dark:text-white'>
-                                        Non laboris consequat cupidatat laborum
-                                        magna. Eiusmod non irure cupidatat duis
-                                        commodo amet.
+                                        Receive weekly articles on React,
+                                        TypeScript, and full-stack development.
+                                        Stay up to date with tutorials, tips,
+                                        and industry news tailored for software
+                                        engineers.
                                     </dd>
                                 </div>
                                 <div className='flex flex-col items-start'>
@@ -88,9 +91,9 @@ export default function Articles() {
                                         No spam
                                     </dt>
                                     <dd className='mt-2 leading-7 text-gray-600 dark:text-white'>
-                                        Officia excepteur ullamco ut sint duis
-                                        proident non adipisicing. Voluptate
-                                        incididunt anim.
+                                        Only useful content! No irrelevant
+                                        promotions, just valuable insights and
+                                        updates to help you grow as a developer.
                                     </dd>
                                 </div>
                             </dl>
@@ -105,7 +108,7 @@ export default function Articles() {
                                 clipPath:
                                     'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                             }}
-                            className='aspect-[1155/678] w-[72.1875rem] bg-white dark:bg-[#101214]'
+                            className='aspect-[1155/678] w-[72.1875rem] bg-stone-100dark:bg-[#101214]'
                         />
                     </div>
                 </div>
