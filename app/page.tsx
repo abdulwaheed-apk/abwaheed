@@ -30,6 +30,7 @@ export default function Home() {
                         <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-zinc-100 ring-1 ring-gray-900/10 dark:ring-gray-400 hover:ring-gray-900/20 dark:hover:ring-gray-300'>
                             Learn about my skills and experience.{' '}
                             <Link
+                                prefetch
                                 href='/about'
                                 className='font-semibold text-orange-600'
                             >
@@ -59,6 +60,7 @@ export default function Home() {
                         <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
                             <Button variant={'primary'} className='font-medium'>
                                 <Link
+                                    prefetch
                                     href='/work'
                                     className='flex justify-center items-center gap-x-0.5'
                                 >
