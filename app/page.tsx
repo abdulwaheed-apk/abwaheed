@@ -1,4 +1,3 @@
-'use client'
 import Link from 'next/link'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
 import { HiMiniRectangleStack } from 'react-icons/hi2'
@@ -7,7 +6,6 @@ import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
 import MovingLogos from '@/components/custom/moving-logos'
-import Preview from '@/components/custom/preview'
 
 export default function Home() {
     return (
@@ -48,14 +46,10 @@ export default function Home() {
                             Lifelong Learning
                         </h1>
                         <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
-                            I&apos;m a self-taught full-stack engineer focus on
-                            building beautiful, modern and scaleable web
-                            applications. Discover{' '}
-                            <Preview img='/assets/About.png' url='/about'>
-                                About me
-                            </Preview>{' '}
-                            and the projects I had worked on, highlighting my
-                            expertise in full-stack development.
+                            Self-taught full-stack engineer passionate about
+                            building elegant, scalable software solutions.
+                            Discover my expertise in modern technologies and
+                            commitment to lifelong learning.
                         </p>
                         <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
                             <Button variant={'primary'} className='font-medium'>

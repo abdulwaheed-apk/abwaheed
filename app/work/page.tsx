@@ -17,7 +17,6 @@ export default function Work() {
                     insight into my past experience.
                 </p>
             </section>
-            {/* <ProjectCard /> */}
             <ProjectThreeDCard />
         </main>
     )

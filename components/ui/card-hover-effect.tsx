@@ -19,7 +19,7 @@ export const HoverEffect = ({
     return (
         <div
             className={cn(
-                'grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10',
+                'grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4  py-5',
                 className
             )}
         >
@@ -68,12 +68,12 @@ export const Card = ({
     return (
         <div
             className={cn(
-                'rounded-2xl h-full w-full p-4 overflow-hidden bg-stone-100 dark:bg-[#101214] border border-solid border-[#e3e6ee] shadow-sm dark:border-white/[0.2] group-hover:border-slate-50 dark:group-hover:border-white/[0.3] relative z-20',
+                'rounded-2xl h-full w-full p-3 overflow-hidden bg-stone-100 dark:bg-[#101214] border border-solid border-[#e3e6ee] shadow-sm dark:border-white/[0.2] group-hover:border-slate-50 dark:group-hover:border-white/[0.3] relative z-20',
                 className
             )}
         >
             <div className='relative z-50'>
-                <div className='p-4'>{children}</div>
+                <div className='p-3'>{children}</div>
             </div>
         </div>
     )
@@ -88,7 +88,7 @@ export const CardTitle = ({
     return (
         <h4
             className={cn(
-                'text-[#101214] dark:text-stone-100 font-bold tracking-wide mt-4',
+                'text-[#101214] dark:text-stone-100 font-bold tracking-wide mt-2',
                 className
             )}
         >
@@ -106,7 +106,7 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                'mt-6 text-gray-600 dark:text-white tracking-wide leading-relaxed text-sm',
+                'mt-2 text-gray-600 dark:text-white tracking-wide leading-relaxed text-sm',
                 className
             )}
         >

@@ -8,6 +8,7 @@ export default function LogoAvatar() {
             <Avatar>
                 <AvatarImage
                     src='/assets/avatar.jpeg'
+                    alt='Ab. Waheed'
                     className='object-cover pointer-events-none'
                 />
                 <AvatarFallback>apk</AvatarFallback>

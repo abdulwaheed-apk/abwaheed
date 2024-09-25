@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Social from './social-nav'
 import LogoAvatar from './logo-avatar'
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { navigation } from '@/data'
 import { ThemeSwitch } from './theme-switch'
 
@@ -28,7 +28,7 @@ export default function Header() {
                             className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-white'
                         >
                             <span className='sr-only'>Open main menu</span>
-                            <Bars3Icon aria-hidden='true' className='h-6 w-6' />
+                            <Bars2Icon aria-hidden='true' className='h-6 w-6' />
                         </button>
                     </div>
                     <div className='hidden lg:flex lg:gap-x-12'>

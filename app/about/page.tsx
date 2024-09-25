@@ -20,8 +20,6 @@ export default function About() {
                 <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
                     <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] dark:text-stone-100 font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
                         Driven by <br /> Curiosity and Impact.
-                        {/* Driven by
-Innovation and Growth. */}
                     </h1>
                     <p className='mt-4 font-normal text-base text-neutral-800 dark:text-white max-w-lg text-center mx-auto'>
                         Thanks for visiting. I&apos;m a Full Stack Engineer
