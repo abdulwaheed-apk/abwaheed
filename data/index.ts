@@ -492,25 +492,23 @@ export const newProjects = [
     },
     {
         title: 'Video Calling App',
-        description: 'Video Conferencing using React, WebRTC',
-        src: '/assets/webrtc-meeting.webp',
-        projectUrl: 'https://github.com/abdulwaheed-apk',
-        stack: ['TypeScript', 'WebRTC', 'Tailwind', 'Next.js'],
-    },
-
-    {
-        title: 'Acme | Invoice Tracking Dashboard',
         description:
-            'Invoice Tracking Dashboard using Next.js, TypeScript, PostgreSQL',
-        src: '/assets/invoice tracking dashboard.avif',
-        projectUrl:
-            'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
-        stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
+            'Video Conferencing using React, WebRTC, Node.js, Socket.io',
+        src: '/assets/webrtc-meeting.webp',
+        projectUrl: 'https://github.com/abdulwaheed-apk/video-call-app',
+        stack: ['TypeScript', 'WebRTC', 'Socket.io', 'Next.js'],
     },
 
     {
-        title: 'UBL | Fin-tech Mobile App',
-        description: 'UBL Digital iOS and Android App using Temenos Framework',
+        title: 'Ecommerce Backend',
+        description: 'Ecommerce API built with Node.js, TypeScript and Stripe.',
+        src: '/assets/ecommerce-api.png',
+        projectUrl: 'https://github.com/abdulwaheed-apk/ecommerce-api',
+        stack: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
+    },
+    {
+        title: 'UBL | Fintech Mobile App',
+        description: 'UBL Digital iOS and Android App using Temenos Framework.',
         src: '/assets/ubl-digital.webp',
         projectUrl:
             'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
@@ -519,17 +517,27 @@ export const newProjects = [
     {
         title: 'Methvin | Takeoff Software App',
         description:
-            'Takeoff app to provides an accurate count of the materials needed',
+            'Takeoff app to provides an accurate count of the materials needed.',
         src: '/assets/Methvin-takeoff.png',
         projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
         stack: ['JS', 'React', 'Redux', 'AWS'],
     },
     {
-        title: 'Microservices | Video Calling',
+        title: 'Acme | Invoice Tracking Dashboard',
         description:
-            'Video Calling built with Microservices Architecture using Kafka',
-        src: '/assets/webrtc-meeting.webp',
-        projectUrl: 'https://github.com/abdulwaheed-apk',
-        stack: ['TypeScript', 'Next.js', 'Tailwind', 'AWS'],
+            'Invoice Tracking Dashboard using Next.js, TypeScript, and PostgreSQL.',
+        src: '/assets/invoice tracking dashboard.avif',
+        projectUrl:
+            'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
+        stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
     },
+
+    // {
+    //     title: 'Microservices | Video Calling',
+    //     description:
+    //         'Video Calling built with Microservices Architecture using Kafka',
+    //     src: '/assets/webrtc-meeting.webp',
+    //     projectUrl: 'https://github.com/abdulwaheed-apk',
+    //     stack: ['TypeScript', 'Next.js', 'Tailwind', 'AWS'],
+    // },
 ]
