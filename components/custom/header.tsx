@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Social from './social-nav'
 import LogoAvatar from './logo-avatar'
 import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars2Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { navigation } from '@/data'
 import { ThemeSwitch } from './theme-switch'
 
