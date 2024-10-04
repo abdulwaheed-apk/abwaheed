@@ -4,7 +4,7 @@ This is a `Next.js` project bootstrapped with `create-next-app`.
 Clone repository:
 
  ```bash 
-git clone https://github.com/abdulwaheed-apk/waheed.git
+git clone https://github.com/abdulwaheed-apk/abwaheed.git
  ```
 
 First, install dependencies:

@@ -112,7 +112,7 @@ export default function Home() {
                                 className='font-medium'
                             >
                                 <Link
-                                    href='/Ab_Waheed_Full_Stack_Engineer.pdf'
+                                    href='/Abdul_Waheed_Software_Engineer.pdf'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     download
