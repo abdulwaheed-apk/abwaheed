@@ -237,6 +237,13 @@ export const stackIcons = [
 
 export const newProjects = [
     {
+        title: 'Qadderha | Insurance Company App',
+        description: 'Cross platform app for insurance companies',
+        src: '/assets/main.png',
+        projectUrl: 'https://www.github.com/abdulwaheed-apk',
+        stack: ['TS', 'Next.js', 'AWS', 'React Query', 'Laravel'],
+    },
+    {
         title: 'Methvin | Estimation App',
         description: 'Cost Estimation App for construction projects',
         src: '/assets/Methvin - Estimate.png',
@@ -276,15 +283,15 @@ export const newProjects = [
         projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
         stack: ['JS', 'React', 'Redux', 'AWS'],
     },
-    {
-        title: 'Acme | Invoice Tracking Dashboard',
-        description:
-            'Invoice Tracking Dashboard using Next.js, TypeScript, and PostgreSQL.',
-        src: '/assets/invoice tracking dashboard.avif',
-        projectUrl:
-            'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
-        stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
-    },
+    // {
+    //     title: 'Acme | Invoice Tracking Dashboard',
+    //     description:
+    //         'Invoice Tracking Dashboard using Next.js, TypeScript, and PostgreSQL.',
+    //     src: '/assets/invoice tracking dashboard.avif',
+    //     projectUrl:
+    //         'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
+    //     stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
+    // },
 
     // {
     //     title: 'Microservices | Video Calling',

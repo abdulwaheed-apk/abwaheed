@@ -33,7 +33,7 @@ export default function ProjectThreeDCard() {
                                 src={project.src}
                                 height='1000'
                                 width='1000'
-                                className='h-60 w-full object-cover rounded-xl pointer-events-none group-hover/card:shadow-xl'
+                                className='h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl'
                                 alt={project.title}
                             />
                         </CardItem>
