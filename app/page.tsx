@@ -6,6 +6,7 @@ import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
 import MovingLogos from '@/components/custom/moving-logos'
+import Balancer from "react-wrap-balancer";
 
 export default function Home() {
     return (
@@ -24,34 +25,21 @@ export default function Home() {
                     />
                 </div>
                 <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
-                    <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
-                        <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-zinc-100 ring-1 ring-gray-900/10 dark:ring-gray-400 hover:ring-gray-900/20 dark:hover:ring-gray-300'>
-                            Learn about my skills and experience.{' '}
-                            <Link
-                                prefetch
-                                href='/about'
-                                className='font-semibold text-orange-600'
-                            >
-                                <span
-                                    aria-hidden='true'
-                                    className='absolute inset-0'
-                                />
-                                Read more <span aria-hidden='true'>&rarr;</span>
-                            </Link>
-                        </div>
-                    </div>
+
                     <div className='text-center'>
                         <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-6xl'>
-                            Innovative Problem Solver with a Passion for
+                        <Balancer>
+                            Full Stack Engineer with a Passion for
                             Lifelong Learning
+                        </Balancer>
                         </h1>
-                        <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
+                        <p className='mt-6 hidden text-lg leading-8 text-gray-600 dark:text-white'>
                             Self-taught full-stack engineer passionate about
                             building elegant, scalable software solutions.
                             Discover my expertise in modern technologies and
                             commitment to lifelong learning.
                         </p>
-                        <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
+                        <div className='mt-10 hidden flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
                             <Button variant={'primary'} className='font-medium'>
                                 <Link
                                     prefetch
@@ -80,7 +68,6 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <MovingLogos />
             <HoverEffect items={skills} />
             <section>
                 <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
@@ -102,25 +89,16 @@ export default function Home() {
                                 variant={'primary'}
                                 className='font-medium'
                             >
-                                <Link href='mailto:abwaheed701@gmail.com'>
-                                    Hire Me
-                                </Link>
-                            </Button>
-                            <Button
-                                asChild
-                                variant={'outline'}
-                                className='font-medium'
-                            >
                                 <Link
                                     href='/Abdul_Waheed_Software_Engineer.pdf'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    download
-                                >
-                                    Resume{' '}
+                                       target='_blank'
+                                       rel='noopener noreferrer'
+                                       download>
+                                    Resume
                                     <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
                             </Button>
+                            <CopyEmail />
                         </div>
                     </div>
                 </div>
