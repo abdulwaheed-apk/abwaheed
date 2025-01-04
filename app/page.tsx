@@ -13,19 +13,19 @@ const featuredProjects = [
     {
         id:1,
         title:"Carz.sa",
-        link:"https://carz.sa",
+        projectUrl:'https://8.213.32.39:4000/',
         image:'/assets/Carz-Dashboard.png',
     },
     {
         id:2,
-        title:"Estimating Software",
-        link:"https://carz.sa",
+        title:"Methvin Estimating Software",
+        projectUrl:'https://portal.methvin.org/',
         image:'/assets/methvin-estimating.svg',
     },
     {
         id:3,
         title:"Qadderha",
-        link:"https://carz.sa",
+        projectUrl:'https://8.213.32.39:4000/',
         image:'/assets/Qadderha-orders.png',
     }
 ]
@@ -51,8 +51,7 @@ export default function Home() {
                     <div className='text-center'>
                         <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
                         <Balancer>
-                            Self-taught Full Stack Engineer with a Passion for
-                            Lifelong Learning
+                            Self-Taught Full-Stack Engineer Driven by a Passion for Lifelong Learning
                         </Balancer>
                         </h1>
                     </div>
@@ -72,10 +71,10 @@ export default function Home() {
                 </div>
             </main>
             <HoverEffect items={skills}/>
-            <section aria-label={'Featured projects'}>
-                <div className={'flex justify-between items-end'}>
+            <section aria-label={'Featured projects'} className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
+                <div className={'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'}>
                     <div className={'flex flex-col gap-y-4'}>
-                        <h2 className={'text-5xl max-w-2xl font-medium tracking-tight'}>
+                        <h2 className={'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'}>
                             Some of my most recent projects
                         </h2>
                         <p>
@@ -91,17 +90,29 @@ export default function Home() {
                     </Button>
                     </Link>
                 </div>
-                <ScrollArea className={'h-[400px] w-full flex justify-start items-center gap-6'}>
-                    {featuredProjects.map(item => (
-                        <div key={item.id} className={'flex flex-col gap-4'}>
-                            <div className={'flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl'}>
-                                <span
-                                    className={'text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full'}>Featured</span>
-                                <Image src={item.image} alt={item.title} width={465} height={400}/>
-                            </div>
-                            <h3 className={'text-lg font-medium text-black dark:text-white'}>{item.title}</h3>
-                        </div>
-                    ))}
+                <ScrollArea className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
+                    <div aria-label={'Featured Projects Cards'} className="flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4">
+                        {featuredProjects.map(item => (
+                            <Link
+                                href={item.projectUrl}
+                                target={'_blank'}
+                                rel={'noopener noreferrer'}
+                                key={item.id}
+                                className="flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px]"
+                                style={{ flex: '0 0 auto' }}
+                            >
+                                <div className="flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl">
+                                    <span className="text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full">
+                                        Featured
+                                    </span>
+                                    <Image src={item.image} alt={item.title} width={465} height={400} />
+                                </div>
+                                <h3 className="text-lg font-medium text-black dark:text-white">
+                                    {item.title}
+                                </h3>
+                            </Link>
+                        ))}
+                    </div>
                     <ScrollBar orientation="horizontal" />
                 </ScrollArea>
             </section>
@@ -129,7 +140,7 @@ export default function Home() {
                                     href='/Abdul_Waheed_Software_Engineer.pdf'
                                        target='_blank'
                                        rel='noopener noreferrer'
-                                       download>
+                                       download >
                                     Resume
                                     <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
