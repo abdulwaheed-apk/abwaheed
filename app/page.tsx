@@ -1,12 +1,34 @@
 import Link from 'next/link'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
-import { HiMiniRectangleStack } from 'react-icons/hi2'
 import { Button } from '@/components/ui/button'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
-import MovingLogos from '@/components/custom/moving-logos'
 import Balancer from "react-wrap-balancer";
+import Image from "next/image";
+import {ScrollArea} from "@radix-ui/react-scroll-area";
+import {ScrollBar} from "@/components/ui/scroll-area";
+
+const featuredProjects = [
+    {
+        id:1,
+        title:"Carz.sa",
+        link:"https://carz.sa",
+        image:'/assets/Carz-Dashboard.png',
+    },
+    {
+        id:2,
+        title:"Estimating Software",
+        link:"https://carz.sa",
+        image:'/assets/methvin-estimating.svg',
+    },
+    {
+        id:3,
+        title:"Qadderha",
+        link:"https://carz.sa",
+        image:'/assets/Qadderha-orders.png',
+    }
+]
 
 export default function Home() {
     return (
@@ -24,34 +46,15 @@ export default function Home() {
                         className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
                     />
                 </div>
-                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
+                <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
 
                     <div className='text-center'>
-                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-6xl'>
+                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
                         <Balancer>
-                            Full Stack Engineer with a Passion for
+                            Self-taught Full Stack Engineer with a Passion for
                             Lifelong Learning
                         </Balancer>
                         </h1>
-                        <p className='mt-6 hidden text-lg leading-8 text-gray-600 dark:text-white'>
-                            Self-taught full-stack engineer passionate about
-                            building elegant, scalable software solutions.
-                            Discover my expertise in modern technologies and
-                            commitment to lifelong learning.
-                        </p>
-                        <div className='mt-10 hidden flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
-                            <Button variant={'primary'} className='font-medium'>
-                                <Link
-                                    prefetch
-                                    href='/work'
-                                    className='flex justify-center items-center gap-x-0.5'
-                                >
-                                    Projects{' '}
-                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
-                                </Link>
-                            </Button>
-                            <CopyEmail />
-                        </div>
                     </div>
                 </div>
 
@@ -68,11 +71,44 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <HoverEffect items={skills} />
+            <HoverEffect items={skills}/>
+            <section aria-label={'Featured projects'}>
+                <div className={'flex justify-between items-end'}>
+                    <div className={'flex flex-col gap-y-4'}>
+                        <h2 className={'text-5xl max-w-2xl font-medium tracking-tight'}>
+                            Some of my most recent projects
+                        </h2>
+                        <p>
+                            Transforming ideas into seamless, user-centric web solutions with precision and care.
+                        </p>
+                    </div>
+                    <Link href={'/work'}>
+                    <Button
+                        variant={'outline'}
+                        size={'lg'}
+                        className={'rounded-full'}>
+                        Browse all projects
+                    </Button>
+                    </Link>
+                </div>
+                <ScrollArea className={'h-[400px] w-full flex justify-start items-center gap-6'}>
+                    {featuredProjects.map(item => (
+                        <div key={item.id} className={'flex flex-col gap-4'}>
+                            <div className={'flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl'}>
+                                <span
+                                    className={'text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full'}>Featured</span>
+                                <Image src={item.image} alt={item.title} width={465} height={400}/>
+                            </div>
+                            <h3 className={'text-lg font-medium text-black dark:text-white'}>{item.title}</h3>
+                        </div>
+                    ))}
+                    <ScrollBar orientation="horizontal" />
+                </ScrollArea>
+            </section>
             <section>
-                <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
+                <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
                     <div className='max-w-screen-md'>
-                        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-stone-100'>
+                    <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
                             Let&apos;s find more that brings us together.
                         </h2>
                         <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>

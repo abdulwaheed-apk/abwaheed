@@ -48,6 +48,19 @@ export const socialNavigation = [
 
 export const experiences = [
     {
+        duration: 'Aug 2024 - Present',
+        position: 'Software Engineer',
+        company: 'Sky Solutions',
+        companyWebsite: 'https://sico.sa/',
+        location: 'Riyadh, Saudi Arabia',
+        office: 'Onsite',
+        work: [
+            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel and MySQL, and deployed on AWS.',
+            'Developed Qadderha dashboard for employee and center management for vehicle insurance companies and deployed to Alibaba Cloud.',
+            'Created user centric applications keeping.',
+        ],
+    },
+    {
         duration: 'Apr 2023 - Aug 2024',
         position: 'Software Engineer',
         company: 'Methvin',
@@ -237,19 +250,26 @@ export const stackIcons = [
 
 export const newProjects = [
     {
-        title: 'Qadderha | Insurance Company App',
-        description: 'Cross platform app for insurance companies',
-        src: '/assets/main.png',
-        projectUrl: 'https://www.github.com/abdulwaheed-apk',
+        title: 'Carz.sa | Cars auction market place',
+        description: 'Marketplace for new and used cars',
+        src: '/assets/Carz-Dashboard.png',
+        projectUrl: 'https://8.213.32.39:4000/',
         stack: ['TS', 'Next.js', 'AWS', 'React Query', 'Laravel'],
     },
     {
-        title: 'Methvin | Estimation App',
+        title: 'Methvin | Estimation Software',
         description: 'Cost Estimation App for construction projects',
         src: '/assets/Methvin - Estimate.png',
         projectUrl:
             'https://methvin.org/products/estimating-tools/estimating-software',
         stack: ['JS', 'React', 'Redux', 'AWS'],
+    },
+    {
+        title: 'Qadderha | Insurance Company App',
+        description: 'Cross platform app for insurance companies',
+        src: '/assets/Qadderha-orders.png',
+        projectUrl: 'https://www.github.com/abdulwaheed-apk',
+        stack: ['TS', 'Next.js', 'Alibaba Cloud', 'React Query', 'Laravel'],
     },
     {
         title: 'Video Calling App',
@@ -260,13 +280,13 @@ export const newProjects = [
         stack: ['TypeScript', 'WebRTC', 'Socket.io', 'Next.js'],
     },
 
-    {
-        title: 'Ecommerce Backend',
-        description: 'Ecommerce API built with Node.js, TypeScript and Stripe.',
-        src: '/assets/ecommerce-api.png',
-        projectUrl: 'https://github.com/abdulwaheed-apk/ecommerce-api',
-        stack: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    },
+    // {
+    //     title: 'Ecommerce Backend',
+    //     description: 'Ecommerce API built with Node.js, TypeScript and Stripe.',
+    //     src: '/assets/ecommerce-api.png',
+    //     projectUrl: 'https://github.com/abdulwaheed-apk/ecommerce-api',
+    //     stack: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
+    // },
     {
         title: 'UBL | Fintech Mobile App',
         description: 'UBL Digital iOS and Android App using Temenos Framework.',
@@ -283,22 +303,4 @@ export const newProjects = [
         projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
         stack: ['JS', 'React', 'Redux', 'AWS'],
     },
-    // {
-    //     title: 'Acme | Invoice Tracking Dashboard',
-    //     description:
-    //         'Invoice Tracking Dashboard using Next.js, TypeScript, and PostgreSQL.',
-    //     src: '/assets/invoice tracking dashboard.avif',
-    //     projectUrl:
-    //         'https://github.com/abdulwaheed-apk/invoice-tracking-dashboard',
-    //     stack: ['TypeScript', 'Tailwind', 'Next.js', 'PostgreSQL'],
-    // },
-
-    // {
-    //     title: 'Microservices | Video Calling',
-    //     description:
-    //         'Video Calling built with Microservices Architecture using Kafka',
-    //     src: '/assets/webrtc-meeting.webp',
-    //     projectUrl: 'https://github.com/abdulwaheed-apk',
-    //     stack: ['TypeScript', 'Next.js', 'Tailwind', 'AWS'],
-    // },
 ]

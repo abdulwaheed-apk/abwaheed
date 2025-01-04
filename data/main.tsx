@@ -10,7 +10,7 @@ export const skills = [
         icon: <FaTerminal className='w-10 h-10 text-orange-600' />,
         title: 'Full Stack',
         description:
-            'Specialized in building robust full-stack web applications using modern technologies like React, TypeScript, Node.js, and PostgreSQL. From backend logic to frontend interfaces, I ensure seamless integration and optimal performance.',
+            'Specializing in building robust full-stack web applications using modern technologies like TypeScript, Python, React, Angular, Node.js, Django, and Ruby on Rails, I ensure seamless integration and optimal performance.',
     },
     {
         icon: <LightBulbIcon className='w-10 h-10 text-orange-600' />,
