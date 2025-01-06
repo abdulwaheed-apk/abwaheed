@@ -1,11 +1,34 @@
 import Link from 'next/link'
 import { IoCloudDownloadOutline } from 'react-icons/io5'
-import { HiMiniRectangleStack } from 'react-icons/hi2'
 import { Button } from '@/components/ui/button'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
-import MovingLogos from '@/components/custom/moving-logos'
+import Balancer from "react-wrap-balancer";
+import Image from "next/image";
+import {ScrollArea} from "@radix-ui/react-scroll-area";
+import {ScrollBar} from "@/components/ui/scroll-area";
+
+const featuredProjects = [
+    {
+        id:1,
+        title:"Carz.sa",
+        projectUrl:'http://Carz.sa:4000/',
+        image:'/assets/Carz-Dashboard.png',
+    },
+    {
+        id:2,
+        title:"Methvin Estimating Software",
+        projectUrl:'https://portal.methvin.org/',
+        image:'/assets/methvin-estimating.svg',
+    },
+    {
+        id:3,
+        title:"Qadderha",
+        projectUrl:'http://8.213.32.39:4000/',
+        image:'/assets/Qadderha-orders.png',
+    }
+]
 
 export default function Home() {
     return (
@@ -23,47 +46,14 @@ export default function Home() {
                         className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
                     />
                 </div>
-                <div className='mx-auto max-w-2xl py-16 sm:py-24 lg:pb-8 lg:pt-16'>
-                    <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
-                        <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-zinc-100 ring-1 ring-gray-900/10 dark:ring-gray-400 hover:ring-gray-900/20 dark:hover:ring-gray-300'>
-                            Learn about my skills and experience.{' '}
-                            <Link
-                                prefetch
-                                href='/about'
-                                className='font-semibold text-orange-600'
-                            >
-                                <span
-                                    aria-hidden='true'
-                                    className='absolute inset-0'
-                                />
-                                Read more <span aria-hidden='true'>&rarr;</span>
-                            </Link>
-                        </div>
-                    </div>
+                <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
+
                     <div className='text-center'>
-                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-6xl'>
-                            Innovative Problem Solver with a Passion for
-                            Lifelong Learning
+                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
+                        <Balancer>
+                            Self-Taught Full-Stack Engineer Driven by a Passion for Lifelong Learning
+                        </Balancer>
                         </h1>
-                        <p className='mt-6 text-lg leading-8 text-gray-600 dark:text-white'>
-                            Self-taught full-stack engineer passionate about
-                            building elegant, scalable software solutions.
-                            Discover my expertise in modern technologies and
-                            commitment to lifelong learning.
-                        </p>
-                        <div className='mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-center w-full  sm:gap-x-2 gap-y-2 sm:gap-y-0'>
-                            <Button variant={'primary'} className='font-medium'>
-                                <Link
-                                    prefetch
-                                    href='/work'
-                                    className='flex justify-center items-center gap-x-0.5'
-                                >
-                                    Projects{' '}
-                                    <HiMiniRectangleStack className='ml-2 size-5' />{' '}
-                                </Link>
-                            </Button>
-                            <CopyEmail />
-                        </div>
                     </div>
                 </div>
 
@@ -80,12 +70,56 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <MovingLogos />
-            <HoverEffect items={skills} />
+            <HoverEffect items={skills}/>
+            <section aria-label={'Featured projects'} className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
+                <div className={'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'}>
+                    <div className={'flex flex-col gap-y-4'}>
+                        <h2 className={'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'}>
+                            Some of my most recent projects
+                        </h2>
+                        <p>
+                            Transforming ideas into seamless, user-centric web solutions with precision and care.
+                        </p>
+                    </div>
+                    <Link href={'/work'}>
+                    <Button
+                        variant={'outline'}
+                        size={'lg'}
+                        className={'rounded-full'}>
+                        Browse all projects
+                    </Button>
+                    </Link>
+                </div>
+                <ScrollArea className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
+                    <div aria-label={'Featured Projects Cards'} className="flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4">
+                        {featuredProjects.map(item => (
+                            <Link
+                                href={item.projectUrl}
+                                target={'_blank'}
+                                rel={'noopener noreferrer'}
+                                key={item.id}
+                                className="flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px]"
+                                style={{ flex: '0 0 auto' }}
+                            >
+                                <div className="flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl">
+                                    <span className="text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full">
+                                        Featured
+                                    </span>
+                                    <Image src={item.image} alt={item.title} width={465} height={400} />
+                                </div>
+                                <h3 className="text-lg font-medium text-black dark:text-white">
+                                    {item.title}
+                                </h3>
+                            </Link>
+                        ))}
+                    </div>
+                    <ScrollBar orientation="horizontal" />
+                </ScrollArea>
+            </section>
             <section>
-                <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
+                <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
                     <div className='max-w-screen-md'>
-                        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-stone-100'>
+                    <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
                             Let&apos;s find more that brings us together.
                         </h2>
                         <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
@@ -102,25 +136,16 @@ export default function Home() {
                                 variant={'primary'}
                                 className='font-medium'
                             >
-                                <Link href='mailto:abwaheed701@gmail.com'>
-                                    Hire Me
-                                </Link>
-                            </Button>
-                            <Button
-                                asChild
-                                variant={'outline'}
-                                className='font-medium'
-                            >
                                 <Link
-                                    href='/Abdul_Waheed_Software_Engineer.pdf'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    download
-                                >
-                                    Resume{' '}
+                                    href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
+                                       target='_blank'
+                                       rel='noopener noreferrer'
+                                       download >
+                                    Resume
                                     <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
                             </Button>
+                            <CopyEmail />
                         </div>
                     </div>
                 </div>

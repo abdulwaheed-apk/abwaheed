@@ -40,18 +40,17 @@ export default function About() {
                     <h4 className='font-bold text-xl my-2'>Biography</h4>
                     <p className='font-medium'>
                         Hello, I&apos;m Abdul Waheed, a self-taught Full Stack
-                        Software Engineer specializing in the MERN stack and
-                        modern web technologies. With 3 years of professional
+                        Software Engineer. With 3 years of professional
                         experience, I&apos;ve honed my skills in building robust
                         and scalable applications using Node.js, React, Next.js,
                         and TypeScript. My expertise extends to database
-                        management with PostgreSQL and MongoDB.
+                        management with MySQL, PostgreSQL and MongoDB.
                     </p>
                     <p className='font-medium my-4'>
                         {' '}
                         My journey in software development has been driven by
                         curiosity and a passion for problem-solving. I&apos;ve
-                        expanded my skillset to include Python, Django, Ruby on
+                        expanded my skill-set to include Python, Django, Ruby on
                         Rails, and Angular, allowing me to adapt to diverse
                         project requirements. I hold a MERN Stack certification,
                         validating my proficiency in this powerful technology

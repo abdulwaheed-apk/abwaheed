@@ -1,13 +1,13 @@
 'use client'
 import { useState } from 'react'
 import { Button } from '../ui/button'
-import { FaCheck, FaRegCopy } from 'react-icons/fa6'
+import {Check, Copy} from "lucide-react";
 
 export default function CopyEmail() {
     const [copied, setCopied] = useState(false)
 
     function handleOnClick() {
-        window.navigator.clipboard.writeText('abwaheed701@gmail.com')
+        window.navigator.clipboard.writeText('abdulwaheed.apk@gmail.com')
         setCopied(true)
 
         setTimeout(() => {
@@ -21,12 +21,12 @@ export default function CopyEmail() {
             variant={'outline'}
             className='hover:cursor-copy font-medium'
         >
-            <button onClick={handleOnClick}>
+            <button onClick={handleOnClick} className={'py-1.5'}>
                 {copied ? 'Email Copied' : 'Copy Email'}
                 {copied ? (
-                    <FaCheck className='ml-1.5 size-5' />
+                    <Check className='ml-1.5 size-5' />
                 ) : (
-                    <FaRegCopy className='ml-1.5 size-5' />
+                    <Copy className='ml-1.5 size-5' />
                 )}
             </button>
         </Button>

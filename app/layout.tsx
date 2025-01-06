@@ -5,6 +5,7 @@ import './globals.css'
 import Header from '@/components/custom/header'
 import Footer from '@/components/custom/footer'
 import { ThemeProvider } from 'next-themes'
+import {ReactNode} from "react";
 
 const mont = Montserrat({
     subsets: ['latin'],
@@ -12,19 +13,19 @@ const mont = Montserrat({
 })
 
 export const metadata: Metadata = {
-    title: 'Abdul Waheed • Full Stack Software Engineer',
+    title: 'Full Stack Software Engineer • Abdul Waheed',
     description: 'Self-Taught Full Stack Engineer',
 }
 
 export default function RootLayout({
     children,
 }: Readonly<{
-    children: React.ReactNode
+    children: ReactNode
 }>) {
     return (
         <html lang='en' suppressHydrationWarning>
             <body
-                className={`${mont.className} antialiased flex flex-col bg-stone-100 text-[#101214] dark:bg-[#101214] dark:text-white mx-auto max-w-screen-xl`}
+                className={`${mont.className} antialiased flex flex-col bg-stone-100 min-h-screen text-[#101214] dark:bg-[#101214] dark:text-white mx-auto max-w-screen-xl`}
             >
                 <ThemeProvider attribute='class'>
                     <Header />
