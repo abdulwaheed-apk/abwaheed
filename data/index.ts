@@ -56,8 +56,11 @@ export const experiences = [
         office: 'Onsite',
         work: [
             'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel and MySQL, and deployed on AWS.',
+            'Implemented multi-language support in a React',
             'Developed Qadderha dashboard for employee and center management for vehicle insurance companies and deployed to Alibaba Cloud.',
             'Created user centric applications keeping.',
+            'Wrote comprehensive documentation for API and frontend, resulting in a 300% increase in developer productivity and improved\n' +
+            'client satisfaction'
         ],
     },
     {
@@ -77,16 +80,15 @@ export const experiences = [
     },
     {
         duration: 'Jan 2023 - Apr 2023',
-        position: 'Software Engineer',
+        position: 'Software Engineer (Bootcamp)',
         company: 'Contour Software',
         companyWebsite: 'https://contour-software.com/',
         location: 'Karachi, Pakistan',
         office: 'Onsite',
         work: [
-            'Designed and implemented RESTful APIs using Node.js, Express, MongoDB, and TypeScript, deployed on AWS (EC2, S3).',
-            'Developed and maintained frontend for 5 e-commerce applications using Next.js, TypeScript, Redux, React Query, and Tailwind CSS.',
-            'Created comprehensive API documentation, improving developer productivity by 200%.',
-            'Implemented user review system and Stripe payment integration for an LMS application (Angular, RxJS, Tailwind CSS), generating $500K quarterly revenue.',
+            'Completed an intensive 300-hour, onsite full-stack development program led by industry experts, covering advanced topics in Node.js, Express, MongoDB, MySQL, and TypeScript, with hands-on deployment on AWS services (EC2, S3).',
+            'Gained extensive practical experience through Agile methodologies, collaborative Git workflows, and the development of real-world, production-ready projects.',
+
         ],
     },
     {
