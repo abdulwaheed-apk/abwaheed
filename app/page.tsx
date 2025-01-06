@@ -13,7 +13,7 @@ const featuredProjects = [
     {
         id:1,
         title:"Carz.sa",
-        projectUrl:'https://8.213.32.39:4000/',
+        projectUrl:'http://Carz.sa:4000/',
         image:'/assets/Carz-Dashboard.png',
     },
     {
@@ -25,7 +25,7 @@ const featuredProjects = [
     {
         id:3,
         title:"Qadderha",
-        projectUrl:'https://8.213.32.39:4000/',
+        projectUrl:'http://8.213.32.39:4000/',
         image:'/assets/Qadderha-orders.png',
     }
 ]
@@ -137,7 +137,7 @@ export default function Home() {
                                 className='font-medium'
                             >
                                 <Link
-                                    href='/Abdul_Waheed_Software_Engineer.pdf'
+                                    href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
                                        target='_blank'
                                        rel='noopener noreferrer'
                                        download >

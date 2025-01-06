@@ -253,7 +253,7 @@ export const newProjects = [
         title: 'Carz.sa | Cars auction market place',
         description: 'Marketplace for new and used cars',
         src: '/assets/Carz-Dashboard.png',
-        projectUrl: 'https://8.213.32.39:4000/',
+        projectUrl: 'http://carz.sa:4000/',
         stack: ['TS', 'Next.js', 'AWS', 'React Query', 'Laravel'],
     },
     {
@@ -269,7 +269,7 @@ export const newProjects = [
         description: 'Cross platform app for insurance companies',
         src: '/assets/Qadderha-orders.png',
         projectUrl: 'https://www.github.com/abdulwaheed-apk',
-        stack: ['TS', 'Next.js', 'Alibaba Cloud', 'React Query', 'Laravel'],
+        stack: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
     },
     {
         title: 'Video Calling App',

@@ -7,7 +7,7 @@ export default function CopyEmail() {
     const [copied, setCopied] = useState(false)
 
     function handleOnClick() {
-        window.navigator.clipboard.writeText('abwaheed701@gmail.com')
+        window.navigator.clipboard.writeText('abdulwaheed.apk@gmail.com')
         setCopied(true)
 
         setTimeout(() => {
