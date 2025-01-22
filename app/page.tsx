@@ -13,19 +13,19 @@ const featuredProjects = [
     {
         id:1,
         title:"Carz.sa",
-        projectUrl:'http://Carz.sa:4000/',
+        projectLink:'https://carz.sa/seller',
         image:'/assets/Carz-Dashboard.png',
     },
     {
         id:2,
         title:"Methvin Estimating Software",
-        projectUrl:'https://portal.methvin.org/',
+        projectLink:'https://portal.methvin.org/',
         image:'/assets/methvin-estimating.svg',
     },
     {
         id:3,
         title:"Qadderha",
-        projectUrl:'http://8.213.32.39:4000/',
+        projectLink:'#',
         image:'/assets/Qadderha-orders.png',
     }
 ]
@@ -94,7 +94,7 @@ export default function Home() {
                     <div aria-label={'Featured Projects Cards'} className="flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4">
                         {featuredProjects.map(item => (
                             <Link
-                                href={item.projectUrl}
+                                href={item.projectLink}
                                 target={'_blank'}
                                 rel={'noopener noreferrer'}
                                 key={item.id}
