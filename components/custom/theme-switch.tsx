@@ -21,7 +21,7 @@ export const ThemeSwitch = () => {
     return (
         <button
             onClick={toggleTheme}
-            className='flex justify-center items-center p-2 rounded-full shadow-sm max-w-10 max-h-10 bg-white dark:bg-black'
+            className='flex justify-center items-center p-2 rounded-full shadow-sm max-w-10 max-h-10 bg-white dark:bg-[#171717]'
         >
             {theme === 'dark' ? (
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

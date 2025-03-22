@@ -8,6 +8,7 @@ import Image from "next/image";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { ScrollBar } from "@/components/ui/scroll-area";
 import { IconCloudDown, IconFileTypePdf, IconPdf } from '@tabler/icons-react'
+import {BlurFade} from "@/components/magicui/blur-fade";
 
 const featuredProjects = [
     {
@@ -49,27 +50,28 @@ export default function Home() {
                 <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
 
                     <div className='text-center'>
+                        <BlurFade direction={'right'}>
+                            <h1
 
-                        <h1
-
-                            className='font-lexend inline text-4xl sm:text-6xl lg:text-8xl tracking-tight dark:text-white font-semibold text-center'
-                        >
-                            Crafting
-                            <span
-                                className='inline bg-gradient-to-r font-bold from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display text-4xl sm:text-6xl lg:text-8xl tracking-tight text-transparent px-5'
+                                className='font-lexend inline text-4xl sm:text-6xl lg:text-8xl tracking-tight dark:text-white font-semibold text-center'
                             >
-                                Scalable
-                            </span>
-                            <br />
-                            & Robust Solutions
-                        </h1>
-                        <p
-                            className='mt-4 text-md font-lexend md:text-xl tracking-tight text-neutral-500 dark:text-neutral-400 max-w-md md:max-w-3xl mb-0 text-center mx-auto'
-                        >
-                            Passionate Software Engineer building high-performance, scalable, and
-                            reliable solutions across web, cloud, and beyond. Focused on clean code,
-                            efficiency, and innovation.
-                        </p>
+                                Crafting
+                                <span
+                                    className='inline bg-gradient-to-r font-bold from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display text-4xl sm:text-6xl lg:text-8xl tracking-tight text-transparent px-5'
+                                >
+                                    Scalable
+                                </span>
+                                <br />
+                                & Robust Solutions
+                            </h1>
+                            <p
+                                className='mt-4 text-md font-lexend md:text-xl tracking-tight text-neutral-500 dark:text-neutral-400 max-w-md md:max-w-3xl mb-0 text-center mx-auto'
+                            >
+                                Passionate Software Engineer building high-performance, scalable, and
+                                reliable solutions across web, cloud, and beyond. Focused on clean code,
+                                efficiency, and innovation.
+                            </p>
+                        </BlurFade>
                         <div className='hidden justify-center items-center gap-x-8 my-8 font-cantarell'>
                             <Link
                                 href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'

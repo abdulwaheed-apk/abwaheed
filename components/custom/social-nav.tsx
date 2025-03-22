@@ -12,7 +12,7 @@ export default function Social() {
                         target='_blank'
                         title={item.name}
                         rel='noopener noreferrer'
-                        className={`flex justify-center items-center p-2 rounded-full h-10 w-10 shadow-sm bg-white dark:bg-black`}
+                        className={`flex justify-center items-center p-2 rounded-full h-10 w-10 shadow-sm bg-white dark:bg-[#171717]`}
                     >
                         <item.icon />
                     </Link>
