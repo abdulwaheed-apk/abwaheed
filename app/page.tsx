@@ -4,10 +4,10 @@ import { Button } from '@/components/ui/button'
 import CopyEmail from '@/components/custom/copy-email'
 import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
-import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { ScrollBar } from "@/components/ui/scroll-area";
+import { IconCloudDown, IconFileTypePdf, IconPdf } from '@tabler/icons-react'
 
 const featuredProjects = [
     {
@@ -49,11 +49,43 @@ export default function Home() {
                 <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
 
                     <div className='text-center'>
-                        <h1 className='text-4xl font-bold font-lexend tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
-                            <Balancer>
-                                Self-Taught Full-Stack Engineer Driven by a Passion for Lifelong Learning
-                            </Balancer>
+
+                        <h1
+
+                            className='font-lexend inline text-4xl sm:text-6xl lg:text-8xl tracking-tight dark:text-white font-semibold text-center'
+                        >
+                            Crafting
+                            <span
+                                className='inline bg-gradient-to-r font-bold from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display text-4xl sm:text-6xl lg:text-8xl tracking-tight text-transparent px-5'
+                            >
+                                Scalable
+                            </span>
+                            <br />
+                            & Robust Solutions
                         </h1>
+                        <p
+                            className='mt-4 text-md font-lexend md:text-xl tracking-tight text-neutral-500 dark:text-neutral-400 max-w-md md:max-w-3xl mb-0 text-center mx-auto'
+                        >
+                            Passionate Software Engineer building high-performance, scalable, and
+                            reliable solutions across web, cloud, and beyond. Focused on clean code,
+                            efficiency, and innovation.
+                        </p>
+                        <div className='hidden justify-center items-center gap-x-8 my-8 font-cantarell'>
+                            <Link
+                                href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
+                                download
+                                className='bg-neutral-800 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-white hover:bg-neutral-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-neutral-400 rounded-sm text-md flex gap-x-2'
+                            >
+                                Download my Resume
+                                <IconFileTypePdf />
+                            </Link>
+                            <a
+                                href='/work'
+                                className='!font-cantarell bg-yellow-300 transition-colors duration-300 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-neutral-900 hover:bg-orange-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300/50 active:bg-yellow-500 rounded-sm'
+                            >
+                                Projects
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -71,7 +103,8 @@ export default function Home() {
                 </div>
             </main>
             <HoverEffect items={skills} />
-            <section aria-label={'Featured projects'} className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
+            <section aria-label={'Featured projects'}
+                className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
                 <div className={'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'}>
                     <div className={'flex flex-col gap-y-4'}>
                         <h2 className={'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'}>
@@ -85,12 +118,13 @@ export default function Home() {
                         <Button
                             variant={'outline'}
                             size={'lg'}
-                            className={'rounded-full'}>
+                            className={'rounded-full font-lexend font-normal'}>
                             Browse all projects
                         </Button>
                     </Link>
                 </div>
-                <ScrollArea className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
+                <ScrollArea
+                    className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
                     <div aria-label={'Featured Projects Cards'} className="flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4">
                         {featuredProjects.map(item => (
                             <Link

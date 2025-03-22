@@ -12,15 +12,19 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <main className='w-full sm:w-11/12 max-w-screen-xl mx-auto'>
-            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-stone-100/[0.96] dark:bg-[#101214] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
+            <div className='h-auto sm:h-[20rem] w-full mx-auto rounded-md flex md:items-start md:justify-center bg-stone-100/[0.96] dark:bg-[#171717] pt-4 md:pt-8 antialiased bg-grid-white/[0.02] relative overflow-hidden'>
                 <Spotlight
                     className='-top-40 left-0 md:left-60 md:-top-20'
                     fill='white'
                 />
                 <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
                     <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] dark:text-stone-100 font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
-                        Driven by <br /> Curiosity and Impact.
-                    </h1>
+                        Driven by <br />
+                        <span className='inline bg-gradient-to-r from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display tracking-normal text-transparent pe-4'
+                    >
+                        Impact
+                    </span>
+                        and Curiosity. </h1>
                     <p className='mt-4 font-normal text-base text-neutral-800 dark:text-white max-w-lg text-center mx-auto'>
                         Thanks for visiting. I&apos;m a Full Stack Engineer
                         currently based in Riyadh, Saudi Arabia. Explore below
@@ -37,7 +41,7 @@ export default function About() {
                     className='rounded-3xl pointer-events-none md:w-2/5 lg:w-1/3'
                 />
                 <div className='w-full sm:w-4/5 md:w-2/4'>
-                    <h4 className='font-bold text-xl my-2'>Biography</h4>
+                    <h4 className='font-bold text-xl my-2'>About Myself</h4>
                     <p className='font-medium'>
                         Hello, I&apos;m Abdul Waheed, a self-taught Full Stack
                         Software Engineer. With 3 years of professional

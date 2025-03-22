@@ -29,7 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
     return (
         <div
-            className='w-full bg-stone-100 dark:bg-[#101214] font-sans md:px-10'
+            className='w-full bg-stone-100 dark:bg-[#171717] font-sans md:px-10'
             ref={containerRef}
         >
             <div className='max-w-7xl mx-auto pt-20 pb-0 px-4 md:px-8 lg:px-10'>
