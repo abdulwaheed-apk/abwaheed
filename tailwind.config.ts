@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 const {
     default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette')
@@ -52,6 +53,9 @@ const config: Config = {
                     '3': 'hsl(var(--chart-3))',
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))',
+                },
+                fontFamily: {
+                    lexend: ['var(--font-lexend)', ...fontFamily.sans],
                 },
             },
             animation: {

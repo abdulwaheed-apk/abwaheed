@@ -6,27 +6,27 @@ import { HoverEffect } from '@/components/ui/card-hover-effect'
 import { skills } from '@/data/main'
 import Balancer from "react-wrap-balancer";
 import Image from "next/image";
-import {ScrollArea} from "@radix-ui/react-scroll-area";
-import {ScrollBar} from "@/components/ui/scroll-area";
+import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollBar } from "@/components/ui/scroll-area";
 
 const featuredProjects = [
     {
-        id:1,
-        title:"Carz.sa",
-        projectLink:'https://carz.sa/seller',
-        image:'/assets/Carz-Dashboard.png',
+        id: 1,
+        title: "Carz.sa",
+        projectLink: 'https://carz.sa/seller',
+        image: '/assets/Carz-Dashboard.png',
     },
     {
-        id:2,
-        title:"Methvin Estimating Software",
-        projectLink:'https://portal.methvin.org/',
-        image:'/assets/methvin-estimating.svg',
+        id: 2,
+        title: "Methvin Estimating Software",
+        projectLink: 'https://portal.methvin.org/',
+        image: '/assets/methvin-estimating.svg',
     },
     {
-        id:3,
-        title:"Qadderha",
-        projectLink:'#',
-        image:'/assets/Qadderha-orders.png',
+        id: 3,
+        title: "Qadderha",
+        projectLink: '#',
+        image: '/assets/Qadderha-orders.png',
     }
 ]
 
@@ -49,10 +49,10 @@ export default function Home() {
                 <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
 
                     <div className='text-center'>
-                        <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
-                        <Balancer>
-                            Self-Taught Full-Stack Engineer Driven by a Passion for Lifelong Learning
-                        </Balancer>
+                        <h1 className='text-4xl font-bold font-lexend tracking-tight text-gray-900 dark:text-stone-100 sm:text-7xl'>
+                            <Balancer>
+                                Self-Taught Full-Stack Engineer Driven by a Passion for Lifelong Learning
+                            </Balancer>
                         </h1>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Home() {
                     />
                 </div>
             </main>
-            <HoverEffect items={skills}/>
+            <HoverEffect items={skills} />
             <section aria-label={'Featured projects'} className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
                 <div className={'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'}>
                     <div className={'flex flex-col gap-y-4'}>
@@ -82,12 +82,12 @@ export default function Home() {
                         </p>
                     </div>
                     <Link href={'/work'}>
-                    <Button
-                        variant={'outline'}
-                        size={'lg'}
-                        className={'rounded-full'}>
-                        Browse all projects
-                    </Button>
+                        <Button
+                            variant={'outline'}
+                            size={'lg'}
+                            className={'rounded-full'}>
+                            Browse all projects
+                        </Button>
                     </Link>
                 </div>
                 <ScrollArea className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
@@ -119,7 +119,7 @@ export default function Home() {
             <section>
                 <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
                     <div className='max-w-screen-md'>
-                    <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
+                        <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
                             Let&apos;s find more that brings us together.
                         </h2>
                         <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
@@ -138,9 +138,9 @@ export default function Home() {
                             >
                                 <Link
                                     href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
-                                       target='_blank'
-                                       rel='noopener noreferrer'
-                                       download >
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    download >
                                     Resume
                                     <IoCloudDownloadOutline className='ml-1.5 size-5' />
                                 </Link>
