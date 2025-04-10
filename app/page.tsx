@@ -1,191 +1,186 @@
-import Link from 'next/link'
-import { IoCloudDownloadOutline } from 'react-icons/io5'
-import { Button } from '@/components/ui/button'
-import CopyEmail from '@/components/custom/copy-email'
-import { HoverEffect } from '@/components/ui/card-hover-effect'
-import { skills } from '@/data/main'
-import Image from "next/image";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
-import { ScrollBar } from "@/components/ui/scroll-area";
-import { IconCloudDown, IconFileTypePdf, IconPdf } from '@tabler/icons-react'
-import {BlurFade} from "@/components/magicui/blur-fade";
+import Link from 'next/link';
+import { IoCloudDownloadOutline } from 'react-icons/io5';
+import { Button } from '@/components/ui/button';
+import CopyEmail from '@/components/custom/copy-email';
+import { HoverEffect } from '@/components/ui/card-hover-effect';
+import { skills } from '@/data/main';
+import Image from 'next/image';
+import { ScrollArea } from '@radix-ui/react-scroll-area';
+import { ScrollBar } from '@/components/ui/scroll-area';
+import { IconFileTypePdf } from '@tabler/icons-react';
+import { BlurFade } from '@/components/magicui/blur-fade';
 
 const featuredProjects = [
-    {
-        id: 1,
-        title: "Carz.sa",
-        projectLink: 'https://carz.sa/seller',
-        image: '/assets/Carz-Dashboard.png',
-    },
-    {
-        id: 2,
-        title: "Methvin Estimating Software",
-        projectLink: 'https://portal.methvin.org/',
-        image: '/assets/methvin-estimating.svg',
-    },
-    {
-        id: 3,
-        title: "Qadderha",
-        projectLink: '#',
-        image: '/assets/Qadderha-orders.png',
-    }
-]
+  {
+    id: 1,
+    title: 'Carz.sa',
+    projectLink: 'https://carz.sa/seller',
+    image: '/assets/Carz-Dashboard.png',
+  },
+  {
+    id: 2,
+    title: 'Methvin Estimating Software',
+    projectLink: 'https://portal.methvin.org/',
+    image: '/assets/methvin-estimating.svg',
+  },
+  {
+    id: 3,
+    title: 'Qadderha',
+    projectLink: '#',
+    image: '/assets/Qadderha-orders.png',
+  },
+];
 
 export default function Home() {
-    return (
-        <>
-            <main className='relative isolate px-6 pt-14 lg:px-8'>
-                <div
-                    aria-hidden='true'
-                    className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
-                >
-                    <div
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                        className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
-                    />
-                </div>
-                <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
+  return (
+    <>
+      <main className='relative isolate px-6 pt-14 lg:px-8'>
+        <div
+          aria-hidden='true'
+          className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className='relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]'
+          />
+        </div>
+        <div className='mx-auto py-16 sm:py-24 lg:pb-8 lg:pt-16'>
+          <div className='text-center'>
+            <BlurFade direction={'right'}>
+              <h1 className='font-lexend inline text-4xl sm:text-6xl lg:text-8xl tracking-tight dark:text-white font-semibold text-center'>
+                Crafting
+                <span className='inline bg-gradient-to-r font-bold from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display text-4xl sm:text-6xl lg:text-8xl tracking-tight text-transparent px-5'>
+                  Scalable
+                </span>
+                <br />& Robust Solutions
+              </h1>
+              <p className='mt-4 text-md font-lexend md:text-xl tracking-tight text-neutral-500 dark:text-neutral-400 max-w-md md:max-w-3xl mb-0 text-center mx-auto'>
+                Passionate Software Engineer building high-performance,
+                scalable, and reliable solutions across web, cloud, and beyond.
+                Focused on clean code, efficiency, and innovation.
+              </p>
+            </BlurFade>
+            <div className='hidden justify-center items-center gap-x-8 my-8 font-cantarell'>
+              <Link
+                href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
+                download
+                className='bg-neutral-800 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-white hover:bg-neutral-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-neutral-400 rounded-sm text-md flex gap-x-2'>
+                Download my Resume
+                <IconFileTypePdf />
+              </Link>
+              <a
+                href='/work'
+                className='!font-cantarell bg-yellow-300 transition-colors duration-300 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-neutral-900 hover:bg-orange-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300/50 active:bg-yellow-500 rounded-sm'>
+                Projects
+              </a>
+            </div>
+          </div>
+        </div>
 
-                    <div className='text-center'>
-                        <BlurFade direction={'right'}>
-                            <h1
-
-                                className='font-lexend inline text-4xl sm:text-6xl lg:text-8xl tracking-tight dark:text-white font-semibold text-center'
-                            >
-                                Crafting
-                                <span
-                                    className='inline bg-gradient-to-r font-bold from-red-500 dark:from-yellow-300 dark:via-orange-500 dark:to-red-400 via-yellow-500 to-orange-400 bg-clip-text font-display text-4xl sm:text-6xl lg:text-8xl tracking-tight text-transparent px-5'
-                                >
-                                    Scalable
-                                </span>
-                                <br />
-                                & Robust Solutions
-                            </h1>
-                            <p
-                                className='mt-4 text-md font-lexend md:text-xl tracking-tight text-neutral-500 dark:text-neutral-400 max-w-md md:max-w-3xl mb-0 text-center mx-auto'
-                            >
-                                Passionate Software Engineer building high-performance, scalable, and
-                                reliable solutions across web, cloud, and beyond. Focused on clean code,
-                                efficiency, and innovation.
-                            </p>
-                        </BlurFade>
-                        <div className='hidden justify-center items-center gap-x-8 my-8 font-cantarell'>
-                            <Link
-                                href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
-                                download
-                                className='bg-neutral-800 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-white hover:bg-neutral-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-neutral-400 rounded-sm text-md flex gap-x-2'
-                            >
-                                Download my Resume
-                                <IconFileTypePdf />
-                            </Link>
-                            <a
-                                href='/work'
-                                className='!font-cantarell bg-yellow-300 transition-colors duration-300 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-neutral-900 hover:bg-orange-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300/50 active:bg-yellow-500 rounded-sm'
-                            >
-                                Projects
-                            </a>
-                        </div>
-                    </div>
+        <div
+          aria-hidden='true'
+          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'>
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className='relative left-[calc(50%+3rem)] aspect-[1155/678] h-4 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
+          />
+        </div>
+      </main>
+      <HoverEffect items={skills} />
+      <section
+        aria-label={'Featured projects'}
+        className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
+        <div
+          className={
+            'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'
+          }>
+          <div className={'flex flex-col gap-y-4'}>
+            <h2
+              className={
+                'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'
+              }>
+              Some of my most recent projects
+            </h2>
+            <p>
+              Transforming ideas into seamless, user-centric web solutions with
+              precision and care.
+            </p>
+          </div>
+          <Link href={'/work'}>
+            <Button
+              variant={'outline'}
+              size={'lg'}
+              className={'rounded-full font-lexend font-normal'}>
+              Browse all projects
+            </Button>
+          </Link>
+        </div>
+        <ScrollArea className='sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto'>
+          <div
+            aria-label={'Featured Projects Cards'}
+            className='flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4'>
+            {featuredProjects.map((item) => (
+              <Link
+                href={item.projectLink}
+                target={'_blank'}
+                rel={'noopener noreferrer'}
+                key={item.id}
+                className='flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px]'
+                style={{ flex: '0 0 auto' }}>
+                <div className='flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl'>
+                  <span className='text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full'>
+                    Featured
+                  </span>
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={465}
+                    height={400}
+                  />
                 </div>
-
-                <div
-                    aria-hidden='true'
-                    className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
-                >
-                    <div
-                        style={{
-                            clipPath:
-                                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-                        }}
-                        className='relative left-[calc(50%+3rem)] aspect-[1155/678] h-4 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#aa4b6b] via-[#6b6b83] to-[#3b8d99] opacity-30sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]'
-                    />
-                </div>
-            </main>
-            <HoverEffect items={skills} />
-            <section aria-label={'Featured projects'}
-                className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
-                <div className={'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'}>
-                    <div className={'flex flex-col gap-y-4'}>
-                        <h2 className={'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'}>
-                            Some of my most recent projects
-                        </h2>
-                        <p>
-                            Transforming ideas into seamless, user-centric web solutions with precision and care.
-                        </p>
-                    </div>
-                    <Link href={'/work'}>
-                        <Button
-                            variant={'outline'}
-                            size={'lg'}
-                            className={'rounded-full font-lexend font-normal'}>
-                            Browse all projects
-                        </Button>
-                    </Link>
-                </div>
-                <ScrollArea
-                    className="sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto">
-                    <div aria-label={'Featured Projects Cards'} className="flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4">
-                        {featuredProjects.map(item => (
-                            <Link
-                                href={item.projectLink}
-                                target={'_blank'}
-                                rel={'noopener noreferrer'}
-                                key={item.id}
-                                className="flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px]"
-                                style={{ flex: '0 0 auto' }}
-                            >
-                                <div className="flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl">
-                                    <span className="text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full">
-                                        Featured
-                                    </span>
-                                    <Image src={item.image} alt={item.title} width={465} height={400} />
-                                </div>
-                                <h3 className="text-lg font-medium text-black dark:text-white">
-                                    {item.title}
-                                </h3>
-                            </Link>
-                        ))}
-                    </div>
-                    <ScrollBar orientation="horizontal" />
-                </ScrollArea>
-            </section>
-            <section>
-                <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
-                    <div className='max-w-screen-md'>
-                        <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
-                            Let&apos;s find more that brings us together.
-                        </h2>
-                        <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
-                            As a passionate full-stack engineer, I focus on
-                            transforming concepts into efficient, scalable web
-                            applications. Discover my recent projects and
-                            articles, highlighting my expertise in building
-                            full-stack solutions using React, TypeScript, and
-                            other modern technologies.
-                        </p>
-                        <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
-                            <Button
-                                asChild
-                                variant={'primary'}
-                                className='font-medium'
-                            >
-                                <Link
-                                    href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    download >
-                                    Resume
-                                    <IoCloudDownloadOutline className='ml-1.5 size-5' />
-                                </Link>
-                            </Button>
-                            <CopyEmail />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+                <h3 className='text-lg font-medium text-black dark:text-white'>
+                  {item.title}
+                </h3>
+              </Link>
+            ))}
+          </div>
+          <ScrollBar orientation='horizontal' />
+        </ScrollArea>
+      </section>
+      <section>
+        <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
+          <div className='max-w-screen-md'>
+            <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
+              Let&apos;s find more that brings us together.
+            </h2>
+            <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
+              As a passionate full-stack engineer, I focus on transforming
+              concepts into efficient, scalable web applications. Discover my
+              recent projects and articles, highlighting my expertise in
+              building full-stack solutions using React, TypeScript, and other
+              modern technologies.
+            </p>
+            <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
+              <Button asChild variant={'primary'} className='font-medium'>
+                <Link
+                  href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  download>
+                  Resume
+                  <IoCloudDownloadOutline className='ml-1.5 size-5' />
+                </Link>
+              </Button>
+              <CopyEmail />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
