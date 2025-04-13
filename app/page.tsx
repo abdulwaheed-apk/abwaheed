@@ -4,9 +4,6 @@ import { Button } from '@/components/ui/button';
 import CopyEmail from '@/components/custom/copy-email';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { skills } from '@/data/main';
-import Image from 'next/image';
-import { ScrollArea } from '@radix-ui/react-scroll-area';
-import { ScrollBar } from '@/components/ui/scroll-area';
 import {
   IconBrandGithub,
   IconFileTypePdf,
@@ -227,7 +224,10 @@ export default function Home() {
               modern technologies.
             </p>
             <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
-              <Button asChild variant={'primary'} className='font-medium'>
+              <Button
+                asChild
+                variant={'primary'}
+                className='font-medium text-neutral-100'>
                 <Link
                   href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
                   target='_blank'

@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["api.microlink.io"], // Microlink Image Preview
+    remotePatterns:[]
   },
   // Explicitly disable experimental features if not needed
   experimental: {
