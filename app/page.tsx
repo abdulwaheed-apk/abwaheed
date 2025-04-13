@@ -11,6 +11,13 @@ import { IconFileTypePdf } from '@tabler/icons-react';
 import { BlurFade } from '@/components/magicui/blur-fade';
 
 const featuredProjects = [
+  // chat-server-microservices.png
+  {
+    id: 1,
+    title: 'Microservices-Based Chat Application',
+    projectLink: 'https://github.com/abdulwaheed-apk/chat-server',
+    image: '/assets/chat-server-microservices.png',
+  },
   {
     id: 1,
     title: 'Carz.sa',
@@ -23,12 +30,12 @@ const featuredProjects = [
     projectLink: 'https://portal.methvin.org/',
     image: '/assets/methvin-estimating.svg',
   },
-  {
-    id: 3,
-    title: 'Qadderha',
-    projectLink: '#',
-    image: '/assets/Qadderha-orders.png',
-  },
+  // {
+  //   id: 3,
+  //   title: 'Qadderha',
+  //   projectLink: '#',
+  //   image: '/assets/Qadderha-orders.png',
+  // },
 ];
 
 export default function Home() {
@@ -130,7 +137,7 @@ export default function Home() {
                 target={'_blank'}
                 rel={'noopener noreferrer'}
                 key={item.id}
-                className='flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px]'
+                className='flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px] lg:min-h-[324px]'
                 style={{ flex: '0 0 auto' }}>
                 <div className='flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl'>
                   <span className='text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full'>
@@ -141,6 +148,7 @@ export default function Home() {
                     alt={item.title}
                     width={465}
                     height={400}
+                    className='w-[465px] h-[400] object-cover'
                   />
                 </div>
                 <h3 className='text-lg font-medium text-black dark:text-white'>

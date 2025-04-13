@@ -45,10 +45,33 @@ export default function Work() {
   );
 }
 
-export const projects = [
+const projects = [
+  {
+    title: 'Ecommerce Microservices',
+    href: 'http://carz.autos/seller/en',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description: 'Scaleable Microservices using Kafka fro distributed event streaming',
+    technologies: ['TS', 'NestJS', 'Apache Kafka', 'Microservices', 'Kubernetes', 'Docker', 'Angular', 'React', 'PostgreSQL', 'MongoDB', 'DRF'],
+    links: [
+      {
+        type: 'Website',
+        href: 'http://carz.autos/seller/en',
+        icon: <IconGlobe className='size-3' />,
+      },
+      {
+        type: 'GitHub',
+        href: 'https://www.github.com/abdulwaheed-apk',
+        icon: <IconBrandGithub className='size-3' />,
+      },
+    ],
+    image: '/assets/Carz-Dashboard.png',
+    video:
+        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+  },
   {
     title: 'Carz.sa | Cars auction market place',
-    href: 'http://carz.sa:4000/',
+    href: 'http://carz.autos/seller/en',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
     description: 'Marketplace for new and used cars',
@@ -56,21 +79,21 @@ export const projects = [
     links: [
       {
         type: 'Website',
-        href: 'http://carz.sa:4000/',
+        href: 'http://carz.autos/seller/en',
         icon: <IconGlobe className='size-3' />,
       },
     ],
     image: '/assets/Carz-Dashboard.png',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   },
   {
     title: 'Methvin | Estimation Software',
     href: 'https://methvin.org/products/estimating-tools/estimating-software',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
-    description: 'Cost Estimation App for construction projects',
-    technologies: ['JS', 'React', 'Redux', 'AWS'],
+    description: 'Cost Estimation and Bidding Decisions Through First-Principles Methodology',
+    technologies: ['JS', 'React', 'Redux','Docker','AWS'],
     links: [
       {
         type: 'Website',
@@ -80,7 +103,26 @@ export const projects = [
     ],
     image: '/assets/Methvin - Estimate.png',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+        '/assets/projects/methvin-estimating.mp4',
+    gif:'/assets/projects/estimate-title-page1-done.gif'
+  },
+  {
+    title: 'Methvin | Takeoff',
+    href: 'https://methvin.org/products/estimating-tools/takeoff',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description: 'Takeoff for managing large-scale construction projects and intricate design plans',
+    technologies: ['JS', 'React', 'Redux','Docker' ,'AWS'],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://methvin.org/products/estimating-tools/estimating-software',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/Methvin-takeoff.png',
+    video:'/assets/projects/methvin-takeoff.mp4',
+    gif:'/assets/projects/takeoff-product-page.gif'
   },
   {
     title: 'Qadderha | Insurance Company App',
@@ -98,7 +140,8 @@ export const projects = [
     ],
     image: '/assets/Qadderha-orders.png',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+    gif:''
   },
   {
     title: 'Video Calling App',
@@ -106,8 +149,13 @@ export const projects = [
     dates: 'Jan 2024 - Feb 2024',
     active: true,
     description: 'Video Conferencing using React, WebRTC, Node.js, Socket.io',
-    technologies: ['TypeScript', 'WebRTC', 'Socket.io', 'Next.js'],
+    technologies: ['TypeScript', 'WebRTC', 'WebSocket', 'React'],
     links: [
+      {
+        type: 'Website',
+        href: 'http://carz.autos/seller/en',
+        icon: <IconGlobe className='size-3' />,
+      },
       {
         type: 'GitHub',
         href: 'https://github.com/abdulwaheed-apk/video-call-app',
@@ -116,43 +164,26 @@ export const projects = [
     ],
     image: '/assets/webrtc-meeting.webp',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+    gif:''
   },
-  {
-    title: 'UBL | Fintech Mobile App',
-    href: 'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description: 'UBL Digital iOS and Android App using Temenos Framework.',
-    technologies: ['JavaScript', 'HTML/CSS', 'Temenos', 'REST'],
-    links: [
-      {
-        type: 'Play Store',
-        href: 'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/ubl-digital.webp',
-    video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-  },
-  {
-    title: 'Methvin | Takeoff Software App',
-    href: 'https://methvin.org/products/estimating-tools/takeoff',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description:
-      'Takeoff app to provides an accurate count of the materials needed.',
-    technologies: ['JS', 'React', 'Redux', 'AWS'],
-    links: [
-      {
-        type: 'Website',
-        href: 'https://methvin.org/products/estimating-tools/takeoff',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Methvin-takeoff.png',
-    video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-  },
+  // {
+  //   title: 'UBL | Fintech Mobile App',
+  //   href: 'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
+  //   dates: 'Jan 2024 - Feb 2024',
+  //   active: true,
+  //   description: 'UBL Digital iOS and Android App using Temenos Framework.',
+  //   technologies: ['JavaScript', 'HTML/CSS', 'Temenos', 'REST'],
+  //   links: [
+  //     {
+  //       type: 'Play Store',
+  //       href: 'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
+  //       icon: <IconGlobe className='size-3' />,
+  //     },
+  //   ],
+  //   image: '/assets/ubl-digital.webp',
+  //   video:
+  //       'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+  //   gif:''
+  // }
 ];
