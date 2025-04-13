@@ -47,12 +47,63 @@ export default function Work() {
 
 const projects = [
   {
+    title: 'Methvin | Estimation Software',
+    href: 'https://methvin.org/products/estimating-tools/estimating-software',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description:
+      'Cost Estimation and Bidding Decisions Through First-Principles Methodology',
+    technologies: ['JS', 'React', 'Redux', 'Docker', 'AWS'],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://methvin.org/products/estimating-tools/estimating-software',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/Methvin - Estimate.png',
+    video: '/assets/projects/methvin-estimating.mp4',
+    gif: '/assets/projects/estimate-title-page1-done.gif',
+  },
+  {
+    title: 'Methvin | Takeoff',
+    href: 'https://methvin.org/products/estimating-tools/takeoff',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description:
+      'Takeoff for managing large-scale construction projects and intricate design plans',
+    technologies: ['JS', 'React', 'Redux', 'Docker', 'AWS'],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://methvin.org/products/estimating-tools/estimating-software',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/Methvin-takeoff.png',
+    video: '/assets/projects/methvin-takeoff.mp4',
+    gif: '/assets/projects/takeoff-product-page.gif',
+  },
+  {
     title: 'Ecommerce Microservices',
     href: 'http://carz.autos/seller/en',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
-    description: 'Scaleable Microservices using Kafka fro distributed event streaming',
-    technologies: ['TS', 'NestJS', 'Apache Kafka', 'Microservices', 'Kubernetes', 'Docker', 'Angular', 'React', 'PostgreSQL', 'MongoDB', 'DRF'],
+    description:
+      'Scaleable Microservices using Kafka fro distributed event streaming',
+    technologies: [
+      'TS',
+      'NestJS',
+      'Apache Kafka',
+      'Microservices',
+      'Kubernetes',
+      'Docker',
+      'Angular',
+      'React',
+      'PostgreSQL',
+      'MongoDB',
+      'DRF',
+    ],
     links: [
       {
         type: 'Website',
@@ -65,9 +116,9 @@ const projects = [
         icon: <IconBrandGithub className='size-3' />,
       },
     ],
-    image: '/assets/Carz-Dashboard.png',
+    image: '/assets/chat-server-microservices.png',
     video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   },
   {
     title: 'Carz.sa | Cars auction market place',
@@ -85,45 +136,9 @@ const projects = [
     ],
     image: '/assets/Carz-Dashboard.png',
     video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   },
-  {
-    title: 'Methvin | Estimation Software',
-    href: 'https://methvin.org/products/estimating-tools/estimating-software',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description: 'Cost Estimation and Bidding Decisions Through First-Principles Methodology',
-    technologies: ['JS', 'React', 'Redux','Docker','AWS'],
-    links: [
-      {
-        type: 'Website',
-        href: 'https://methvin.org/products/estimating-tools/estimating-software',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Methvin - Estimate.png',
-    video:
-        '/assets/projects/methvin-estimating.mp4',
-    gif:'/assets/projects/estimate-title-page1-done.gif'
-  },
-  {
-    title: 'Methvin | Takeoff',
-    href: 'https://methvin.org/products/estimating-tools/takeoff',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description: 'Takeoff for managing large-scale construction projects and intricate design plans',
-    technologies: ['JS', 'React', 'Redux','Docker' ,'AWS'],
-    links: [
-      {
-        type: 'Website',
-        href: 'https://methvin.org/products/estimating-tools/estimating-software',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Methvin-takeoff.png',
-    video:'/assets/projects/methvin-takeoff.mp4',
-    gif:'/assets/projects/takeoff-product-page.gif'
-  },
+
   {
     title: 'Qadderha | Insurance Company App',
     href: 'https://www.github.com/abdulwaheed-apk',
@@ -140,8 +155,7 @@ const projects = [
     ],
     image: '/assets/Qadderha-orders.png',
     video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-    gif:''
+      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   },
   {
     title: 'Video Calling App',
@@ -163,9 +177,7 @@ const projects = [
       },
     ],
     image: '/assets/webrtc-meeting.webp',
-    video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-    gif:''
+    video: '/assets/projects/video-call.mp4',
   },
   // {
   //   title: 'UBL | Fintech Mobile App',

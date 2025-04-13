@@ -7,35 +7,101 @@ import { skills } from '@/data/main';
 import Image from 'next/image';
 import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { ScrollBar } from '@/components/ui/scroll-area';
-import { IconFileTypePdf } from '@tabler/icons-react';
+import {
+  IconBrandGithub,
+  IconFileTypePdf,
+  IconGlobe,
+} from '@tabler/icons-react';
 import { BlurFade } from '@/components/magicui/blur-fade';
+import { ProjectCard } from '@/components/custom/project-card';
+
+const BLUR_FADE_DELAY = 0.04;
 
 const featuredProjects = [
-  // chat-server-microservices.png
   {
-    id: 1,
     title: 'Microservices-Based Chat Application',
-    projectLink: 'https://github.com/abdulwaheed-apk/chat-server',
+    href: 'https://github.com/abdulwaheed-apk/chat-server',
+    dates: '',
+    active: false,
+    description: 'A chat application built using microservices architecture',
+    technologies: [
+      'Node.js',
+      'Microservices',
+      'TypeScript',
+      'Docker',
+      'RabbitMQ',
+      'Nginx',
+    ],
+    links: [
+      {
+        type: 'GitHub',
+        href: 'https://github.com/abdulwaheed-apk/chat-server',
+        icon: <IconBrandGithub className='size-3' />,
+      },
+    ],
     image: '/assets/chat-server-microservices.png',
+    video: '',
   },
   {
-    id: 1,
     title: 'Carz.sa',
-    projectLink: 'https://carz.sa/seller',
+    href: 'https://carz.sa/seller',
+    dates: '',
+    active: true,
+    description: 'Digital Marketplace for Buying & Selling Cars',
+    technologies: [
+      'TypeScript',
+      'React',
+      'NextJS',
+      'Tailwind',
+      'MySQL',
+      'Laravel',
+      'Alibaba Cloud',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://carz.sa/seller',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
     image: '/assets/Carz-Dashboard.png',
+    video: '',
   },
   {
-    id: 2,
     title: 'Methvin Estimating Software',
-    projectLink: 'https://portal.methvin.org/',
+    href: 'https://portal.methvin.org/',
+    dates: '',
+    active: true,
+    description: 'Construction estimating software platform',
+    technologies: ['React', 'WebSocket', 'AWS', 'MySQL', 'Spring Boot'],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://portal.methvin.org/',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
     image: '/assets/methvin-estimating.svg',
+    video: '',
   },
-  // {
-  //   id: 3,
-  //   title: 'Qadderha',
-  //   projectLink: '#',
-  //   image: '/assets/Qadderha-orders.png',
-  // },
+  {
+    title: 'Qadderha',
+    href: '#',
+    dates: '',
+    active: false,
+    description:
+      'A platform for [describe purpose - e.g., "managing orders and services"]',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+    links: [
+      {
+        type: 'Website',
+        href: '#',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/Qadderha-orders.png',
+    video: '',
+  },
 ];
 
 export default function Home() {
@@ -111,11 +177,11 @@ export default function Home() {
               className={
                 'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'
               }>
-              Some of my most recent projects
+              My Recent Work
             </h2>
             <p>
-              Transforming ideas into seamless, user-centric web solutions with
-              precision and care.
+              Delivering measurable impact through clean code and intuitive
+              interfaces
             </p>
           </div>
           <Link href={'/work'}>
@@ -127,41 +193,28 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-        <ScrollArea className='sm:h-[400px] flex justify-start items-center gap-6 lg:overflow-x-hidden overflow-x-auto'>
-          <div
-            aria-label={'Featured Projects Cards'}
-            className='flex flex-nowrap lg:flex-wrap lg:justify-between sm:gap-6 gap-4'>
-            {featuredProjects.map((item) => (
-              <Link
-                href={item.projectLink}
-                target={'_blank'}
-                rel={'noopener noreferrer'}
-                key={item.id}
-                className='flex flex-col gap-4 min-w-[300px] sm:min-w-[auto] lg:w-[400px] lg:min-h-[324px]'
-                style={{ flex: '0 0 auto' }}>
-                <div className='flex flex-col gap-4 relative bg-[#f7f7f7] border dark:bg-black/[0.5] py-4 px-6 rounded-xl'>
-                  <span className='text-black w-fit border dark:text-white text-sm px-3 py-0.5 rounded-full'>
-                    Featured
-                  </span>
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={465}
-                    height={400}
-                    className='w-[465px] h-[400] object-cover'
-                  />
-                </div>
-                <h3 className='text-lg font-medium text-black dark:text-white'>
-                  {item.title}
-                </h3>
-              </Link>
-            ))}
-          </div>
-          <ScrollBar orientation='horizontal' />
-        </ScrollArea>
+        <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto'>
+          {featuredProjects.map((project, id) => (
+            <BlurFade
+              key={project.title}
+              delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+              <ProjectCard
+                href={project.href}
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                dates={project.dates}
+                tags={project.technologies}
+                image={project.image}
+                video={project.video}
+                links={project.links}
+              />
+            </BlurFade>
+          ))}
+        </div>
       </section>
       <section>
-        <div className='py-8 mx-auto max-w-screen-xl sm:py-16'>
+        <div className='py-8 mx-auto max-w-screen-xl px-2 sm:py-16'>
           <div className='max-w-screen-md'>
             <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
               Let&apos;s find more that brings us together.
