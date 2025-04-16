@@ -121,7 +121,7 @@ const projects = [
       'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   },
   {
-    title: 'Carz.sa | Cars auction market place',
+    title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
     href: 'http://carz.autos/seller/en',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
@@ -136,7 +136,7 @@ const projects = [
     ],
     image: '/assets/Carz-Dashboard.png',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+      '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
   },
 
   {
@@ -155,7 +155,7 @@ const projects = [
     ],
     image: '/assets/Qadderha-orders.png',
     video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+        '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
   },
   {
     title: 'Video Calling App',
