@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import { Metadata } from 'next';
-import { Spotlight } from '@/components/ui/spotlight';
-import { Timeline } from '@/components/ui/timeline';
-import { timelineData } from '@/data/main';
-import TechStackIcons from '@/components/custom/tech-stack-icons';
-import { BlurFade } from '@/components/magicui/blur-fade';
+import Image from 'next/image'
+import { Metadata } from 'next'
+import { Spotlight } from '@/components/ui/spotlight'
+import { Timeline } from '@/components/ui/timeline'
+import { timelineData } from '@/data/main'
+import TechStackIcons from '@/components/custom/tech-stack-icons'
+import { BlurFade } from '@/components/magicui/blur-fade'
 
 export const metadata: Metadata = {
   title: 'About • Abdul Waheed',
-};
+}
 
 export default function About() {
   return (
@@ -40,7 +40,7 @@ export default function About() {
         <section className='flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-4 lg:gap-y-0 md:gap-x-4 w-11/12 sm:w-full mx-auto'>
           <Image
             alt='Abdul Waheed'
-            src={'/assets/abdul-waheed.jpeg'}
+            src={'/assets/abdul-waheed1.jpeg'}
             width={620}
             height={850}
             className='rounded-3xl pointer-events-none md:w-2/5 lg:w-1/3'
@@ -98,5 +98,5 @@ export default function About() {
         <TechStackIcons />
       </section>
     </main>
-  );
+  )
 }
