@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    remotePatterns:[]
+    remotePatterns: [],
   },
   // Explicitly disable experimental features if not needed
   experimental: {

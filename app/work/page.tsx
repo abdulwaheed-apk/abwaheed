@@ -85,42 +85,6 @@ const projects = [
     gif: '/assets/projects/takeoff-product-page.gif',
   },
   {
-    title: 'Ecommerce Microservices',
-    href: 'http://carz.autos/seller/en',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description:
-      'Scaleable Microservices using Kafka fro distributed event streaming',
-    technologies: [
-      'TS',
-      'NestJS',
-      'Apache Kafka',
-      'Microservices',
-      'Kubernetes',
-      'Docker',
-      'Angular',
-      'React',
-      'PostgreSQL',
-      'MongoDB',
-      'DRF',
-    ],
-    links: [
-      {
-        type: 'Website',
-        href: 'http://carz.autos/seller/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-      {
-        type: 'GitHub',
-        href: 'https://www.github.com/abdulwaheed-apk',
-        icon: <IconBrandGithub className='size-3' />,
-      },
-    ],
-    image: '/assets/chat-server-microservices.png',
-    video:
-      'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-  },
-  {
     title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
     href: 'http://carz.autos/seller/en',
     dates: 'Jan 2024 - Feb 2024',
@@ -154,8 +118,43 @@ const projects = [
       },
     ],
     image: '/assets/Qadderha-orders.png',
+    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
+  },
+  {
+    title: 'Ecommerce Microservices',
+    href: 'http://carz.autos/seller/en',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description:
+      'Scaleable Microservices using Kafka fro distributed event streaming',
+    technologies: [
+      'TS',
+      'NestJS',
+      'Apache Kafka',
+      'Microservices',
+      'Kubernetes',
+      'Docker',
+      'Angular',
+      'React',
+      'PostgreSQL',
+      'MongoDB',
+      'DRF',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'http://carz.autos/seller/en',
+        icon: <IconGlobe className='size-3' />,
+      },
+      {
+        type: 'GitHub',
+        href: 'https://www.github.com/abdulwaheed-apk',
+        icon: <IconBrandGithub className='size-3' />,
+      },
+    ],
+    image: '/assets/chat-server-microservices.png',
     video:
-        '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
+      'dd',
   },
   {
     title: 'Video Calling App',
