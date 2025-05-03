@@ -1,5 +1,5 @@
 'use client';
-import { FaAws } from 'react-icons/fa6';
+import { FaAws, FaJava } from 'react-icons/fa6';
 import {
   SiTypescript,
   SiPython,
@@ -22,6 +22,10 @@ import {
   SiPrisma,
   SiGit,
   SiAstro,
+  SiMysql,
+  SiRubyonrails,
+  SiGithub,
+  SiGitlab,
 } from 'react-icons/si';
 
 const icons = [
@@ -41,12 +45,15 @@ const icons = [
   { Icon: SiNodedotjs, name: 'Node.js' },
   { Icon: SiExpress, name: 'Express.js' },
   { Icon: SiNestjs, name: 'Nest.js' },
+  { Icon: FaJava, name: 'Java' },
   { Icon: SiPython, name: 'Python' },
   { Icon: SiDjango, name: 'Django' },
+  { Icon: SiRubyonrails, name: 'Ruby on Rails' },
 
   // Databases & ORMs
   { Icon: SiMongodb, name: 'MongoDB' },
   { Icon: SiPostgresql, name: 'PostgreSQL' },
+  { Icon: SiMysql, name: 'PostgreSQL' },
   { Icon: SiPrisma, name: 'Prisma ORM' },
   { Icon: SiDrizzle, name: 'Drizzle ORM' },
 
@@ -57,6 +64,8 @@ const icons = [
 
   // Tools & Misc
   { Icon: SiGit, name: 'Git' },
+  { Icon: SiGithub, name: 'GitHub' },
+  { Icon: SiGitlab, name: 'GitLab' },
   { Icon: SiWebrtc, name: 'WebRTC' },
 ];
 
