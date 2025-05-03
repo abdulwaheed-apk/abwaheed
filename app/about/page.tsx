@@ -18,7 +18,7 @@ export default function About() {
           className='-top-40 left-0 md:left-60 md:-top-20'
           fill='white'
         />
-        <div className=' p-4 max-w-7xl  mx-auto relative z-10  w-full pt-12 sm:pt-20 md:pt-0'>
+        <div className='p-4 max-w-7xl mx-auto relative z-10 w-full pt-12 sm:pt-20 md:pt-0'>
           <BlurFade delay={0.04}>
             <h1 className='text-4xl sm:text-5xl lg:text-7xl text-black/[0.96] dark:text-stone-100 font-bold text-center bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50'>
               Driven by <br />
@@ -40,7 +40,7 @@ export default function About() {
         <section className='flex flex-col-reverse md:flex-row justify-evenly items-start gap-y-4 lg:gap-y-0 md:gap-x-4 w-11/12 sm:w-full mx-auto'>
           <Image
             alt='Abdul Waheed'
-            src={'/assets/abdul-waheed1.jpeg'}
+            src={'/assets/abdul-waheed.jpg'}
             width={620}
             height={850}
             className='rounded-3xl pointer-events-none md:w-2/5 lg:w-1/3'
@@ -49,25 +49,17 @@ export default function About() {
             <h4 className='font-bold text-xl my-2'>About Myself</h4>
             <p className='font-medium'>
               Hello, I&apos;m Abdul Waheed, a self-taught Full Stack Software
-              Engineer. With 3 years of professional experience, I&apos;ve honed
+              Engineer. With over 2 years of industry experience, I&apos;ve honed
               my skills in building robust and scalable applications using
-              Node.js, React, Next.js, and TypeScript. My expertise extends to
-              database management with MySQL, PostgreSQL and MongoDB.
+              TypeScript, React, Angular, Node.js, NestJS, MySQL, PostgreSQL and MongoDB.
             </p>
             <p className='font-medium my-4'>
-              {' '}
               My journey in software development has been driven by curiosity
-              and a passion for problem-solving. I&apos;ve expanded my skill-set
-              to include Python, Django, Ruby on Rails, and Angular, allowing me
-              to adapt to diverse project requirements. I hold a MERN Stack
-              certification, validating my proficiency in this powerful
-              technology stack.
+              and a passion for problem-solving. Currently I&apos;m learning Java to extend my skill-set to build highly scalable Event-Driven distributed systems using microservices and Apache Kafka. I&apos;m currently pursuing Apache Kafka Certification with Confluent. I also hold a MERN Stack certification.
             </p>
             <p className='font-medium'>
-              {' '}
-              I&apos;m committed to creating intuitive, high-performance
-              solutions that seamlessly integrate front-end and back-end
-              systems. My approach combines technical expertise with a keen eye
+              I&apos;m committed to creating scalable, high-performance
+              solutions. My approach combines technical expertise with a keen eye
               for user-centered design, ensuring that every project I undertake
               not only functions flawlessly but also delivers an exceptional
               user experience.
@@ -75,7 +67,7 @@ export default function About() {
             <p className='font-medium mt-4'>
               As a continuous learner, I&apos;m always exploring new
               technologies and methodologies to enhance my capabilities and
-              deliver cutting-edge solutions to my clients.
+              deliver cutting-edge solutions. I&apos;m also familiar with Ruby on Rails, DRF and Laravel.
             </p>
           </div>
         </section>
