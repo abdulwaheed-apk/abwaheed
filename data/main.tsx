@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import { FaTerminal } from 'react-icons/fa6'
 import { IoIosCheckmarkCircleOutline } from 'react-icons/io'
 import { PiStrategy } from 'react-icons/pi'
 import { experiences } from '.'
-import { BookOpenIcon, LightBulbIcon } from '@heroicons/react/24/outline'
 import { IconBook, IconBulb, IconTerminal } from '@tabler/icons-react'
 
 export const skills = [
