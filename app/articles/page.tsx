@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Articles() {
     return (
-        <div className='bg-stone-100 dark:bg-[#101214] pt-24 pb-4 sm:pt-32'>
+        <div className='bg-stone-100 dark:bg-[#171717] pt-24 pb-4 sm:pt-32'>
             <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                 <div className='mx-auto max-w-2xl lg:text-center'>
                     <h2 className='text-base font-semibold leading-7 text-orange-600'>
@@ -24,7 +24,7 @@ export default function Articles() {
                     or subscribe to newsletter for updates!
                 </p>
 
-                <div className='relative isolate overflow-hidden bg-stone-100 dark:bg-[#101214] py-16 md:-mb-6'>
+                <div className='relative isolate overflow-hidden bg-stone-100 dark:bg-[#171717] py-16 md:-mb-6'>
                     <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2'>
                             <div className='max-w-xl lg:max-w-lg'>

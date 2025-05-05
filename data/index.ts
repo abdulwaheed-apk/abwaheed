@@ -10,7 +10,7 @@ export const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Work', href: '/work' },
-    { name: 'Articles', href: '/articles' },
+    { name: 'Articles', href: '#' },
 ]
 
 export const socialNavigation = [
@@ -48,205 +48,57 @@ export const socialNavigation = [
 
 export const experiences = [
     {
-        duration: 'Aug 2024 - Present',
+        duration: 'May 2024 - Present',
         position: 'Software Engineer',
-        company: 'Sky Solutions',
-        companyWebsite: 'https://sico.sa/',
+        company: 'Sky Innovation',
+        companyWebsite: 'https://www.linkedin.com/company/sico-sa/',
         location: 'Riyadh, Saudi Arabia',
         office: 'Onsite',
         work: [
-            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel and MySQL, and deployed on AWS.',
-            'Implemented multi-language support in a React',
-            'Developed Qadderha dashboard for employee and center management for vehicle insurance companies and deployed to Alibaba Cloud.',
-            'Created user centric applications keeping.',
-            'Wrote comprehensive documentation for API and frontend, resulting in a 300% increase in developer productivity and improved\n' +
-            'client satisfaction'
+            'Developed the Qadderha dashboard for Najm to streamline insurance center management, deploying it on Alibaba Cloud.',
+            'Implemented multi-language support in a React application.',
+            'Integrated Google Maps and the ClickPay payment gateway into the platform.',
+            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel, and MySQL, deploying it on AWS.',
+            'Wrote comprehensive API and frontend documentation, increasing developer productivity by 300% and improving client satisfaction.',
         ],
     },
     {
-        duration: 'Apr 2023 - Aug 2024',
+        duration: 'Apr 2023 - Apr 2024',
         position: 'Software Engineer',
         company: 'Methvin',
         companyWebsite: 'https://methvin.org/',
         location: 'New Zealand',
         office: 'Remote',
         work: [
-            'Led the migration of legacy codebase to modern tech stack (TypeScript, React, Redux, AWS), supporting $5 million annual revenue.',
-            'Optimized frontend performance through code splitting and caching, reducing initial load time by 60%.',
-            'Collaborated with cross-functional teams to prioritize tasks and gather business requirements.',
-            'Architected microservices using Node.js, Express, TypeScript, PostgreSQL, and Kafka, increasing paid customers by 30%.',
-            'Mentored junior developers through training sessions and code reviews.',
+            'Led the migration of a legacy codebase to a modern tech stack (TypeScript, React, Redux, AWS), supporting $5M in annual revenue.',
+            'Optimized frontend performance using code splitting and caching, reducing initial load time by 60%.',
+            'Collaborated with cross-functional teams to gather business requirements and prioritize development tasks.',
         ],
     },
+    // {
+    //     duration: 'Jan 2023 - Apr 2023',
+    //     position: 'Software Engineer (Bootcamp)',
+    //     company: 'Contour Software',
+    //     companyWebsite: 'https://contour-software.com/',
+    //     location: 'Karachi, Pakistan',
+    //     office: 'Onsite',
+    //     work: [
+    //         'Completed an intensive 300-hour, onsite full-stack development program led by industry experts, covering advanced topics in Node.js, Express, MongoDB, MySQL, and TypeScript, with hands-on deployment on AWS services (EC2, S3).',
+    //         'Gained extensive practical experience through Agile methodologies, collaborative Git workflows, and the development of real-world, production-ready projects.',
+    //     ],
+    // },
     {
-        duration: 'Jan 2023 - Apr 2023',
-        position: 'Software Engineer (Bootcamp)',
-        company: 'Contour Software',
-        companyWebsite: 'https://contour-software.com/',
-        location: 'Karachi, Pakistan',
-        office: 'Onsite',
-        work: [
-            'Completed an intensive 300-hour, onsite full-stack development program led by industry experts, covering advanced topics in Node.js, Express, MongoDB, MySQL, and TypeScript, with hands-on deployment on AWS services (EC2, S3).',
-            'Gained extensive practical experience through Agile methodologies, collaborative Git workflows, and the development of real-world, production-ready projects.',
-
-        ],
-    },
-    {
-        duration: 'Oct 2021 - Jan 2023',
-        position: 'Software Engineer (Fintech)',
+        duration: 'Oct 2022 - Jan 2023',
+        position: 'Software Engineer (Internship - Fintech)',
         company: 'O3 Interfaces',
         companyWebsite: 'https://www.o3interfaces.com/',
         location: 'Karachi, Pakistan',
         office: 'Onsite',
         work: [
-            'Collaborated on RESTful API integration for frontend applications, liaising with backend teams and partner companies.',
-            'Transformed Figma designs into scalable code for user account management dashboards using React, Bootstrap, and Styled Components.',
-            'Contributed to the UBL digital mobile application (8M+ installs) using the Temenos framework, supporting millions of daily transactions.',
+            'Built user account management dashboards from Figma designs using Temenos Quantum and Temenos Fabric.',
+            'Developed features for UBL Digital mobile app (8M+ installs) using Temenos framework, processing millions of daily transactions.',
+            'Integrated RESTful APIs into the application, coordinating with backend teams and third-party partners.',
         ],
-    },
-]
-
-export const stackIcons = [
-    {
-        url: '/assets/ts.svg',
-        name: 'TS',
-    },
-    {
-        url: '/assets/tailwind.svg',
-        name: 'Tailwind CSS',
-    },
-    {
-        url: '/assets/vite.svg',
-        name: 'Vite',
-    },
-    {
-        url: '/assets/astro-icon-dark.svg',
-        darkIcon: '/assets/astro-icon-light.svg',
-        name: 'Astro',
-    },
-    {
-        url: '/assets/react.svg',
-        name: 'React',
-    },
-    {
-        url: '/assets/Figma.svg',
-        name: 'Figma',
-    },
-    {
-        url: '/assets/aws.svg',
-        darkIcon: '/assets/aws.png',
-        name: 'AWS',
-    },
-    {
-        url: '/assets/bootstrap.png',
-        name: 'Bootstrap',
-    },
-    {
-        url: '/assets/webrtc.svg',
-        name: 'WebRTC',
-    },
-
-    {
-        url: '/assets/github.svg',
-        darkIcon: '/assets/github-mark-white.svg',
-        name: 'GitHub',
-    },
-    {
-        url: '/assets/js.svg',
-        name: 'JS',
-    },
-    {
-        url: '/assets/appwrite-logo1.svg',
-        name: 'Appwrite',
-    },
-    {
-        url: '/assets/djangoproject1.svg',
-        darkIcon: '/assets/djangoproject.svg',
-        name: 'django',
-    },
-    {
-        url: '/assets/mysql-official.svg',
-        name: 'MySQL',
-    },
-    {
-        url: '/assets/vs-code.svg',
-        name: 'VS Code',
-    },
-    {
-        url: '/assets/Gatsby.svg',
-        name: 'Gatsby',
-    },
-    {
-        url: '/assets/rubyonrails.svg',
-        name: 'Ruby on Rails',
-    },
-    {
-        url: '/assets/Angular.svg',
-        name: 'Angular',
-    },
-    {
-        url: '/assets/tan-stack-query.svg',
-        name: 'TanStack Query',
-    },
-    {
-        url: '/assets/Sanity.svg',
-        name: 'Sanity',
-    },
-    {
-        url: '/assets/Ruby_logo.png',
-        name: 'Ruby',
-    },
-    {
-        url: '/assets/devexpress.svg',
-        name: 'Dev Express',
-    },
-    {
-        url: '/assets/git.svg',
-        name: 'Git',
-    },
-    {
-        url: '/assets/EC2.svg',
-        name: 'EC2',
-    },
-    {
-        url: '/assets/dock.svg',
-        name: 'Docker',
-    },
-    {
-        url: '/assets/express.svg',
-        name: 'Express.js',
-    },
-    {
-        url: '/assets/graph-ql.svg',
-        name: 'GraphQL',
-    },
-    {
-        url: '/assets/mui.svg',
-        name: 'MIUI',
-    },
-    {
-        url: '/assets/nextjs.svg',
-        name: 'Next.js',
-    },
-    {
-        url: '/assets/redux.svg',
-        name: 'Redux.js',
-    },
-    {
-        url: '/assets/pg.svg',
-        name: 'PostgreSQL',
-    },
-    {
-        url: '/assets/nodejs.svg',
-        name: 'Node.js',
-    },
-    {
-        url: '/assets/mongodb.svg',
-        name: 'MongoDB',
-    },
-    {
-        url: '/assets/Strapi-monogram-logo.svg',
-        name: 'Strapi',
     },
 ]
 

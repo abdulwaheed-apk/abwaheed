@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import { fontFamily } from 'tailwindcss/defaultTheme'
+import {mont} from "@/utils/fonts";
 const {
     default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette')
@@ -54,12 +55,14 @@ const config: Config = {
                     '4': 'hsl(var(--chart-4))',
                     '5': 'hsl(var(--chart-5))',
                 },
-                fontFamily: {
-                    lexend: ['var(--font-lexend)', ...fontFamily.sans],
-                },
             },
             animation: {
                 scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+            },
+            fontFamily: {
+                lexend: ['var(--font-lexend)', ...fontFamily.sans],
+                cantarell: ['var(--font-cantarell)', ...fontFamily.sans],
+                mont: ['var(--font-mont)', ...fontFamily.sans],
             },
             keyframes: {
                 scroll: {
