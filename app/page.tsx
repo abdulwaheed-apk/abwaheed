@@ -225,7 +225,7 @@ export default function Home() {
                 variant={'primary'}
                 className='font-medium text-neutral-100'>
                 <Link
-                  href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
+                  href='/Abdul_Waheed_Full_Stack_Engineer.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
                   download>
