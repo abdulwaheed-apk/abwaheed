@@ -117,7 +117,7 @@ const projects = [
         icon: <IconBrandGithub className='size-3' />,
       },
     ],
-    image: '/assets/Qadderha-orders.png',
+    image: '/assets/projects/qaddrha-2.png',
     video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
   },
   {

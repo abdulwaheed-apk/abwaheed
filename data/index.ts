@@ -10,7 +10,7 @@ export const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Work', href: '/work' },
-    { name: 'Articles', href: '/articles' },
+    { name: 'Articles', href: '#' },
 ]
 
 export const socialNavigation = [
@@ -55,24 +55,24 @@ export const experiences = [
         location: 'Riyadh, Saudi Arabia',
         office: 'Onsite',
         work: [
-            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel and MySQL, and deployed on AWS.',
-            'Implemented multi-language support in a React',
-            'Developed Qadderha dashboard for employee and center management for vehicle insurance companies and deployed to Alibaba Cloud.',
-            'Wrote comprehensive documentation for API and frontend, resulting in a 300% increase in developer productivity and improved\n' +
-                'client satisfaction',
+            'Developed the Qadderha dashboard for Najm to streamline insurance center management, deploying it on Alibaba Cloud.',
+            'Implemented multi-language support in a React application.',
+            'Integrated Google Maps and the ClickPay payment gateway into the platform.',
+            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel, and MySQL, deploying it on AWS.',
+            'Wrote comprehensive API and frontend documentation, increasing developer productivity by 300% and improving client satisfaction.',
         ],
     },
     {
-        duration: 'Apr 2023 - Arr 2024',
+        duration: 'Apr 2023 - Apr 2024',
         position: 'Software Engineer',
         company: 'Methvin',
         companyWebsite: 'https://methvin.org/',
         location: 'New Zealand',
         office: 'Remote',
         work: [
-            'Led the migration of legacy codebase to modern tech stack (TypeScript, React, Redux, AWS), supporting $5 million annual revenue.',
-            'Optimized frontend performance through code splitting and caching, reducing initial load time by 60%.',
-            'Collaborated with cross-functional teams to prioritize tasks and gather business requirements.',
+            'Led the migration of a legacy codebase to a modern tech stack (TypeScript, React, Redux, AWS), supporting $5M in annual revenue.',
+            'Optimized frontend performance using code splitting and caching, reducing initial load time by 60%.',
+            'Collaborated with cross-functional teams to gather business requirements and prioritize development tasks.',
         ],
     },
     // {
@@ -95,9 +95,9 @@ export const experiences = [
         location: 'Karachi, Pakistan',
         office: 'Onsite',
         work: [
-            'Transformed Figma designs into user account management dashboards using Temenos Quantum and Temenos Fabric.',
-            'Contributed to the UBL digital mobile application (8M+ installs) using the Temenos framework, supporting millions of daily transactions.',
-            'Collaborated on RESTful API integration for application, liaising with backend teams and partner companies.',
+            'Built user account management dashboards from Figma designs using Temenos Quantum and Temenos Fabric.',
+            'Developed features for UBL Digital mobile app (8M+ installs) using Temenos framework, processing millions of daily transactions.',
+            'Integrated RESTful APIs into the application, coordinating with backend teams and third-party partners.',
         ],
     },
 ]

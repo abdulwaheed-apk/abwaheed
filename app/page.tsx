@@ -214,14 +214,10 @@ export default function Home() {
         <div className='py-8 mx-auto max-w-screen-xl px-2 sm:py-16'>
           <div className='max-w-screen-md'>
             <h2 className='mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-stone-100'>
-              Let&apos;s find more that brings us together.
+              Let&apos;s build something great together.
             </h2>
             <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
-              As a passionate full-stack engineer, I focus on transforming
-              concepts into efficient, scalable web applications. Discover my
-              recent projects and articles, highlighting my expertise in
-              building full-stack solutions using React, TypeScript, and other
-              modern technologies.
+              I build clean, efficient web applications that solve real problems. Whether you need a new project developed or existing systems improved, I&apos;d love to help.
             </p>
             <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
               <Button

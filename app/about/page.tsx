@@ -78,7 +78,7 @@ export default function About() {
         <div className='flex flex-col justify-start items-start gap-y-2 w-full md:w-9/12'>
           <h6 className='font-semibold text-lg'>
             Bachelors of Engineering in <strong>Electronic Engineering</strong>{' '}
-            (Jan 2018 - Oct 2021)
+            (Jan 2018 - Feb 2022)
           </h6>
           <p className='font-medium'>
             Dawood University of Engineering and Technology, Karachi, Pakistan

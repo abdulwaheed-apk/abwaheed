@@ -14,7 +14,7 @@ export default function Footer() {
           <Heart className='size-5 font-black inline-block hover:animate-pulse hover:text-orange-600 mx-1' />
           by{' '}
           <Link
-            href={'https://www.instagram.com/abdulwaheed.apk'}
+            href={'https://github.com/abdulwaheed-apk'}
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-orange-500'>
