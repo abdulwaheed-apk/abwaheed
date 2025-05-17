@@ -40,7 +40,7 @@ const featuredProjects = [
     video: '',
   },
   {
-    title: 'Carz.sa',
+    title: 'Carz.sa | Seller Portal',
     href: 'https://carz.sa/seller',
     dates: '',
     active: true,
@@ -65,11 +65,11 @@ const featuredProjects = [
     video: '',
   },
   {
-    title: 'Methvin Estimating Software',
+    title: 'Methvin | Estimating Software',
     href: 'https://portal.methvin.org/',
     dates: '',
     active: true,
-    description: 'Construction estimating software platform',
+    description: 'Cost Estimation and Bidding software for construction',
     technologies: ['React', 'WebSocket', 'AWS', 'MySQL', 'Spring Boot'],
     links: [
       {
@@ -82,12 +82,12 @@ const featuredProjects = [
     video: '',
   },
   {
-    title: 'Qadderha',
+    title: 'Qadderha | A Najm platform',
     href: '#',
     dates: '',
     active: false,
     description:
-      'A platform for [describe purpose - e.g., "managing orders and services"]',
+      'A platform for managing insurance centers for Najm in Saudi Arabia',
     technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
     links: [
       {

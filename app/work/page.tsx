@@ -104,11 +104,11 @@ const projects = [
   },
 
   {
-    title: 'Qadderha | Insurance Company App',
+    title: 'Qadderha | A Najm platform',
     href: 'https://www.github.com/abdulwaheed-apk',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
-    description: 'Cross platform app for insurance companies',
+    description: 'A platform for managing insurance centers for Najm in Saudi Arabia',
     technologies: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
     links: [
       {
@@ -142,11 +142,6 @@ const projects = [
     ],
     links: [
       {
-        type: 'Website',
-        href: 'http://carz.autos/seller/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-      {
         type: 'GitHub',
         href: 'https://www.github.com/abdulwaheed-apk',
         icon: <IconBrandGithub className='size-3' />,
@@ -164,11 +159,7 @@ const projects = [
     description: 'Video Conferencing using React, WebRTC, Node.js, Socket.io',
     technologies: ['TypeScript', 'WebRTC', 'WebSocket', 'React'],
     links: [
-      {
-        type: 'Website',
-        href: 'http://carz.autos/seller/en',
-        icon: <IconGlobe className='size-3' />,
-      },
+
       {
         type: 'GitHub',
         href: 'https://github.com/abdulwaheed-apk/video-call-app',
