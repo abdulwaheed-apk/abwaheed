@@ -19,8 +19,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'
-              suppressHydrationWarning
-              className={`${lexend.variable} ${cantarell.variable} ${mont.variable}`}
+            suppressHydrationWarning
+            className={`${lexend.variable} ${cantarell.variable} ${mont.variable}`}
         >
             <body
                 className={`${lexend.className} antialiased flex flex-col bg-stone-100 min-h-screen text-[#101214] dark:bg-[#171717] dark:text-white mx-auto max-w-screen-xl`}
