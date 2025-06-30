@@ -76,7 +76,7 @@ const projects = [
     links: [
       {
         type: 'Website',
-        href: 'https://methvin.org/products/estimating-tools/estimating-software',
+        href: 'https://methvin.org/products/estimating-tools/takeoff',
         icon: <IconGlobe className='size-3' />,
       },
     ],
@@ -85,8 +85,30 @@ const projects = [
     gif: '/assets/projects/takeoff-product-page.gif',
   },
   {
+    title: 'Qadderha | A Najm platform',
+    href: 'https://www.qaddrha.com.sa/en',
+    dates: 'Jan 2024 - Feb 2024',
+    active: true,
+    description: 'A platform for managing insurance centers for Najm in Saudi Arabia',
+    technologies: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
+    links: [
+      // {
+      //   type: 'GitHub',
+      //   href: 'https://www.github.com/abdulwaheed-apk',
+      //   icon: <IconBrandGithub className='size-3' />,
+      // },
+      {
+        type: 'Website',
+        href: 'https://www.qaddrha.com.sa/en',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/projects/qaddrha-2.png',
+    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
+  },
+  {
     title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
-    href: 'http://carz.autos/seller/en',
+    href: 'https://carz.autos/seller/en',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
     description: 'Marketplace for new and used cars',
@@ -102,27 +124,9 @@ const projects = [
     video:
       '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
   },
-
-  {
-    title: 'Qadderha | A Najm platform',
-    href: 'https://www.github.com/abdulwaheed-apk',
-    dates: 'Jan 2024 - Feb 2024',
-    active: true,
-    description: 'A platform for managing insurance centers for Najm in Saudi Arabia',
-    technologies: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
-    links: [
-      {
-        type: 'GitHub',
-        href: 'https://www.github.com/abdulwaheed-apk',
-        icon: <IconBrandGithub className='size-3' />,
-      },
-    ],
-    image: '/assets/projects/qaddrha-2.png',
-    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
-  },
   {
     title: 'Ecommerce Microservices',
-    href: 'http://carz.autos/seller/en',
+    href: 'https://www.github.com/abdulwaheed-apk',
     dates: 'Jan 2024 - Feb 2024',
     active: true,
     description:
@@ -148,8 +152,7 @@ const projects = [
       },
     ],
     image: '/assets/chat-server-microservices.png',
-    video:
-      'dd',
+    video:'#',
   },
   {
     title: 'Video Calling App',
@@ -167,7 +170,8 @@ const projects = [
       },
     ],
     image: '/assets/webrtc-meeting.webp',
-    video: '/assets/projects/video-call.mp4',
+    // video: '/assets/projects/video-call.mp4',
+    video: '#',
   },
   // {
   //   title: 'UBL | Fintech Mobile App',

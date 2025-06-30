@@ -16,32 +16,26 @@ const BLUR_FADE_DELAY = 0.04;
 
 const featuredProjects = [
   {
-    title: 'Microservices-Based Chat Application',
-    href: 'https://github.com/abdulwaheed-apk/chat-server',
+    title: 'Qadderha | A Najm platform',
+    href: '#',
     dates: '',
     active: false,
-    description: 'A chat application built using microservices architecture',
-    technologies: [
-      'Node.js',
-      'Microservices',
-      'TypeScript',
-      'Docker',
-      'RabbitMQ',
-      'Nginx',
-    ],
+    description:
+        'A platform for managing insurance centers for Najm in Saudi Arabia',
+    technologies: ['React', 'NextJS', 'TypeScript', 'AWS', 'Laravel'],
     links: [
       {
-        type: 'GitHub',
-        href: 'https://github.com/abdulwaheed-apk/chat-server',
-        icon: <IconBrandGithub className='size-3' />,
+        type: 'Website',
+        href: 'https://www.qaddrha.com.sa/en',
+        icon: <IconGlobe className='size-3' />,
       },
     ],
-    image: '/assets/chat-server-microservices.png',
+    image: '/assets/Qadderha-orders.png',
     video: '',
   },
   {
     title: 'Carz.sa | Seller Portal',
-    href: 'https://carz.sa/seller',
+    href: 'https://carz.sa/seller/en',
     dates: '',
     active: true,
     description: 'Digital Marketplace for Buying & Selling Cars',
@@ -57,7 +51,7 @@ const featuredProjects = [
     links: [
       {
         type: 'Website',
-        href: 'https://carz.sa/seller',
+        href: 'https://carz.sa/seller/en',
         icon: <IconGlobe className='size-3' />,
       },
     ],
@@ -81,22 +75,29 @@ const featuredProjects = [
     image: '/assets/methvin-estimating.svg',
     video: '',
   },
+
   {
-    title: 'Qadderha | A Najm platform',
-    href: '#',
+    title: 'Microservices-Based Chat Application',
+    href: 'https://github.com/abdulwaheed-apk/chat-server',
     dates: '',
     active: false,
-    description:
-      'A platform for managing insurance centers for Najm in Saudi Arabia',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS'],
+    description: 'A chat application built using microservices architecture',
+    technologies: [
+      'Node.js',
+      'Microservices',
+      'TypeScript',
+      'Docker',
+      'RabbitMQ',
+      'Nginx',
+    ],
     links: [
       {
-        type: 'Website',
-        href: '#',
-        icon: <IconGlobe className='size-3' />,
+        type: 'GitHub',
+        href: 'https://github.com/abdulwaheed-apk/chat-server',
+        icon: <IconBrandGithub className='size-3' />,
       },
     ],
-    image: '/assets/Qadderha-orders.png',
+    image: '/assets/chat-server-microservices.png',
     video: '',
   },
 ];
