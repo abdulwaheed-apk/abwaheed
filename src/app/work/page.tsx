@@ -49,7 +49,7 @@ const projects = [
   {
     title: 'Methvin | Estimation Software',
     href: 'https://methvin.org/products/estimating-tools/estimating-software',
-    dates: 'Jan 2024 - Feb 2024',
+    dates: 'Apr 2023 - Apr 2024',
     active: true,
     description:
       'Cost Estimation and Bidding Decisions Through First-Principles Methodology',
@@ -68,7 +68,7 @@ const projects = [
   {
     title: 'Methvin | Takeoff',
     href: 'https://methvin.org/products/estimating-tools/takeoff',
-    dates: 'Jan 2024 - Feb 2024',
+    dates: 'May 2023 - Feb 2024',
     active: true,
     description:
       'Takeoff for managing large-scale construction projects and intricate design plans',
@@ -87,10 +87,10 @@ const projects = [
   {
     title: 'Qadderha | A Najm platform',
     href: 'https://www.qaddrha.com.sa/en',
-    dates: 'Jan 2024 - Feb 2024',
+    dates: 'May 2024 - June 2025',
     active: true,
     description: 'A platform for managing insurance centers for Najm in Saudi Arabia',
-    technologies: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
+    technologies: ['TypeScript', 'Next.js', 'AWS', 'Laravel'],
     links: [
       // {
       //   type: 'GitHub',
@@ -108,15 +108,15 @@ const projects = [
   },
   {
     title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
-    href: 'https://carz.autos/seller/en',
-    dates: 'Jan 2024 - Feb 2024',
+    href: 'https://carz.sa/seller/en',
+    dates: 'Sep 2024 - Present',
     active: true,
     description: 'Marketplace for new and used cars',
-    technologies: ['TS', 'Next.js', 'AWS', 'React Query', 'Laravel'],
+    technologies: ['TypeScript', 'Next.js', 'Alibaba Cloud', 'React Query', 'Laravel'],
     links: [
       {
         type: 'Website',
-        href: 'http://carz.autos/seller/en',
+        href: 'http://carz.sa/seller/en',
         icon: <IconGlobe className='size-3' />,
       },
     ],
