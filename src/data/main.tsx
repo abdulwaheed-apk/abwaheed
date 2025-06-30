@@ -46,12 +46,12 @@ export const timelineData = experiences.map((experience) => ({
                     @{experience.company}
                 </Link>{' '}
             </h4>
-            <span className='capitalize font-medium text-black/20 dark:text-light/75 xs:text-sm'>
+            <span className='capitalize font-medium text-black/60 dark:text-white/75 xs:text-sm'>
                 {experience.location} - {experience.office}
             </span>
             <ul className='mb-8'>
                 {experience.work.map((point) => (
-                    <li className='flex items-start gap-x-1.5' key={point}>
+                    <li className='flex items-start gap-x-1.5 dark:text-muted-foreground' key={point}>
                         <IoIosCheckmarkCircleOutline className='flex-shrink-0 w-5 h-5 mt-1' />
                         {point}
                     </li>
