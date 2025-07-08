@@ -103,7 +103,7 @@ const projects = [
         icon: <IconGlobe className='size-3' />,
       },
     ],
-    image: '/assets/projects/qaddrha-2.png',
+    image: '/assets/Qadderha-orders.png',
     video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
   },
   {
@@ -152,7 +152,7 @@ const projects = [
       },
     ],
     image: '/assets/chat-server-microservices.png',
-    video:'#',
+    video: '#',
   },
   {
     title: 'Video Calling App',
