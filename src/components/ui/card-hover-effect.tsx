@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
+// const MotionSpan = motion.span as React.FC<HTMLMotionProps<'span'>>;
+
 export const HoverEffect = ({
   items,
   className,
@@ -43,6 +45,7 @@ export const HoverEffect = ({
                   transition: { duration: 0.15, delay: 0.2 },
                 }}
               />
+
             )}
           </AnimatePresence>
           <Card className='cursor-pointer'>
