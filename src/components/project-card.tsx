@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import { Badge } from '../ui/badge';
+import { Badge } from './ui/badge';
 
 interface Props {
   title: string;

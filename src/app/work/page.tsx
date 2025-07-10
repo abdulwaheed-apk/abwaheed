@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { IconBrandGithub, IconGlobe } from '@tabler/icons-react';
 import { BlurFade } from '@/components/magicui/blur-fade';
-import { ProjectCard } from '@/components/custom/project-card';
+import { ProjectCard } from '@/components/project-card';
 
 export const metadata: Metadata = {
   title: 'Work • Abdul Waheed',
@@ -21,7 +21,6 @@ export default function Work() {
           into my past experience.
         </p>
       </section>
-      {/* <ProjectThreeDCard /> */}
       <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto'>
         {projects.map((project, id) => (
           <BlurFade

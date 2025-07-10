@@ -3,15 +3,15 @@ import {
     FaLinkedin,
     FaHackerrank,
     FaSquareXTwitter,
-} from 'react-icons/fa6'
-import { SiCodewars, SiLeetcode } from 'react-icons/si'
+} from 'react-icons/fa6';
+import { SiCodewars, SiLeetcode } from 'react-icons/si';
 
 export const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Work', href: '/work' },
     { name: 'Articles', href: '#' },
-]
+];
 
 export const socialNavigation = [
     {
@@ -44,7 +44,7 @@ export const socialNavigation = [
         href: 'https://www.codewars.com/users/abdulwaheed-apk',
         icon: SiCodewars,
     },
-]
+];
 
 export const experiences = [
     {
@@ -55,11 +55,18 @@ export const experiences = [
         location: 'Riyadh, Saudi Arabia',
         office: 'Onsite',
         work: [
-            'Developed the Qadderha dashboard for Najm to streamline insurance center management, deploying it on Alibaba Cloud.',
-            'Implemented multi-language support in a React application.',
+            `Architected enterprise-grade insurance management platform (Qadderha) for Najm Saudi Arabia, implementing dynamic
+role-based permissions with fine-grained access controls using Next.js 15, TypeScript, Tailwind CSS, replacing legacy admin
+structure`,
+            `Engineered high-performance React applications with optimized caching, accessibility compliance, and multilingual support
+(EN/AR), achieving seamless UX through Tanstack Query, React Hook Form, Zod validation`,
             'Integrated Google Maps and the ClickPay payment gateway into the platform.',
-            'Led the development of Carz.sa seller portal using TypeScript, Next.js, TanStack Query, Shadcn UI, Laravel, and MySQL, deploying it on AWS.',
-            'Wrote comprehensive API and frontend documentation, increasing developer productivity by 300% and improving client satisfaction.',
+            `Spearheaded dual frontend projects - Qadderha insurance dashboard and Carz.sa seller marketplace, contributing API design
+input while delivering pixel-perfect Figma-to-code implementations`,
+            `Orchestrated deployment strategies utilizing AWS and Alibaba Cloud ECS, ensuring robust production environments with
+CI/CD pipelines and Flutter mobile app integration`,
+            `Collaborated with cross-functional stakeholders, wrote comprehensive documentation resulting in 300% productivity increase,
+and optimized applications for SEO and accessibility standards`
         ],
     },
     {
@@ -70,9 +77,10 @@ export const experiences = [
         location: 'New Zealand',
         office: 'Remote',
         work: [
-            'Led the migration of a legacy codebase to a modern tech stack (TypeScript, React, Redux, AWS), supporting $5M in annual revenue.',
+            `Migrated legacy codebase of Cost Estimation application to modern tech stack (TypeScript, React, Redux, Styled Components,
+AWS), supporting $5 million annual revenue`,
             'Optimized frontend performance using code splitting and caching, reducing initial load time by 60%.',
-            'Collaborated with cross-functional teams to gather business requirements and prioritize development tasks.',
+            'Spearheaded cross-functional team collaboration to define and prioritize product roadmap and technical requirements',
         ],
     },
     // {
@@ -95,66 +103,10 @@ export const experiences = [
         location: 'Karachi, Pakistan',
         office: 'Onsite',
         work: [
-            'Built user account management dashboards from Figma designs using Temenos Quantum and Temenos Fabric.',
-            'Developed features for UBL Digital mobile app (8M+ installs) using Temenos framework, processing millions of daily transactions.',
-            'Integrated RESTful APIs into the application, coordinating with backend teams and third-party partners.',
+            `Contributed to mission-critical UBL digital banking platform serving 8M+ users with millions of daily transactions, utilizing
+Temenos framework for scalable financial services`,
+            `Engineered responsive account management dashboards using React, Bootstrap, Styled Components, converting complex
+Figma designs into production-ready, accessible financial interfaces`,
         ],
     },
-]
-
-export const newProjects = [
-    {
-        title: 'Carz.sa | Cars auction market place',
-        description: 'Marketplace for new and used cars',
-        src: '/assets/Carz-Dashboard.png',
-        projectUrl: 'http://carz.sa:4000/',
-        stack: ['TS', 'Next.js', 'AWS', 'React Query', 'Laravel'],
-    },
-    {
-        title: 'Methvin | Estimation Software',
-        description: 'Cost Estimation App for construction projects',
-        src: '/assets/Methvin - Estimate.png',
-        projectUrl:
-            'https://methvin.org/products/estimating-tools/estimating-software',
-        stack: ['JS', 'React', 'Redux', 'AWS'],
-    },
-    {
-        title: 'Qadderha | Insurance Company App',
-        description: 'Cross platform app for insurance companies',
-        src: '/assets/Qadderha-orders.png',
-        projectUrl: 'https://www.github.com/abdulwaheed-apk',
-        stack: ['TS', 'Next.js', 'Alibaba Cloud', 'Laravel'],
-    },
-    {
-        title: 'Video Calling App',
-        description:
-            'Video Conferencing using React, WebRTC, Node.js, Socket.io',
-        src: '/assets/webrtc-meeting.webp',
-        projectUrl: 'https://github.com/abdulwaheed-apk/video-call-app',
-        stack: ['TypeScript', 'WebRTC', 'Socket.io', 'Next.js'],
-    },
-
-    // {
-    //     title: 'Ecommerce Backend',
-    //     description: 'Ecommerce API built with Node.js, TypeScript and Stripe.',
-    //     src: '/assets/ecommerce-api.png',
-    //     projectUrl: 'https://github.com/abdulwaheed-apk/ecommerce-api',
-    //     stack: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    // },
-    {
-        title: 'UBL | Fintech Mobile App',
-        description: 'UBL Digital iOS and Android App using Temenos Framework.',
-        src: '/assets/ubl-digital.webp',
-        projectUrl:
-            'https://play.google.com/store/apps/details?id=app.com.brd&pcampaignid=web_share',
-        stack: ['JavaScript', 'HTML/CSS', 'Temenos', 'REST'],
-    },
-    {
-        title: 'Methvin | Takeoff Software App',
-        description:
-            'Takeoff app to provides an accurate count of the materials needed.',
-        src: '/assets/Methvin-takeoff.png',
-        projectUrl: 'https://methvin.org/products/estimating-tools/takeoff',
-        stack: ['JS', 'React', 'Redux', 'AWS'],
-    },
-]
+];

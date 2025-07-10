@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { IoCloudDownloadOutline } from 'react-icons/io5';
 import { Button } from '@/components/ui/button';
-import CopyEmail from '@/components/custom/copy-email';
+import CopyEmail from '@/components/copy-email';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { skills } from '@/data/main';
 import {
@@ -10,7 +10,7 @@ import {
   IconGlobe,
 } from '@tabler/icons-react';
 import { BlurFade } from '@/components/magicui/blur-fade';
-import { ProjectCard } from '@/components/custom/project-card';
+import { ProjectCard } from '@/components/project-card';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -21,7 +21,7 @@ const featuredProjects = [
     dates: '',
     active: false,
     description:
-        'A platform for managing insurance centers for Najm in Saudi Arabia',
+      'A platform for managing insurance centers for Najm in Saudi Arabia',
     technologies: ['React', 'NextJS', 'TypeScript', 'AWS', 'Laravel'],
     links: [
       {

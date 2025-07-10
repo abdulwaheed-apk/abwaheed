@@ -1,18 +1,18 @@
-'use client'
-import { useState } from 'react'
-import { Button } from '../ui/button'
-import {Check, Copy} from "lucide-react";
+'use client';
+import { useState } from 'react';
+import { Button } from './ui/button';
+import { Check, Copy } from "lucide-react";
 
 export default function CopyEmail() {
-    const [copied, setCopied] = useState(false)
+    const [copied, setCopied] = useState(false);
 
     function handleOnClick() {
-        window.navigator.clipboard.writeText('abdulwaheed.apk@gmail.com')
-        setCopied(true)
+        window.navigator.clipboard.writeText('abdulwaheed.apk@gmail.com');
+        setCopied(true);
 
         setTimeout(() => {
-            setCopied(false)
-        }, 3000)
+            setCopied(false);
+        }, 3000);
     }
 
     return (
@@ -30,5 +30,5 @@ export default function CopyEmail() {
                 )}
             </button>
         </Button>
-    )
+    );
 }
