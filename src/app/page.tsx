@@ -1,20 +1,46 @@
-import Link from 'next/link';
-import { IoCloudDownloadOutline } from 'react-icons/io5';
-import { Button } from '@/components/ui/button';
-import CopyEmail from '@/components/copy-email';
-import { HoverEffect } from '@/components/ui/card-hover-effect';
-import { skills } from '@/data/main';
+import Link from 'next/link'
+import { IoCloudDownloadOutline } from 'react-icons/io5'
+import { Button } from '@/components/ui/button'
+import CopyEmail from '@/components/copy-email'
+import { HoverEffect } from '@/components/ui/card-hover-effect'
+import { skills } from '@/data/main'
 import {
   IconBrandGithub,
   IconFileTypePdf,
   IconGlobe,
-} from '@tabler/icons-react';
-import { BlurFade } from '@/components/magicui/blur-fade';
-import { ProjectCard } from '@/components/project-card';
+} from '@tabler/icons-react'
+import { BlurFade } from '@/components/magicui/blur-fade'
+import { ProjectCard } from '@/components/project-card'
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.04
 
 const featuredProjects = [
+  {
+    title: 'Carz.sa | Buyer Website',
+    href: 'https://carz.sa/en',
+    dates: '',
+    active: true,
+    description:
+      'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
+    technologies: [
+      'TypeScript',
+      'React',
+      'NextJS',
+      'Tailwind',
+      'MySQL',
+      'Laravel',
+      'Alibaba Cloud',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://carz.sa/en',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/projects/Carz.sa-buyer-car-details-page.png',
+    video: '',
+  },
   {
     title: 'Qadderha | A Najm platform',
     href: '#',
@@ -100,7 +126,7 @@ const featuredProjects = [
     image: '/assets/chat-server-microservices.png',
     video: '',
   },
-];
+]
 
 export default function Home() {
   return (
@@ -108,7 +134,8 @@ export default function Home() {
       <main className='relative isolate px-6 pt-14 lg:px-8'>
         <div
           aria-hidden='true'
-          className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
+          className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
+        >
           <div
             style={{
               clipPath:
@@ -137,13 +164,15 @@ export default function Home() {
               <Link
                 href='/Abdul_Waheed_Full_Stack_Software_Engineer.pdf'
                 download
-                className='bg-neutral-800 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-white hover:bg-neutral-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-neutral-400 rounded-sm text-md flex gap-x-2'>
+                className='bg-neutral-800 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-white hover:bg-neutral-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/50 active:text-neutral-400 rounded-sm text-md flex gap-x-2'
+              >
                 Download my Resume
                 <IconFileTypePdf />
               </Link>
               <a
                 href='/work'
-                className='!font-cantarell bg-yellow-300 transition-colors duration-300 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-neutral-900 hover:bg-orange-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300/50 active:bg-yellow-500 rounded-sm'>
+                className='!font-cantarell bg-yellow-300 transition-colors duration-300 py-2 px-4 md:py-3 md:px-8 text-sm md:text-md font-medium text-neutral-900 hover:bg-orange-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-300/50 active:bg-yellow-500 rounded-sm'
+              >
                 Projects
               </a>
             </div>
@@ -152,7 +181,8 @@ export default function Home() {
 
         <div
           aria-hidden='true'
-          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'>
+          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
+        >
           <div
             style={{
               clipPath:
@@ -165,16 +195,19 @@ export default function Home() {
       <HoverEffect items={skills} />
       <section
         aria-label={'Featured projects'}
-        className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}>
+        className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}
+      >
         <div
           className={
             'flex flex-col sm:flex-row gap-4 justify-between sm:items-end'
-          }>
+          }
+        >
           <div className={'flex flex-col gap-y-4'}>
             <h2
               className={
                 'text-3xl sm:text-5xl max-w-2xl font-medium tracking-tight'
-              }>
+              }
+            >
               My Recent Work
             </h2>
             <p>
@@ -186,16 +219,18 @@ export default function Home() {
             <Button
               variant={'outline'}
               size={'lg'}
-              className={'rounded-full font-lexend font-normal'}>
+              className={'rounded-full font-lexend font-normal'}
+            >
               Browse all projects
             </Button>
           </Link>
         </div>
         <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto'>
-          {featuredProjects.map((project, id) => (
+          {featuredProjects.slice(0, 4).map((project, id) => (
             <BlurFade
               key={project.title}
-              delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+              delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+            >
               <ProjectCard
                 href={project.href}
                 key={project.title}
@@ -218,18 +253,22 @@ export default function Home() {
               Let&apos;s build something great together.
             </h2>
             <p className='mb-8 font-light text-gray-500 sm:text-xl dark:text-white'>
-              I build clean, efficient web applications that solve real problems. Whether you need a new project developed or existing systems improved, I&apos;d love to help.
+              I build clean, efficient web applications that solve real
+              problems. Whether you need a new project developed or existing
+              systems improved, I&apos;d love to help.
             </p>
             <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-2'>
               <Button
                 asChild
                 variant={'primary'}
-                className='font-medium text-neutral-100'>
+                className='font-medium text-neutral-100'
+              >
                 <Link
                   href='/Abdul_Waheed_Full_Stack_Engineer.pdf'
                   target='_blank'
                   rel='noopener noreferrer'
-                  download>
+                  download
+                >
                   Resume
                   <IoCloudDownloadOutline className='ml-1.5 size-5' />
                 </Link>
@@ -240,5 +279,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }

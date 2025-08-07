@@ -1,13 +1,13 @@
-import { Metadata } from 'next';
-import { IconBrandGithub, IconGlobe } from '@tabler/icons-react';
-import { BlurFade } from '@/components/magicui/blur-fade';
-import { ProjectCard } from '@/components/project-card';
+import { Metadata } from 'next'
+import { IconBrandGithub, IconGlobe } from '@tabler/icons-react'
+import { BlurFade } from '@/components/magicui/blur-fade'
+import { ProjectCard } from '@/components/project-card'
 
 export const metadata: Metadata = {
   title: 'Work • Abdul Waheed',
-};
+}
 
-const BLUR_FADE_DELAY = 0.04;
+const BLUR_FADE_DELAY = 0.04
 
 export default function Work() {
   return (
@@ -22,10 +22,11 @@ export default function Work() {
         </p>
       </section>
       <div className='grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto'>
-        {projects.map((project, id) => (
+        {projects.slice(0, 6).map((project, id) => (
           <BlurFade
             key={project.title}
-            delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+            delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+          >
             <ProjectCard
               href={project.href}
               key={project.title}
@@ -41,10 +42,36 @@ export default function Work() {
         ))}
       </div>
     </main>
-  );
+  )
 }
 
 const projects = [
+  {
+    title: 'Carz.sa | Buyer Website',
+    href: 'https://carz.sa/en',
+    dates: '',
+    active: true,
+    description:
+      'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
+    technologies: [
+      'TypeScript',
+      'React',
+      'NextJS',
+      'Tailwind',
+      'MySQL',
+      'Laravel',
+      'Alibaba Cloud',
+    ],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://carz.sa/en',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/projects/Carz.sa-buyer-car-details-page.png',
+    video: '/projects/carz.sa-buyer.mp4',
+  },
   {
     title: 'Methvin | Estimation Software',
     href: 'https://methvin.org/products/estimating-tools/estimating-software',
@@ -88,7 +115,8 @@ const projects = [
     href: 'https://www.qaddrha.com.sa/en',
     dates: 'May 2024 - June 2025',
     active: true,
-    description: 'A platform for managing insurance centers for Najm in Saudi Arabia',
+    description:
+      'A platform for managing insurance centers for Najm in Saudi Arabia',
     technologies: ['TypeScript', 'Next.js', 'AWS', 'Laravel'],
     links: [
       // {
@@ -103,7 +131,7 @@ const projects = [
       },
     ],
     image: '/assets/Qadderha-orders.png',
-    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4'
+    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4',
   },
   {
     title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
@@ -111,7 +139,13 @@ const projects = [
     dates: 'Sep 2024 - Present',
     active: true,
     description: 'Marketplace for new and used cars',
-    technologies: ['TypeScript', 'Next.js', 'Alibaba Cloud', 'React Query', 'Laravel'],
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'Alibaba Cloud',
+      'React Query',
+      'Laravel',
+    ],
     links: [
       {
         type: 'Website',
@@ -161,7 +195,6 @@ const projects = [
     description: 'Video Conferencing using React, WebRTC, Node.js, Socket.io',
     technologies: ['TypeScript', 'WebRTC', 'WebSocket', 'React'],
     links: [
-
       {
         type: 'GitHub',
         href: 'https://github.com/abdulwaheed-apk/video-call-app',
@@ -191,4 +224,4 @@ const projects = [
   //       'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
   //   gif:''
   // }
-];
+]
