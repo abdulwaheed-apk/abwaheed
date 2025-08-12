@@ -46,31 +46,50 @@ export default function Work() {
 }
 
 const projects = [
+  // {
+  //   title: 'Carz.sa | Buyer Website',
+  //   href: 'https://carz.sa/en',
+  //   dates: '',
+  //   active: true,
+  //   description:
+  //     'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
+  //   technologies: [
+  //     'TypeScript',
+  //     'React',
+  //     'NextJS',
+  //     'Tailwind',
+  //     'MySQL',
+  //     'Laravel',
+  //     'Alibaba Cloud',
+  //   ],
+  //   links: [
+  //     {
+  //       type: 'Website',
+  //       href: 'https://carz.sa/en',
+  //       icon: <IconGlobe className='size-3' />,
+  //     },
+  //   ],
+  //   image: '/projects/Carz.sa-buyer-car-details-page.png',
+  //   video: '/projects/carz.sa-buyer.mp4',
+  // },
   {
-    title: 'Carz.sa | Buyer Website',
-    href: 'https://carz.sa/en',
-    dates: '',
+    title: 'SkillSync API | Peer to Peer Learning platform',
+    href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+    dates: '1st Jul 2025 - 28th July 2025',
     active: true,
-    description:
-      'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
-    technologies: [
-      'TypeScript',
-      'React',
-      'NextJS',
-      'Tailwind',
-      'MySQL',
-      'Laravel',
-      'Alibaba Cloud',
-    ],
+    description: 'Cost Estimation and Bidding software for construction',
+    technologies: ['TypeScript', 'NestJS', 'Docker', 'PostgreSQL', 'Prisma'],
     links: [
+
       {
-        type: 'Website',
-        href: 'https://carz.sa/en',
-        icon: <IconGlobe className='size-3' />,
+        type: 'GitHub',
+        href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+        icon: <IconBrandGithub className='size-3' />,
       },
     ],
-    image: '/projects/Carz.sa-buyer-car-details-page.png',
-    video: '/projects/carz.sa-buyer.mp4',
+    image: '/assets/methvin-estimating.svg',
+    // video: '',
+    video: '/assets/projects/estimate-title-page1-done.gif'
   },
   {
     title: 'Methvin | Estimation Software',
@@ -92,6 +111,25 @@ const projects = [
     gif: '/assets/projects/estimate-title-page1-done.gif',
   },
   {
+    title: 'Household Chore Tracker Webapp | FreeCodeCamp',
+    href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+    dates: '1st Jul 2025 - 28th July 2025',
+    active: true,
+    description: 'Cost Estimation and Bidding software for construction',
+    technologies: ['TypeScript', 'NestJS', 'Docker', 'PostgreSQL', 'Prisma'],
+    links: [
+
+      {
+        type: 'GitHub',
+        href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+        icon: <IconBrandGithub className='size-3' />,
+      },
+    ],
+    image: '/assets/methvin-estimating.svg',
+    // video: '',
+    video: '/assets/projects/estimate-title-page1-done.gif'
+  },
+  {
     title: 'Methvin | Takeoff',
     href: 'https://methvin.org/products/estimating-tools/takeoff',
     dates: 'May 2023 - Feb 2024',
@@ -110,53 +148,53 @@ const projects = [
     video: '/assets/projects/methvin-takeoff.mp4',
     gif: '/assets/projects/takeoff-product-page.gif',
   },
-  {
-    title: 'Qadderha | A Najm platform',
-    href: 'https://www.qaddrha.com.sa/en',
-    dates: 'May 2024 - June 2025',
-    active: true,
-    description:
-      'A platform for managing insurance centers for Najm in Saudi Arabia',
-    technologies: ['TypeScript', 'Next.js', 'AWS', 'Laravel'],
-    links: [
-      // {
-      //   type: 'GitHub',
-      //   href: 'https://www.github.com/abdulwaheed-apk',
-      //   icon: <IconBrandGithub className='size-3' />,
-      // },
-      {
-        type: 'Website',
-        href: 'https://www.qaddrha.com.sa/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Qadderha-orders.png',
-    video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4',
-  },
-  {
-    title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
-    href: 'https://carz.sa/seller/en',
-    dates: 'Sep 2024 - Present',
-    active: true,
-    description: 'Marketplace for new and used cars',
-    technologies: [
-      'TypeScript',
-      'Next.js',
-      'Alibaba Cloud',
-      'React Query',
-      'Laravel',
-    ],
-    links: [
-      {
-        type: 'Website',
-        href: 'http://carz.sa/seller/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Carz-Dashboard.png',
-    video:
-      '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
-  },
+  // {
+  //   title: 'Qadderha | A Najm platform',
+  //   href: 'https://www.qaddrha.com.sa/en',
+  //   dates: 'May 2024 - June 2025',
+  //   active: true,
+  //   description:
+  //     'A platform for managing insurance centers for Najm in Saudi Arabia',
+  //   technologies: ['TypeScript', 'Next.js', 'AWS', 'Laravel'],
+  //   links: [
+  //     // {
+  //     //   type: 'GitHub',
+  //     //   href: 'https://www.github.com/abdulwaheed-apk',
+  //     //   icon: <IconBrandGithub className='size-3' />,
+  //     // },
+  //     {
+  //       type: 'Website',
+  //       href: 'https://www.qaddrha.com.sa/en',
+  //       icon: <IconGlobe className='size-3' />,
+  //     },
+  //   ],
+  //   image: '/assets/Qadderha-orders.png',
+  //   video: '/assets/projects/Qadderha-Dashboard-3-May-2025.mp4',
+  // },
+  // {
+  //   title: 'Carz.sa | Digital Marketplace for Buying & Selling Cars',
+  //   href: 'https://carz.sa/seller/en',
+  //   dates: 'Sep 2024 - Present',
+  //   active: true,
+  //   description: 'Marketplace for new and used cars',
+  //   technologies: [
+  //     'TypeScript',
+  //     'Next.js',
+  //     'Alibaba Cloud',
+  //     'React Query',
+  //     'Laravel',
+  //   ],
+  //   links: [
+  //     {
+  //       type: 'Website',
+  //       href: 'http://carz.sa/seller/en',
+  //       icon: <IconGlobe className='size-3' />,
+  //     },
+  //   ],
+  //   image: '/assets/Carz-Dashboard.png',
+  //   video:
+  //     '/assets/projects/CARZ - Saudi Arabia’s Trusted Digital Marketplace for Buying & Selling Cars.mp4',
+  // },
   {
     title: 'Ecommerce Microservices',
     href: 'https://www.github.com/abdulwaheed-apk',

@@ -15,73 +15,93 @@ import { ProjectCard } from '@/components/project-card'
 const BLUR_FADE_DELAY = 0.04
 
 const featuredProjects = [
+  /*
+    {
+     title: 'Carz.sa | Buyer Website',
+     href: 'https://carz.sa/en',
+     dates: '',
+     active: true,
+     description:
+       'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
+     technologies: [
+       'TypeScript',
+       'React',
+       'NextJS',
+       'Tailwind',
+       'MySQL',
+       'Laravel',
+       'Alibaba Cloud',
+     ],
+     links: [
+       {
+         type: 'Website',
+         href: 'https://carz.sa/en',
+         icon: <IconGlobe className='size-3' />,
+       },
+     ],
+     image: '/projects/Carz.sa-buyer-car-details-page.png',
+     video: '',
+   },
+   {
+     title: 'Qadderha | A Najm platform',
+     href: '#',
+     dates: '',
+     active: false,
+     description:
+       'A platform for managing insurance centers for Najm in Saudi Arabia',
+     technologies: ['React', 'NextJS', 'TypeScript', 'AWS', 'Laravel'],
+     links: [
+       {
+         type: 'Website',
+         href: 'https://www.qaddrha.com.sa/en',
+         icon: <IconGlobe className='size-3' />,
+       },
+     ],
+     image: '/assets/Qadderha-orders.png',
+     video: '',
+   },
+   {
+     title: 'Carz.sa | Seller Portal',
+     href: 'https://carz.sa/seller/en',
+     dates: '',
+     active: true,
+     description: 'Digital Marketplace for Buying & Selling Cars',
+     technologies: [
+       'TypeScript',
+       'React',
+       'NextJS',
+       'Tailwind',
+       'MySQL',
+       'Laravel',
+       'Alibaba Cloud',
+     ],
+     links: [
+       {
+         type: 'Website',
+         href: 'https://carz.sa/seller/en',
+         icon: <IconGlobe className='size-3' />,
+       },
+     ],
+     image: '/assets/Carz-Dashboard.png',
+     video: '',
+   },
+   */
   {
-    title: 'Carz.sa | Buyer Website',
-    href: 'https://carz.sa/en',
-    dates: '',
+    title: 'Household Chore Tracker Webapp | FreeCodeCamp',
+    href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+    dates: '1st Jul 2025 - 28th July 2025',
     active: true,
-    description:
-      'Digital Marketplace for Buying new and used Vehicles in Saudi Arabia',
-    technologies: [
-      'TypeScript',
-      'React',
-      'NextJS',
-      'Tailwind',
-      'MySQL',
-      'Laravel',
-      'Alibaba Cloud',
-    ],
+    description: 'Cost Estimation and Bidding software for construction',
+    technologies: ['TypeScript', 'NestJS', 'Docker', 'PostgreSQL', 'Prisma'],
     links: [
+
       {
-        type: 'Website',
-        href: 'https://carz.sa/en',
-        icon: <IconGlobe className='size-3' />,
+        type: 'GitHub',
+        href: 'https://github.com/freeCodeCamp-2025-Summer-Hackathon/lime-variable',
+        icon: <IconBrandGithub className='size-3' />,
       },
     ],
-    image: '/projects/Carz.sa-buyer-car-details-page.png',
-    video: '',
-  },
-  {
-    title: 'Qadderha | A Najm platform',
-    href: '#',
-    dates: '',
-    active: false,
-    description:
-      'A platform for managing insurance centers for Najm in Saudi Arabia',
-    technologies: ['React', 'NextJS', 'TypeScript', 'AWS', 'Laravel'],
-    links: [
-      {
-        type: 'Website',
-        href: 'https://www.qaddrha.com.sa/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Qadderha-orders.png',
-    video: '',
-  },
-  {
-    title: 'Carz.sa | Seller Portal',
-    href: 'https://carz.sa/seller/en',
-    dates: '',
-    active: true,
-    description: 'Digital Marketplace for Buying & Selling Cars',
-    technologies: [
-      'TypeScript',
-      'React',
-      'NextJS',
-      'Tailwind',
-      'MySQL',
-      'Laravel',
-      'Alibaba Cloud',
-    ],
-    links: [
-      {
-        type: 'Website',
-        href: 'https://carz.sa/seller/en',
-        icon: <IconGlobe className='size-3' />,
-      },
-    ],
-    image: '/assets/Carz-Dashboard.png',
+    image: '/assets/methvin-estimating.svg',
     video: '',
   },
   {
@@ -126,6 +146,24 @@ const featuredProjects = [
     image: '/assets/chat-server-microservices.png',
     video: '',
   },
+  {
+    title: 'Methvin | Takeoff',
+    href: 'https://methvin.org/products/estimating-tools/takeoff',
+    dates: 'May 2023 - Feb 2024',
+    active: true,
+    description:
+      'Takeoff for managing large-scale construction projects and intricate design plans',
+    technologies: ['JS', 'React', 'Redux', 'Docker', 'AWS'],
+    links: [
+      {
+        type: 'Website',
+        href: 'https://methvin.org/products/estimating-tools/takeoff',
+        icon: <IconGlobe className='size-3' />,
+      },
+    ],
+    image: '/assets/Methvin-takeoff.png',
+    video: '',
+  }
 ]
 
 export default function Home() {
@@ -195,7 +233,7 @@ export default function Home() {
       <HoverEffect items={skills} />
       <section
         aria-label={'Featured projects'}
-        className={'flex flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}
+        className={'hidden   flex-col gap-y-6 sm:gap-y-4 h-auto px-2 sm:px-0'}
       >
         <div
           className={
