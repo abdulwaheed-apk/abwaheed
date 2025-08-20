@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/Lexend-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-lexend: 'Lexend', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-lexend);
+}
